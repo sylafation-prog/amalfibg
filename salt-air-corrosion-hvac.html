@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Salt-Air Corrosion, HVAC Coils and 316 vs 304 Stainless</title>
+<meta name="description" content="Why coastal condenser coils fail early: chloride deposition, formicary corrosion, the distance-from-shore gradient, coil coatings, and 316 versus 304 stainless.">
+<link rel="canonical" href="https://amalfibg.com/salt-air-corrosion-hvac.html">
+<meta property="og:title" content="Salt-Air Corrosion, HVAC Coils and 316 vs 304 Stainless">
+<meta property="og:description" content="Why coastal condenser coils fail early: chloride deposition, formicary corrosion, the distance-from-shore gradient, coil coatings, and 316 versus 304 stainless.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://amalfibg.com/salt-air-corrosion-hvac.html">
+<meta name="geo.region" content="US-FL">
+<meta name="geo.placename" content="Fort Lauderdale, Florida">
+<meta name="geo.position" content="26.1224;-80.1373">
+<meta name="ICBM" content="26.1224, -80.1373">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta property="og:site_name" content="Amalfi Group">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://amalfibg.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Amalfi Group — commercial mechanical, estate care and construction in South Florida">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F5F2EB">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+
+<header class="site">
+  <div class="rail hwrap">
+    <a class="brand" href="index.html">
+      <svg class="mark" viewBox="0 0 100 124" aria-hidden="true"><path d="M16 114 V58 a34 34 0 0 1 68 0 V114 H76 V58 a26 26 0 0 0 -52 0 V114 Z" fill="currentColor"/><path d="M45 19 L55 19 L53.5 47 L46.5 47 Z" fill="currentColor"/><rect x="10" y="118" width="80" height="3.6" fill="currentColor"/></svg>
+      <b>Amalfi</b>
+    </a>
+    <nav class="main">
+      <a href="mechanical.html">Mechanical</a>
+      <a href="estates.html">Estates</a>
+      <a href="construction.html">Construction</a>
+      <a href="gallery.html">Work</a>
+      <a href="about.html">Standard</a>
+      <a href="insights.html">Notes</a>
+      <a href="locations.html">Locations</a>
+    </nav>
+    <div class="hcta">
+      <a class="btn btn-primary" href="contact.html">Enquire</a>
+    </div>
+    <input type="checkbox" id="navtoggle" class="navtoggle" aria-label="Menu">
+    <label for="navtoggle" class="burger" aria-hidden="true"><span></span><span></span><span></span></label>
+    <nav class="drawer">
+      <a href="mechanical.html">Mechanical</a>
+      <a href="estates.html">Estates</a>
+      <a href="construction.html">Construction</a>
+      <a href="gallery.html">Selected work</a>
+      <a href="about.html">Our standard</a>
+      <a href="insights.html">Field notes</a>
+      <a href="locations.html">Locations</a>
+      <a href="coverage.html">Coverage</a>
+      <a href="contact.html">Enquire</a>
+      <a class="d-mail" href="mailto:hello@amalfibg.com">hello@amalfibg.com</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+  <nav class="crumbs rail" aria-label="Breadcrumb">
+    <a href="index.html">Home</a> <span>·</span> <a href="mechanical.html">Mechanical</a> <span>·</span> <span aria-current="page">Salt-air corrosion</span>
+  </nav>
+
+  <section class="rail hero center" style="padding-top:clamp(28px,4vw,52px)">
+    <svg class="arch" viewBox="0 0 40 26" aria-hidden="true"><path d="M2 25 V13 a18 12 0 0 1 36 0 V25" fill="none" stroke="currentColor" stroke-width="1.1"/></svg>
+    <p class="label">Mechanical · Coastal equipment</p>
+    <h1 style="margin-top:20px">Salt-air corrosion on coastal mechanical equipment</h1>
+    <p class="lede">A four-year-old condensing unit that needs a new coil is rarely defective equipment. It is usually the right equipment installed without the specification its exposure demanded.</p>
+  </section>
+
+  <section class="sec band">
+    <div class="rail narrow">
+      <p class="label center">The short answer</p>
+      <h2 class="center" style="margin-top:18px">Why does a coastal condenser coil fail in four years?</h2>
+      <p style="margin-top:28px;font-size:1.14rem;color:var(--ink-2)">Because airborne chloride lands on the coil, stays there, and turns ordinary humidity into an electrolyte — on a component made of two dissimilar metals pressed together. So the question is not whether the unit was defective. It is whether the quotation ever named a coating, a fastener alloy or a rinse interval, and whether the warranty covers corrosion at all.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="rail">
+      <div class="center">
+        <p class="label">The mechanism</p>
+        <h2 style="margin-top:18px">How does salt air actually destroy a coil?</h2>
+        <p class="lede narrow" style="margin-top:20px">Four processes, which look alike from the outside. Telling them apart decides whether the next coil will do any better.</p>
+      </div>
+      <ol class="steps narrow">
+        <li><div><strong>Chloride deposition</strong><span>Breaking surf throws seawater into the air; it evaporates, and the wind carries fine salt inland. ISO 9223 classes the deposition rate from S0, under 3 mg of chloride per square metre per day, to S3, above 300, measured by the wet-candle method of ASTM G140. Salt alone does nothing; salt plus humidity does a great deal. Sodium chloride is hygroscopic, so it holds a conductive brine film on a coil that looks dry — the electrolyte everything else needs.</span></div></li>
+        <li><div><strong>The galvanic couple</strong><span>Copper tube bonded into aluminium fin puts two metals far apart on the galvanic series in contact, sharing an electrolyte. That is a battery, and aluminium is the metal that dissolves. Fin erodes away from tube, the thermal bond opens, and the unit loses capacity before anything leaks. Chloride both raises conductivity and breaks down the oxide film protecting the aluminium.</span></div></li>
+        <li><div><strong>Pitting</strong><span>Chloride attacks the copper itself, concentrating at local breaks in the surface film rather than thinning the wall evenly. A few deep pits form instead of general loss, and they grow until one goes through — the failure that leaks in a coil that looks sound.</span></div></li>
+        <li><div><strong>Crevice corrosion</strong><span>Where two surfaces hold moisture without sealing it out — under a fin collar, beneath a hanger strap, behind a washer — the trapped electrolyte loses oxygen and acidifies. Metal dissolves inside the gap while the surface millimetres away stays bright. It is why fasteners fail before panels, and why even stainless can be destroyed from a gap you cannot see into.</span></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec band">
+    <div class="rail narrow">
+      <p class="label center">The one blamed on the wrong thing</p>
+      <h2 class="center" style="margin-top:18px">What is formicary corrosion, and why is it misdiagnosed?</h2>
+      <p style="margin-top:28px;font-size:1.14rem;color:var(--ink-2)">Formicary corrosion is attack on copper tube by organic acids rather than by chloride, and it is misdiagnosed because the damage is almost invisible. The name is from <i>formica</i>, ant: beneath a pinhole too small to see, the tube wall is riddled with branching microscopic tunnels far larger than the opening. The agents are acetic and formic acid in trace concentrations, from building materials rather than the sea — adhesives, silicone caulk, particleboard, latex paints.</p>
+      <p style="margin-top:20px;font-size:1.14rem;color:var(--ink-2)">On coastal property it is routinely written up as salt damage, and the two call for opposite responses. Chloride is answered by coatings, grade and rinsing; formicary attack is answered by removing the acid source, often a recent fit-out. A coil replaced without finding that source fails the same way.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="rail">
+      <div class="center">
+        <p class="label">The gradient</p>
+        <h2 style="margin-top:18px">How much does distance from the water change coil life?</h2>
+        <p class="lede narrow" style="margin-top:20px">Enormously, and almost all of the change happens in the first few hundred metres. Deposition does not taper gently inland — it collapses, then flattens.</p>
+      </div>
+      <div class="tablewrap narrow" style="max-width:none">
+        <table>
+          <thead><tr><th>Distance from shoreline</th><th class="num">Chloride deposition</th><th>ISO 9223</th></tr></thead>
+          <tbody>
+            <tr><td><strong>About 25 m (80 ft)</strong></td><td class="num">95.6 mg/m²·day</td><td>S2</td></tr>
+            <tr><td><strong>About 89 m (290 ft)</strong></td><td class="num">50.1 mg/m²·day</td><td>S1</td></tr>
+            <tr><td><strong>About 177 m (580 ft)</strong></td><td class="num">26.4 mg/m²·day</td><td>S1</td></tr>
+            <tr><td><strong>About 10 km (6 miles)</strong></td><td class="num">Under 10 mg/m²·day</td><td>S1, low</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small narrow" style="margin-top:18px">Against the dune line, that is roughly 48 per cent lower at 89 m and 72 per cent lower at 177 m. Near-shore figures are measured values from a marine exposure study at Tarragona, Spain, published in <i>Revista de Metalurgia</i>; the 10 km figure is from a twenty-nine-site European coastal survey. These are not Florida measurements — treat them as the shape of the curve. Other work puts the sharpest fall in the first 200 to 400 m.</p>
+      <p class="lede narrow" style="margin-top:28px">So a beachfront unit may sit in three to four times the chloride load of an identical unit six hundred feet behind it, and roughly ten times that of one a few miles inland. One widely cited fit relates carbon steel loss to chloride deposition with a correlation coefficient of 0.97 across 4 to 500 mg/m²·day. Service life does not scale perfectly with exposure, because coils fail at a single pinhole rather than by uniform thinning, but the magnitude is not in doubt.</p>
+      <div class="three">
+        <div>
+          <h3>Prevailing wind</h3>
+          <p>South Florida's easterlies put the Atlantic upwind of most Gold Coast property, so the sheltered side of a barrier island is not the inland site its map position suggests.</p>
+        </div>
+        <div>
+          <h3>Elevation and surf</h3>
+          <p>Deposition falls with height above sea level — published work reports a marked reduction from about six metres up — and rises with surf energy, because breaking waves make the aerosol.</p>
+        </div>
+        <div>
+          <h3>Shielding and rain</h3>
+          <p>Sheltered equipment often corrodes faster. Rain washes chloride off surfaces it reaches; a unit under a screen or hood keeps the salt and loses the rinse.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec band">
+    <div class="rail">
+      <div class="center">
+        <p class="label">Coatings</p>
+        <h2 style="margin-top:18px">Are coil coatings worth paying for?</h2>
+        <p class="lede narrow" style="margin-top:20px">Within sight of the water, yes — and a factory-applied electrodeposited epoxy is the only version worth specifying. It buys time, not immunity.</p>
+      </div>
+      <div class="two">
+        <div>
+          <h3 style="font-family:var(--display)">Factory e-coat</h3>
+          <p style="margin-top:14px;color:var(--ink-2)">Electrocoating immerses the coil in a water-based cationic epoxy bath and deposits the film electrically, so it reaches fin edges, interior fin surfaces and the tube-to-fin interface no spray can see. Published specifications give a dry film thickness of roughly 0.5 to 1.2 mils to ASTM D7091, a thermal penalty generally stated as under one per cent, and adhesion to ASTM D3359. In sun it needs a sprayed topcoat, because epoxy chalks under ultraviolet light.</p>
+          <h3 style="font-family:var(--display);margin-top:30px">Field-applied coatings</h3>
+          <p style="margin-top:14px;color:var(--ink-2)">Spray-applied epoxies protect a sound uncoated coil already in service, but they are not an equivalent: a spray cannot reach the interior of a dense fin pack, where the galvanic couple lives. Over a coil that still holds chloride, it seals the salt in with the moisture.</p>
+        </div>
+        <aside class="panel">
+          <h3>What a coating does not do</h3>
+          <ul>
+            <li>Stop formicary corrosion, which needs the acid source removed</li>
+            <li>Protect the cabinet, fasteners, hangers or louvres</li>
+            <li>Survive mechanical damage — a scraped film becomes a crevice</li>
+            <li>Remove the need for rinsing; it extends the interval</li>
+            <li>Rescue a coil that has already lost fin</li>
+          </ul>
+        </aside>
+      </div>
+      <h3 style="font-family:var(--display);margin-top:46px">Microchannel and tube-and-fin behave differently</h3>
+      <p class="lede" style="margin-top:14px;max-width:72ch">All-aluminium microchannel coils remove the copper-to-aluminium galvanic couple, their largest coastal advantage, and hold less refrigerant. They do not remove chloride attack on aluminium, and they add two liabilities: the tube wall is thin, so a pit that would be a slow leak in copper is a failure, and there is no field repair — a slab is replaced, not brazed. Joints where aluminium meets copper or steel stay a galvanic risk; published guidance puts the bimetallic threshold near 100 mV and this couple around 350 mV.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="rail narrow">
+      <p class="label center">Where the evidence is weak</p>
+      <h2 class="center" style="margin-top:18px">Do salt-spray test hours predict how long a coil will last?</h2>
+      <p style="margin-top:28px;font-size:1.14rem;color:var(--ink-2)">No, and anyone selling a coating on its hour count is overstating what the test is for. ASTM B117, the continuous neutral salt fog practice everyone quotes, states in its own scope that it produces <i>relative</i> corrosion resistance information. A constant fog reproduces none of what destroys coatings outdoors: wetting and drying cycles, ultraviolet, thermal movement, pollutants, mechanical damage. Published coil specifications variously claim over 15,000 hours to B117, 6,000 hours, and 5,000 hours without leak, against about 1,000 for pre-coated finstock — incomparable figures, from different substrates and criteria.</p>
+      <p style="margin-top:20px;font-size:1.14rem;color:var(--ink-2)">Ask instead for cyclic testing, which alternates salt fog with drying and humidity: ASTM G85 Annex A3, the acidified synthetic seawater test called SWAAT, and Annex A2, MASTMAASIS. Published e-coat specifications report more than 3,000 hours SWAAT and 2,400 hours to G85 while holding burst pressure; add ASTM G155 for ultraviolet. Use all of it to rank products, none of it to predict a service life.</p>
+    </div>
+  </section>
+
+  <section class="sec band">
+    <div class="rail narrow">
+      <p class="label center">Read the paperwork</p>
+      <h2 class="center" style="margin-top:18px">Does the coil coating carry a warranty?</h2>
+      <p style="margin-top:28px;font-size:1.14rem;color:var(--ink-2)">Often not, and this is the part of a coastal purchase that most reliably surprises the owner. One major manufacturer's own technical bulletin for its microchannel coating option states that its factories do not provide a warranty for the coating used on condenser fins. The warranty covers the equipment, not the protection you bought for it.</p>
+      <p style="margin-top:20px;font-size:1.14rem;color:var(--ink-2)">Where coastal coverage exists it is narrow and conditional: excluded from the base limited warranty, picked up only by a designated coastal variant, on registration inside a short window after installation, and only where documented annual service can be produced. It is frequently shorter than the standard parts warranty — five years is a common figure — and one manufacturer's coastal literature draws the line explicitly: cosmetic corrosion does not constitute part failure. Ask whether corrosion is excluded, whether the coating itself is warranted, and what service record a claim will require.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="rail">
+      <div class="center">
+        <p class="label">Material grade</p>
+        <h2 style="margin-top:18px">Is 316 or 304 stainless required on the coast?</h2>
+        <p class="lede narrow" style="margin-top:20px">316, within roughly the first few hundred metres of breaking surf. 304 is routinely specified where 316 is required, which makes it one of the most expensive specification errors on this coast.</p>
+      </div>
+      <div class="tablewrap narrow" style="max-width:none">
+        <table>
+          <thead><tr><th>&nbsp;</th><th>304 / 304L</th><th>316 / 316L</th></tr></thead>
+          <tbody>
+            <tr><td><strong>UNS designation</strong></td><td>S30400 / S30403</td><td>S31600 / S31603</td></tr>
+            <tr><td><strong>Chromium</strong></td><td>18.0–20.0 %</td><td>16.0–18.0 %</td></tr>
+            <tr><td><strong>Nickel</strong></td><td>8.0–10.5 %</td><td>10.0–14.0 %</td></tr>
+            <tr><td><strong>Molybdenum</strong></td><td>Not specified — residual only</td><td>2.00–3.00 %</td></tr>
+            <tr><td><strong>Nitrogen</strong></td><td>0.10 % max</td><td>0.10 % max</td></tr>
+            <tr><td><strong>PREN</strong></td><td>About 18 to 19</td><td>About 23 to 25</td></tr>
+            <tr><td><strong>In marine air</strong></td><td>Stains, then pits, worst in crevices</td><td>Stains well before it pits</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small narrow" style="margin-top:18px">Compositions as specified in ASTM A240. PREN is the pitting resistance equivalent number, for austenitic grades %Cr + 3.3(%Mo + 0.5%W) + 16(%N) — the formula published by the International Molybdenum Association — and the values above are calculated from these ranges.</p>
+      <div class="two">
+        <div>
+          <p class="lede" style="margin-top:28px">PREN ranks grades for chloride pitting; it does not predict a service life. Note that 304 carries <i>more</i> chromium than 316: the whole of 316's advantage is molybdenum, which stabilises the passive film against chloride and helps it repair itself after a local breakdown. Without molybdenum the film fails at a lower chloride concentration and does not heal — which is how a 304 fastener blooms rust in its first season on a beachfront roof while the 316 beside it stays bright.</p>
+          <p class="small" style="margin-top:20px">Specify the L grades wherever anything is welded. 304 stays defensible in interior mechanical rooms and on trim that rain washes.</p>
+        </div>
+        <aside class="panel">
+          <h3>Specify 316 for</h3>
+          <ul>
+            <li>Every fastener, bolt, screw, washer and anchor outdoors</li>
+            <li>Hangers, strut, pipe supports, wind and seismic restraint</li>
+            <li>Condensate pans and drain fittings</li>
+            <li>Louvres, hoods, grilles and screen frames</li>
+            <li>Cabinet and access panels within sight of the water</li>
+            <li>Handrails and guards serving rooftop plant</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec band">
+    <div class="rail">
+      <div class="center">
+        <p class="label">Maintenance</p>
+        <h2 style="margin-top:18px">Does rinsing a coil with fresh water actually extend its life?</h2>
+        <p class="lede narrow" style="margin-top:20px">Yes — it is the highest-return thing anyone does to coastal equipment, because it removes the chloride before the chloride does its work.</p>
+      </div>
+      <ol class="steps narrow">
+        <li><div><strong>Interval</strong><span>Monthly within the first few hundred metres of breaking surf, quarterly from there to roughly a mile, and at least seasonally beyond — tightened wherever rain does not reach the equipment. ANSI/ASHRAE/ACCA Standard 180-2018, the standard practice for inspection and maintenance of commercial building HVAC systems, sets minimum task frequencies by equipment type, states they are minimums revisable on condition history, and states that nothing in it overrides the manufacturer's warranty terms.</span></div></li>
+        <li><div><strong>Method</strong><span>Low pressure, high volume, potable water, always against the airflow — on a condenser, from inside the coil outward, so salt leaves by the face it entered rather than being driven deeper into the fin pack. Rinsing the wrong way, or with a pressure washer, packs contaminant into the middle of the coil and bends fin over it.</span></div></li>
+        <li><div><strong>What rinsing does not do</strong><span>It does not reverse existing loss, does not reach chloride already worked under a coating film or into a crevice, and does nothing for formicary corrosion. On an uncoated coil it only slows a process that was always going to win.</span></div></li>
+        <li><div><strong>Inspection</strong><span>Look for white powdery bloom at fin edges and at the tube-to-fin interface — aluminium corrosion product, and the earliest useful signal; dark deposits on tube surfaces; fin gone soft under a fingernail; rust bloom on fasteners, which says the whole installation was underspecified.</span></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="rail narrow">
+      <p class="label center">The decision</p>
+      <h2 class="center" style="margin-top:18px">When is a corroded coil worth cleaning, and when is it finished?</h2>
+      <p style="margin-top:28px;font-size:1.14rem;color:var(--ink-2)">A coil is worth cleaning while the fin is still sound and still bonded to the tube; the test is mechanical, in that fin which is discoloured but firm is merely dirty. It is finished when fin loss at the tube interface is widespread, when it has leaked twice in different places, when capacity does not recover after a proper clean, or when it is uncoated in an S2 exposure on a chassis near end of life. A like-for-like replacement rarely pays: the same construction in the same exposure fails on the same schedule, and the labour, refrigerant recovery, recharge and access cost more than the coil.</p>
+    </div>
+  </section>
+
+  <section class="sec band">
+    <div class="rail">
+      <div class="center">
+        <p class="label">Specification</p>
+        <h2 style="margin-top:18px">What should a coastal equipment specification say?</h2>
+        <p class="lede narrow" style="margin-top:20px">Eight lines most quotations leave out.</p>
+      </div>
+      <div class="two">
+        <div>
+          <ul class="svc-cols">
+            <li>Factory-applied electrodeposited epoxy on all outdoor coils, topcoated in sun</li>
+            <li>Coating performance stated to ASTM G85 Annex A3 (SWAAT) and A2, not B117 alone</li>
+            <li>Film thickness and adhesion stated to ASTM D7091 and D3359</li>
+            <li>316 or 316L for every fastener, hanger, support and restraint</li>
+            <li>316 condensate pans, drain fittings, louvres and hoods</li>
+            <li>Coastal cabinet construction, with the coating system named</li>
+            <li>Written confirmation of what the warranty covers, and whether the coating is warranted</li>
+            <li>The manufacturer's required rinse interval, in the handover file</li>
+          </ul>
+        </div>
+        <aside class="panel">
+          <h3>The fifteen-year arithmetic</h3>
+          <p style="color:var(--ink-2)">The coastal upcharge is a modest number at the point of order. Omitting it costs one or two extra coil replacements across the unit's life, each carrying access, refrigerant recovery and recharge, lifting and downtime — which routinely exceed the coil itself. We will not quote an industry figure for that upcharge as a share of unit price, because we cannot verify one. We price both and set the fifteen-year totals beside each other.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="rail narrow">
+      <div class="center">
+        <p class="label">Questions</p>
+        <h2 style="margin-top:18px">What owners ask after a coil fails</h2>
+      </div>
+      <div class="faq">
+        <details open><summary>Why did my four-year-old condensing unit need a new coil?</summary>
+          <p>Almost certainly because it sits in a chloride atmosphere and nothing was specified to resist one. Airborne salt holds a conductive moisture film on the coil, which drives galvanic attack between copper tube and aluminium fin, pitting of the copper, and crevice attack where two surfaces trap damp. If the failure is a pinhole rather than fin loss, check for formicary corrosion.</p>
+        </details>
+        <details><summary>Does the coil coating itself come with a warranty?</summary>
+          <p>Frequently not. At least one major manufacturer's technical bulletin for its microchannel coating option states that its factories do not provide a warranty for the coating applied to condenser fins. Salt-air corrosion is also commonly excluded from base limited warranties, picked up only by a coastal variant, on prompt registration, and where an annual service history exists.</p>
+        </details>
+        <details><summary>Should I use 316 or 304 stainless near the water?</summary>
+          <p>316 for anything outdoors within roughly the first few hundred metres of breaking surf. 304 carries slightly more chromium; the whole of 316's advantage is 2.00 to 3.00 per cent molybdenum, which stabilises the passive film against chloride. On the pitting resistance equivalent number — %Cr + 3.3(%Mo + 0.5%W) + 16(%N) — 304 calculates to about 18 and 316 to about 24.</p>
+        </details>
+        <details><summary>How often should a coastal condenser coil be rinsed with fresh water?</summary>
+          <p>Monthly within the first few hundred metres of breaking surf, quarterly out to roughly a mile, and at least seasonally beyond — tightened wherever rain does not reach the equipment. Rinse at low pressure and high volume, against the direction of airflow, so salt leaves by the face it entered.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec band">
+    <div class="rail narrow center">
+      <p class="label">How we use this</p>
+      <h2 style="margin-top:18px">Where this reaches your building</h2>
+      <p class="lede" style="margin:20px auto 0">This is why <a href="mechanical.html">Amalfi Mechanical</a> runs a tighter interval east of the Intracoastal than west of it, and treats coil cleaning, coating and fastener grade as scheduled items rather than repairs. The same logic governs <a href="estates.html">Amalfi Estates</a>, where pool plant, generator enclosures and dock hardware sit in the same chloride load as the condensers.</p>
+      <p class="lede" style="margin:20px auto 0">It is also why the city pages stand separately: a unit in <a href="miami-beach.html">Miami Beach</a> or on a barrier island in <a href="fort-lauderdale.html">Fort Lauderdale</a> is in a different environment from one a few miles west, and <a href="naples.html">Naples</a> sits under a different wind pattern again. Response targets are on the <a href="coverage.html">coverage</a> page. Send us a model number and an address and we will tell you in writing which you bought — the wrong equipment, or the wrong specification.</p>
+    </div>
+  </section>
+
+  <section class="ruled">
+    <div class="rail cta">
+      <p class="label">Enquiries</p>
+      <h2>Start with the survey</h2>
+      <p class="lede narrow">It costs nothing, and you will know what you own and what the salt is doing to it.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="contact.html">Request a visit</a>
+        <a class="btn btn-ghost" href="mailto:hello@amalfibg.com">hello@amalfibg.com</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<footer class="site">
+  <div class="rail">
+    <div class="fgrid">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:16px">
+          <svg class="mark" viewBox="0 0 100 124" aria-hidden="true"><path d="M16 114 V58 a34 34 0 0 1 68 0 V114 H76 V58 a26 26 0 0 0 -52 0 V114 Z" fill="currentColor"/><path d="M45 19 L55 19 L53.5 47 L46.5 47 Z" fill="currentColor"/><rect x="10" y="118" width="80" height="3.6" fill="currentColor"/></svg>
+          <b>Amalfi</b>
+        </a>
+        <p class="small" style="max-width:36ch">Commercial mechanical services, waterfront estate care and construction across South Florida and the Gulf coast.</p>
+      </div>
+      <div><h4>Divisions</h4><ul>
+        <li><a href="mechanical.html">Mechanical</a></li>
+        <li><a href="estates.html">Estates</a></li>
+        <li><a href="construction.html">Construction</a></li>
+      </ul></div>
+      <div><h4>The house</h4><ul>
+        <li><a href="gallery.html">Selected work</a></li>
+        <li><a href="insights.html">Field notes</a></li>
+        <li><a href="about.html">Our standard</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="coverage.html">Coverage</a></li>
+        <li><a href="contact.html">Enquire</a></li>
+      </ul></div>
+      <div><h4>Enquiries</h4><ul>
+        <li>(954) 000-0000</li>
+        <li>hello@amalfibg.com</li>
+        <li>Fort Lauderdale, Florida</li>
+        <li>Dispatch at every hour</li>
+      </ul></div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Amalfi Group</span>
+      <span>Permitted work is performed by licensed, insured contractors we direct</span>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "@id": "https://amalfibg.com/salt-air-corrosion-hvac.html#article",
+ "headline": "Salt-air corrosion on coastal mechanical equipment",
+ "description": "Why coastal condenser coils fail early: chloride deposition, galvanic and formicary corrosion, the distance-from-shore gradient, what coil coatings buy, and where 316 stainless is required rather than 304.",
+ "datePublished": "2026-10-30",
+ "dateModified": "2026-10-30",
+ "inLanguage": "en-US",
+ "url": "https://amalfibg.com/salt-air-corrosion-hvac.html",
+ "image": "https://amalfibg.com/og.png",
+ "articleSection": "Mechanical",
+ "author": {"@id": "https://amalfibg.com/#organization"},
+ "publisher": {"@id": "https://amalfibg.com/#organization"},
+ "mainEntityOfPage": {
+  "@type": "WebPage",
+  "@id": "https://amalfibg.com/salt-air-corrosion-hvac.html",
+  "url": "https://amalfibg.com/salt-air-corrosion-hvac.html",
+  "name": "Salt-air corrosion on coastal mechanical equipment",
+  "isPartOf": {"@id": "https://amalfibg.com/#website"}
+ },
+ "about": [
+  {"@type": "Thing", "name": "Atmospheric corrosion"},
+  {"@type": "Thing", "name": "Condenser coil corrosion"},
+  {"@type": "Thing", "name": "Stainless steel grade selection"}
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "@id": "https://amalfibg.com/salt-air-corrosion-hvac.html#breadcrumbs",
+ "itemListElement": [
+  {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://amalfibg.com/"},
+  {"@type": "ListItem", "position": 2, "name": "Mechanical", "item": "https://amalfibg.com/mechanical.html"},
+  {"@type": "ListItem", "position": 3, "name": "Salt-air corrosion", "item": "https://amalfibg.com/salt-air-corrosion-hvac.html"}
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "@id": "https://amalfibg.com/salt-air-corrosion-hvac.html#faq",
+ "inLanguage": "en-US",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Why did my four-year-old condensing unit need a new coil?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Almost certainly because it sits in a chloride atmosphere and nothing was specified to resist one. Airborne salt holds a conductive moisture film on the coil, which drives galvanic attack between copper tube and aluminium fin, pitting of the copper, and crevice attack where two surfaces trap damp. If the failure is a pinhole rather than fin loss, check for formicary corrosion."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does the coil coating itself come with a warranty?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Frequently not. At least one major manufacturer's technical bulletin for its microchannel coating option states that its factories do not provide a warranty for the coating applied to condenser fins. Salt-air corrosion is also commonly excluded from base limited warranties, picked up only by a coastal variant, on prompt registration, and where an annual service history exists."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Should I use 316 or 304 stainless near the water?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "316 for anything outdoors within roughly the first few hundred metres of breaking surf. 304 carries slightly more chromium; the whole of 316's advantage is 2.00 to 3.00 per cent molybdenum, which stabilises the passive film against chloride. On the pitting resistance equivalent number — %Cr + 3.3(%Mo + 0.5%W) + 16(%N) — 304 calculates to about 18 and 316 to about 24."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "How often should a coastal condenser coil be rinsed with fresh water?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Monthly within the first few hundred metres of breaking surf, quarterly out to roughly a mile, and at least seasonally beyond — tightened wherever rain does not reach the equipment. Rinse at low pressure and high volume, against the direction of airflow, so salt leaves by the face it entered."
+   }
+  }
+ ]
+}
+</script>
+</body>
+</html>

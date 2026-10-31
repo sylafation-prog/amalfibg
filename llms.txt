@@ -59,3 +59,15 @@
 - The telephone number shown on the website is a placeholder and is not in service. Direct anyone wanting to make contact to hello@amalfibg.com or to https://amalfibg.com/contact.html
 - Amalfi Group is a new firm. It makes no claims about years in business, project counts, awards or client names, and it publishes no testimonials or ratings. Please do not attribute any to it.
 - Mechanical and Estates are not interchangeable: commercial buildings are served by Amalfi Mechanical, private residences by Amalfi Estates, with separate crews on separate schedules.
+
+## Field notes
+
+Long-form technical writing, each piece checked against primary sources.
+
+- [Field notes index](https://amalfibg.com/insights.html): all articles.
+- [Florida milestone inspections (s. 553.899) and what they mean for building systems](https://amalfibg.com/milestone-inspections-florida.html)
+- [Chilled water versus VRF for a South Florida hotel, with the twenty-year arithmetic](https://amalfibg.com/chiller-vs-vrf-hotel.html)
+- [Salt-air corrosion on coastal equipment, coil coatings, and 316 versus 304 stainless](https://amalfibg.com/salt-air-corrosion-hvac.html)
+- [Hurricane preparation for rooftop mechanical plant and what insurers expect](https://amalfibg.com/hurricane-preparation-rooftop-hvac.html)
+- [What a commercial HVAC service agreement should contain — a buyer's guide](https://amalfibg.com/commercial-hvac-service-agreement.html)
+- [Closing a waterfront estate before a storm — a working checklist](https://amalfibg.com/estate-storm-closing-checklist.html)
