@@ -1,16 +1,29 @@
-/* Amalfi Group — classical symmetry: centred masthead, arched openings, hairline rules */
+/* Amalfi Group — classical symmetry: centred masthead, arched openings, hairline rules.
+   Palette: sun-bleached plaster, deep olive (primary, on the van), brass, and majolica blue
+   as the ceramic secondary. Division accent flows through --accent (olive by default). */
 :root{
-  --stone:#F5F2EB;
-  --stone-deep:#EBE6DB;
-  --card:#FEFCF7;
+  --stone:#F9F5EA;
+  --stone-deep:#F1EBDC;
+  --card:#FFFEF9;
   --ink:#241F19;
   --ink-2:#4F463A;
-  --muted:#857A69;
-  --line:#D9D2C4;
-  --line-soft:#E6E0D3;
+  --muted:#746958;
+  --line:#DCD3C1;
+  --line-soft:#E9E2D1;
   --oliva:#3B5540;
   --oliva-soft:#E6EBE4;
-  --ottone:#92763C;
+  --ottone:#826430;
+  --mare:#1F4B5C;
+  --mare-soft:#E3ECEF;
+  --terra:#A6613C;
+
+  /* material */
+  --accent:var(--oliva);          /* division accent; Estates re-points this to --mare */
+  --tile:#7A9FAE;                 /* majolica ornament ink, faded like glazed ceramic in sun */
+  --shadow:rgba(84,64,32,.10);    /* warm shadow, never grey */
+  --shadow-deep:rgba(84,64,32,.16);
+  --wash-hi:rgba(255,253,246,.62);/* limewash highlight */
+  --wash-lo:rgba(146,122,84,.05); /* limewash mottling */
 
   --display:"Marcellus",Georgia,"Times New Roman",serif;
   --body:"EB Garamond",Georgia,"Times New Roman",serif;
@@ -21,20 +34,34 @@
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --stone:#191511; --stone-deep:#211C17; --card:#211C17;
-    --ink:#F0EBE0; --ink-2:#C5BCAB; --muted:#978C7B;
-    --line:#352E25; --line-soft:#2A241D;
-    --oliva:#93B296; --oliva-soft:#1E271F; --ottone:#C9A769;
+    --stone:#1A1612; --stone-deep:#221D17; --card:#241E18;
+    --ink:#F0EBE0; --ink-2:#C5BCAB; --muted:#9A8F7E;
+    --line:#372F26; --line-soft:#2B251E;
+    --oliva:#93B296; --oliva-soft:#1E271F; --ottone:#C9A769; --mare:#8FB8C6; --mare-soft:#17242A; --terra:#CC8B62;
+    --accent:var(--oliva);
+    --tile:#5B8794;
+    --shadow:rgba(0,0,0,.38); --shadow-deep:rgba(0,0,0,.55);
+    --wash-hi:rgba(255,238,205,.028); --wash-lo:rgba(0,0,0,.22);
     color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
-  --stone:#191511; --stone-deep:#211C17; --card:#211C17;
-  --ink:#F0EBE0; --ink-2:#C5BCAB; --muted:#978C7B;
-  --line:#352E25; --line-soft:#2A241D;
-  --oliva:#93B296; --oliva-soft:#1E271F; --ottone:#C9A769;
+  --stone:#1A1612; --stone-deep:#221D17; --card:#241E18;
+  --ink:#F0EBE0; --ink-2:#C5BCAB; --muted:#9A8F7E;
+  --line:#372F26; --line-soft:#2B251E;
+  --oliva:#93B296; --oliva-soft:#1E271F; --ottone:#C9A769; --mare:#8FB8C6; --mare-soft:#17242A; --terra:#CC8B62;
+  --accent:var(--oliva);
+  --tile:#5B8794;
+  --shadow:rgba(0,0,0,.38); --shadow-deep:rgba(0,0,0,.55);
+  --wash-hi:rgba(255,238,205,.028); --wash-lo:rgba(0,0,0,.22);
   color-scheme:dark;
 }
+
+/* Division accents. Estates is the ceramic-blue house; the others stay olive.
+   Hooks: body.estates, [data-division="estates"], or simply the current-page nav link. */
+body.estates,[data-division="estates"],
+body:has(nav.main a[aria-current="page"][href="estates.html"]){--accent:var(--mare)}
+.divs .div-card:nth-child(2){--accent:var(--mare)}
 
 *{box-sizing:border-box}
 html,body{margin:0}
@@ -57,15 +84,21 @@ img{max-width:100%}
   padding-right:max(22px,env(safe-area-inset-right,0px))}
 .narrow{max-width:var(--narrow);margin-inline:auto}
 .sec{padding-block:clamp(60px,8vw,112px)}
-.band{background:var(--stone-deep)}
+/* limewash: three soft pools of light and shade over the deeper plaster — gradients only */
+.band{background-color:var(--stone-deep);
+  background-image:
+    radial-gradient(ellipse 58% 70% at 14% 18%,var(--wash-hi),transparent 72%),
+    radial-gradient(ellipse 48% 62% at 88% 84%,var(--wash-hi),transparent 72%),
+    radial-gradient(ellipse 64% 46% at 56% 6%,var(--wash-lo),transparent 70%),
+    radial-gradient(ellipse 40% 52% at 30% 96%,var(--wash-lo),transparent 70%)}
 .ruled{border-top:1px solid var(--line)}
 .center{text-align:center}
 
-.label{font-family:var(--util);font-weight:400;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--ottone)}
+.label{font-family:var(--util);font-weight:400;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--mare)}
 .lede{font-size:1.2rem;color:var(--ink-2);max-width:58ch}
 .small{font-family:var(--util);font-size:.88rem;font-weight:300;color:var(--muted);line-height:1.6}
 
-.arch{display:block;margin:0 auto 22px;width:40px;height:26px;color:var(--oliva)}
+.arch{display:block;margin:0 auto 22px;width:40px;height:26px;color:var(--accent)}
 
 /* masthead */
 header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;
@@ -75,22 +108,56 @@ header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex:0 0 auto}
 .mark{width:24px;height:30px;flex:0 0 auto;color:var(--oliva)}
 .brand b{font-family:var(--display);font-weight:400;font-size:1.3rem;letter-spacing:.17em;text-transform:uppercase;white-space:nowrap}
-nav.main{display:flex;gap:26px;margin-left:auto}
-nav.main a{font-family:var(--util);font-weight:400;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;
-  text-decoration:none;color:var(--ink-2);padding-block:4px;border-bottom:1px solid transparent}
+header.site .rail{max-width:1300px}  /* the masthead runs a little wider than the text rail so eight links breathe */
+nav.main{display:flex;gap:clamp(14px,1.6vw,24px);margin-left:auto}
+nav.main a{font-family:var(--util);font-weight:400;font-size:.71rem;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;
+  text-decoration:none;color:var(--ink-2);padding-block:4px;border-bottom:1px solid transparent;transition:color .18s ease}
 nav.main a:hover{color:var(--oliva)}
 nav.main a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--ottone)}
 .hcta{display:flex;align-items:center;gap:18px;margin-left:auto}
 .tel{font-family:var(--util);font-weight:400;font-size:.84rem;letter-spacing:.06em;text-decoration:none;white-space:nowrap}
 .btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--util);font-weight:400;
-  font-size:.73rem;letter-spacing:.2em;text-transform:uppercase;padding:13px 26px;border-radius:0;
-  text-decoration:none;border:1px solid transparent;cursor:pointer}
-.btn-primary{background:var(--oliva);color:var(--stone);border-color:var(--oliva)}
-.btn-primary:hover{background:transparent;color:var(--oliva)}
+  font-size:.73rem;letter-spacing:.2em;text-transform:uppercase;padding:13px 26px;min-height:44px;border-radius:0;
+  text-decoration:none;border:1px solid transparent;cursor:pointer;
+  transition:background-color .18s ease,color .18s ease,border-color .18s ease,box-shadow .18s ease}
+.btn-primary{background:var(--oliva);color:var(--stone);border-color:var(--oliva);box-shadow:0 1px 2px var(--shadow)}
+.btn-primary:hover{background:transparent;color:var(--oliva);box-shadow:none}
 .btn-ghost{border-color:var(--line);color:var(--ink);background:transparent}
 .btn-ghost:hover{border-color:var(--oliva);color:var(--oliva)}
-@media (max-width:1020px){nav.main{display:none}.hcta{margin-left:auto}}
-@media (max-width:540px){.tel{display:none}}
+.band .btn-ghost:hover,.band .btn-ghost:focus-visible{border-color:var(--mare);color:var(--mare)}
+@media (max-width:1340px){.tel{display:none}}
+@media (max-width:1140px){nav.main{display:none}.hcta{margin-left:auto}}
+
+/* mobile drawer — CSS only; the checkbox is the state, the label is the burger */
+.navtoggle{position:absolute;width:1px;height:1px;margin:-1px;padding:0;border:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+.burger{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;
+  width:44px;height:44px;margin-left:4px;margin-right:-8px;cursor:pointer;flex:0 0 auto;border-radius:2px}
+.burger span{display:block;width:22px;height:1.5px;background:var(--ink);transform-origin:center;
+  transition:transform .28s cubic-bezier(.4,0,.2,1),opacity .18s ease}
+.navtoggle:focus-visible ~ .burger{outline:2px solid var(--oliva);outline-offset:2px}
+.navtoggle:checked ~ .burger span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.navtoggle:checked ~ .burger span:nth-child(2){opacity:0;transform:scaleX(.2)}
+.navtoggle:checked ~ .burger span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.drawer{display:none}
+@media (max-width:1140px){
+  .burger{display:flex}
+  /* positioned against the sticky header, so it drops from under it, full-bleed */
+  .drawer{position:absolute;left:0;right:0;top:100%;z-index:70;
+    background:var(--stone);border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    flex-direction:column;padding-bottom:10px;box-shadow:0 24px 48px -12px var(--shadow-deep);
+    background-image:linear-gradient(90deg,transparent,var(--tile) 20%,var(--tile) 80%,transparent);
+    background-repeat:no-repeat;background-size:100% 1px;background-position:top center}
+  .navtoggle:checked ~ .drawer{display:flex;animation:drop .22s ease-out}
+  @keyframes drop{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+  .drawer a{font-family:var(--util);font-weight:400;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;
+    text-decoration:none;color:var(--ink-2);min-height:48px;display:flex;align-items:center;
+    padding:12px max(22px,env(safe-area-inset-right,0px)) 12px max(22px,env(safe-area-inset-left,0px));
+    border-bottom:1px solid var(--line-soft)}
+  .drawer a:last-child{border-bottom:0}
+  .drawer a:hover,.drawer a:active{color:var(--oliva);background:var(--oliva-soft)}
+  .drawer a:focus-visible{outline:2px solid var(--oliva);outline-offset:-3px}
+  .drawer .d-mail{text-transform:none;letter-spacing:.04em;font-size:.95rem;color:var(--mare);padding-top:16px}
+}
 
 /* page hero */
 .hero{padding-block:clamp(56px,8vw,110px) clamp(44px,5vw,76px)}
@@ -99,28 +166,35 @@ nav.main a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--otton
 .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px;justify-content:center}
 .rule-orn{display:flex;align-items:center;gap:14px;justify-content:center;margin-top:50px;color:var(--line)}
 .rule-orn span{height:1px;background:currentColor;flex:1;max-width:170px}
-.rule-orn em{width:5px;height:5px;background:var(--ottone);transform:rotate(45deg)}
+.rule-orn em{width:6px;height:6px;background:var(--mare);transform:rotate(45deg)}
 
 .facts{display:grid;grid-template-columns:repeat(4,1fr);margin-top:44px;text-align:center}
 .facts div{padding:8px 16px;border-left:1px solid var(--line)}
 .facts div:first-child{border-left:0}
-.facts .n{font-family:var(--display);font-size:1.9rem;display:block;line-height:1}
+.facts .n{font-family:var(--display);font-size:1.9rem;display:block;line-height:1;color:var(--mare)}
 .facts .l{font-family:var(--util);font-weight:300;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:11px;display:block}
 @media (max-width:760px){
-  .facts{grid-template-columns:1fr 1fr;gap:26px 0}
+  .facts{grid-template-columns:1fr 1fr;gap:0;margin-top:36px}
+  .facts div{padding:18px 10px}
   .facts div:nth-child(odd){border-left:0}
+  .facts div:nth-child(n+3){border-top:1px solid var(--line)}
+  .facts .n{font-size:1.7rem}
+  .facts .l{font-size:.6rem;letter-spacing:.16em;margin-top:9px;text-wrap:balance}
 }
 
 /* division cards */
 .divs{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,2.6vw,34px);margin-top:46px}
 .div-card{background:var(--card);border:1px solid var(--line);padding:34px 28px 28px;text-align:center;
-  display:flex;flex-direction:column;gap:13px;min-width:0;text-decoration:none}
-.div-card:hover{border-color:var(--oliva)}
-.div-card .num{font-family:var(--display);font-size:.9rem;letter-spacing:.3em;color:var(--ottone)}
+  display:flex;flex-direction:column;gap:13px;min-width:0;text-decoration:none;position:relative;
+  box-shadow:0 1px 2px var(--shadow),0 18px 36px -24px var(--shadow-deep);
+  transition:border-color .2s ease,box-shadow .25s ease,transform .25s ease}
+.div-card::before{content:"";position:absolute;left:50%;top:0;transform:translateX(-50%);width:56px;height:1px;background:var(--accent)}
+.div-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 2px 4px var(--shadow),0 26px 44px -22px var(--shadow-deep)}
+.div-card .num{font-family:var(--display);font-size:.9rem;letter-spacing:.3em;color:var(--accent)}
 .div-card h3{font-family:var(--display);font-size:1.42rem;letter-spacing:.03em}
 .div-card p{font-size:1.02rem;color:var(--ink-2)}
 .div-card .go{font-family:var(--util);font-weight:400;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;
-  color:var(--oliva);margin-top:auto;padding-top:14px}
+  color:var(--accent);margin-top:auto;padding-top:14px}
 @media (max-width:860px){.divs{grid-template-columns:1fr}}
 
 /* two-column */
@@ -132,23 +206,23 @@ nav.main a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--otton
 @media (max-width:560px){.svc-cols{columns:1}}
 .svc-cols li{break-inside:avoid;padding:10px 0;border-bottom:1px solid var(--line-soft);font-size:1.03rem;color:var(--ink-2)}
 
-.panel{border:1px solid var(--line);background:var(--card);padding:28px 26px}
+.panel{border:1px solid var(--line);background:var(--card);padding:28px 26px;box-shadow:0 1px 2px var(--shadow),0 18px 36px -24px var(--shadow-deep)}
 .panel h3{font-family:var(--util);font-weight:400;font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;
   color:var(--muted);margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid var(--line)}
 .panel li{padding:9px 0;font-size:1.02rem;color:var(--ink-2)}
 
 /* three-up */
 .three{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(28px,4vw,56px);margin-top:48px}
-@media (max-width:860px){.three{grid-template-columns:1fr}}
-.three h3{font-family:var(--display);font-size:1.26rem;margin-bottom:12px;padding-top:20px;border-top:1px solid var(--oliva)}
+@media (max-width:860px){.three{grid-template-columns:1fr;gap:34px}}
+.three h3{font-family:var(--display);font-size:1.26rem;margin-bottom:12px;padding-top:20px;border-top:1px solid var(--accent)}
 .three p{font-size:1.04rem;color:var(--ink-2)}
 
 /* numbered steps */
 .steps{display:flex;flex-direction:column;gap:22px;margin-top:40px;counter-reset:s}
 .steps li{display:flex;gap:20px;align-items:flex-start}
 .steps li::before{counter-increment:s;content:counter(s,upper-roman);
-  font-family:var(--display);font-size:.8rem;color:var(--ottone);letter-spacing:.1em;
-  border:1px solid var(--ottone);border-radius:999px;width:36px;height:36px;
+  font-family:var(--display);font-size:.8rem;color:var(--mare);letter-spacing:.1em;
+  border:1px solid var(--mare);border-radius:999px;width:36px;height:36px;
   display:grid;place-items:center;flex:0 0 auto;margin-top:3px}
 .steps strong{display:block;font-family:var(--display);font-weight:400;font-size:1.18rem;letter-spacing:.015em}
 .steps span{color:var(--ink-2);font-size:1.02rem}
@@ -157,28 +231,32 @@ nav.main a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--otton
 .coasts{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4.5vw,64px);margin-top:46px}
 @media (max-width:760px){.coasts{grid-template-columns:1fr}}
 .coast > h3{font-family:var(--util);font-weight:400;font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;
-  color:var(--ottone);padding-bottom:14px;border-bottom:1px solid var(--line);text-align:center}
+  color:var(--mare);padding-bottom:14px;border-bottom:1px solid var(--line);text-align:center}
 .county{padding-block:18px;border-bottom:1px solid var(--line-soft)}
 .county h4{margin-bottom:5px}
 .county p{font-size:1rem;color:var(--muted)}
 
 /* table */
-.tablewrap{overflow-x:auto;border:1px solid var(--line);background:var(--card);margin-top:30px}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);background:var(--card);margin-top:30px;
+  box-shadow:0 1px 2px var(--shadow),0 18px 36px -24px var(--shadow-deep)}
 table{width:100%;border-collapse:collapse;font-size:1.02rem}
 th,td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--line-soft);vertical-align:top}
 th{font-family:var(--util);font-weight:400;font-size:.63rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
 td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+@media (max-width:600px){th,td{padding:12px 12px}table{font-size:.98rem}}
 
 /* form */
-.formwrap{border:1px solid var(--line);background:var(--card);padding:clamp(26px,3.4vw,40px)}
+.formwrap{border:1px solid var(--line);background:var(--card);padding:clamp(26px,3.4vw,40px);
+  box-shadow:0 1px 2px var(--shadow),0 18px 36px -24px var(--shadow-deep)}
 form{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}
 .f-full{grid-column:1 / -1}
 label{display:block;font-family:var(--util);font-weight:400;font-size:.63rem;letter-spacing:.2em;
   text-transform:uppercase;color:var(--muted);margin-bottom:8px}
 input,select,textarea{width:100%;font-family:var(--body);font-size:1.05rem;color:var(--ink);
-  background:var(--stone);border:1px solid var(--line);border-radius:0;padding:12px 13px}
+  background:var(--stone);border:1px solid var(--line);border-radius:0;padding:12px 13px;min-height:46px}
 textarea{resize:vertical;min-height:96px}
 input:focus-visible,select:focus-visible,textarea:focus-visible,.btn:focus-visible,a:focus-visible,summary:focus-visible{outline:1px solid var(--oliva);outline-offset:3px}
+input:focus-visible,select:focus-visible,textarea:focus-visible{border-color:var(--oliva);outline-offset:0;outline-width:1px}
 .result{margin-top:20px;padding:16px 18px;border:1px solid var(--oliva);background:var(--oliva-soft);font-size:1.02rem}
 @media (max-width:640px){form{grid-template-columns:1fr}}
 
@@ -188,7 +266,8 @@ input:focus-visible,select:focus-visible,textarea:focus-visible,.btn:focus-visib
 .faq summary{cursor:pointer;padding:20px 0;font-family:var(--display);font-size:1.16rem;letter-spacing:.015em;
   list-style:none;display:flex;justify-content:space-between;gap:18px;align-items:center}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-family:var(--util);font-weight:300;color:var(--ottone);font-size:1.2rem;flex:0 0 auto}
+.faq summary::after{content:"+";font-family:var(--util);font-weight:300;color:var(--ottone);font-size:1.2rem;flex:0 0 auto;transition:color .18s ease}
+.faq summary:hover::after{color:var(--mare)}
 .faq details[open] summary::after{content:"\2013"}
 .faq p{padding-bottom:24px;color:var(--ink-2);max-width:70ch;font-size:1.04rem}
 
@@ -204,23 +283,24 @@ footer.site{border-top:1px solid var(--line);padding-block:52px 32px}
 @media (max-width:520px){.fgrid{grid-template-columns:1fr}}
 footer h4{font-family:var(--util);font-weight:400;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
 footer li{margin-bottom:8px;color:var(--ink-2);font-size:1.01rem}
-footer a{text-decoration:none}
-footer a:hover{color:var(--oliva)}
+footer a{text-decoration:none;display:inline-block;padding-block:3px;transition:color .18s ease}
+footer li a + a{margin-left:14px}
+footer a:hover{color:var(--mare)}
 .legal{margin-top:42px;padding-top:20px;border-top:1px solid var(--line);
   font-family:var(--util);font-weight:300;font-size:.76rem;letter-spacing:.06em;color:var(--muted);
   display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.div-card:hover,.loc-card:hover,.frame img{transform:none!important}}
 
 /* breadcrumbs */
 .crumbs{font-family:var(--util);font-weight:300;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
   color:var(--muted);padding-block:18px 0}
-.crumbs a{text-decoration:none}
-.crumbs a:hover{color:var(--oliva)}
+.crumbs a{text-decoration:none;display:inline-block;padding-block:6px}
+.crumbs a:hover{color:var(--mare)}
 .crumbs span{opacity:.6;margin-inline:4px}
 
 /* city building stock */
-.stock{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:42px}
+.stock{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:42px;
+  box-shadow:0 1px 2px var(--shadow),0 18px 36px -24px var(--shadow-deep)}
 .stock article{background:var(--card);padding:30px 28px;min-width:0}
 .stock h3{font-family:var(--display);font-size:1.22rem;margin-bottom:10px;letter-spacing:.02em}
 .stock p{font-size:1.02rem;color:var(--ink-2)}
@@ -232,12 +312,115 @@ footer a:hover{color:var(--oliva)}
 /* locations hub */
 .locs{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.4vw,30px);margin-top:40px}
 .loc-card{background:var(--card);border:1px solid var(--line);padding:28px 24px;text-decoration:none;
-  display:flex;flex-direction:column;gap:9px;min-width:0}
-.loc-card:hover{border-color:var(--oliva)}
-.loc-card .num{font-family:var(--util);font-weight:300;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ottone)}
+  display:flex;flex-direction:column;gap:9px;min-width:0;
+  box-shadow:0 1px 2px var(--shadow),0 18px 36px -24px var(--shadow-deep);
+  transition:border-color .2s ease,box-shadow .25s ease,transform .25s ease}
+.loc-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 2px 4px var(--shadow),0 26px 44px -22px var(--shadow-deep)}
+.loc-card .num{font-family:var(--util);font-weight:300;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mare)}
 .loc-card h3{font-family:var(--display);font-size:1.4rem;letter-spacing:.02em}
 .loc-card p{font-size:.97rem;color:var(--muted)}
 .loc-card .go{font-family:var(--util);font-weight:400;font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;
-  color:var(--oliva);margin-top:auto;padding-top:12px}
+  color:var(--accent);margin-top:auto;padding-top:12px}
 @media (max-width:860px){.locs{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.locs{grid-template-columns:1fr}}
+
+/* ── majolica band ─────────────────────────────────────────────
+   A hairline strip of lozenges and dots after the Vietri border
+   tiles — two rules and a row of diamonds. The SVG is only a mask;
+   the colour is --tile, so it follows light and dark mode.
+   Usage: <div class="tiles" aria-hidden="true"></div>
+   Variants: .tiles.spaced (own vertical margin), .tiles.full
+   (no edge fade — for use inside a .rail). .majolica is an alias. */
+.tiles,.majolica{position:relative;display:block;height:28px;width:100%;max-width:var(--rail);margin-inline:auto;
+  -webkit-mask-image:linear-gradient(90deg,transparent,black 16%,black 84%,transparent);
+  mask-image:linear-gradient(90deg,transparent,black 16%,black 84%,transparent)}
+.tiles::before,.majolica::before{content:"";position:absolute;inset:0;background:var(--tile);
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'%3E%3Cg fill='none' stroke='black' stroke-width='1'%3E%3Cpath d='M0 .5 H28 M0 27.5 H28'/%3E%3Cpath d='M14 6 L22 14 L14 22 L6 14 Z'/%3E%3C/g%3E%3Cg fill='black'%3E%3Ccircle cx='14' cy='14' r='1.6'/%3E%3Ccircle cx='0' cy='14' r='1.1'/%3E%3Ccircle cx='28' cy='14' r='1.1'/%3E%3C/g%3E%3C/svg%3E") repeat-x center / auto 100%;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'%3E%3Cg fill='none' stroke='black' stroke-width='1'%3E%3Cpath d='M0 .5 H28 M0 27.5 H28'/%3E%3Cpath d='M14 6 L22 14 L14 22 L6 14 Z'/%3E%3C/g%3E%3Cg fill='black'%3E%3Ccircle cx='14' cy='14' r='1.6'/%3E%3Ccircle cx='0' cy='14' r='1.1'/%3E%3Ccircle cx='28' cy='14' r='1.1'/%3E%3C/g%3E%3C/svg%3E") repeat-x center / auto 100%}
+.tiles.spaced,.majolica.spaced{margin-block:clamp(28px,4vw,56px)}
+.tiles.full,.majolica.full{-webkit-mask-image:none;mask-image:none}
+@media (max-width:600px){.tiles,.majolica{height:22px}}
+
+/* ── selected work ─────────────────────────────────────────────
+   Editorial image grid. Two markups are supported:
+
+   A. <div class="gallery">                      (preferred)
+        <figure class="gal">
+          <img src="…" alt="…" loading="lazy" width="800" height="1000">
+          <figcaption><span class="place">Location</span><h3>Title</h3></figcaption>
+        </figure>
+        <figure class="gal is-empty"> … no photograph yet … </figure>
+      </div>
+   B. <div class="gal"> <figure> <span class="frame"><img…><span class="await">…</span></span>
+        <figcaption>…</figcaption> </figure> </div>     (the grid is .gal, children are figures)
+
+   Caption parts: .place / <span> / <small> = location line; <h3> / <strong> / <b> = title;
+   <p> = note; .div-tag = division footnote. .frame is an optional image wrapper
+   (add .arched for a loggia-topped frame). .is-empty hides the image and draws a
+   tinted plaster tile with the house arch as a watermark. Modifiers: .wide, .tall. */
+.gallery,.gal:not(figure){display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:clamp(24px,3.2vw,44px) clamp(20px,2.6vw,34px);margin-top:52px;text-align:left}
+figure.gal,.gal:not(figure) > figure{margin:0;min-width:0;position:relative;display:flex;flex-direction:column;--ratio:4/5}
+figure.gal > img,.gal:not(figure) > figure > img,.frame{display:block;width:100%;aspect-ratio:var(--ratio);
+  border:1px solid var(--line);background:var(--stone-deep);
+  box-shadow:0 1px 2px var(--shadow),0 22px 40px -26px var(--shadow-deep)}
+figure.gal > img,.gal:not(figure) > figure > img{height:auto;object-fit:cover}
+.frame{position:relative;overflow:hidden}
+.frame img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.6,.2,1)}
+a.frame:hover img,.frame a:hover img{transform:scale(1.025)}
+.frame.arched{border-radius:clamp(90px,16vw,170px) clamp(90px,16vw,170px) 2px 2px}
+figure.gal figcaption,.gal:not(figure) > figure figcaption{padding-top:16px;display:flex;flex-direction:column;gap:6px}
+.gal .place,.gal figcaption > span:not([class]),.gal figcaption > small{font-family:var(--util);font-weight:300;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mare)}
+.gal figcaption h3,.gal figcaption strong,.gal figcaption b,.gal .title{font-family:var(--display);font-weight:400;font-size:1.18rem;letter-spacing:.02em;line-height:1.25;color:var(--ink);margin:0}
+.gal figcaption p{font-size:.98rem;color:var(--ink-2);margin-top:2px}
+.gal .div-tag,.gal .tag{font-family:var(--util);font-weight:300;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:8px;padding-top:10px;border-top:1px solid var(--line-soft)}
+.gal.wide,.gal:not(figure) > figure.wide{grid-column:span 2;--ratio:3/2}
+.gal.tall,.gal:not(figure) > figure.tall{grid-row:span 2}
+
+/* no photograph yet: hide the (missing) image, show tinted plaster and the arch */
+.is-empty img,figure.gal.is-empty > img,.gal:not(figure) > figure.is-empty > img{display:none}
+.is-empty .frame{background-color:var(--stone-deep);
+  background-image:radial-gradient(ellipse 70% 60% at 30% 20%,var(--wash-hi),transparent 70%),
+    radial-gradient(ellipse 60% 70% at 80% 90%,var(--wash-lo),transparent 70%)}
+.await{display:none}  /* the "photograph to come" overlay only shows on an .is-empty figure */
+.is-empty .await{position:absolute;inset:0;display:grid;place-items:center;align-content:center;gap:14px;color:var(--accent)}
+.await svg{width:40px;height:50px;opacity:.5}
+.await em{font-family:var(--util);font-weight:300;font-style:normal;font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+/* figures with no .frame/.await wrapper draw the placeholder themselves */
+.is-empty:not(:has(.frame))::before{content:"";display:block;width:100%;aspect-ratio:var(--ratio);
+  border:1px solid var(--line);background-color:var(--stone-deep);
+  background-image:radial-gradient(ellipse 70% 60% at 30% 20%,var(--wash-hi),transparent 70%),
+    radial-gradient(ellipse 60% 70% at 80% 90%,var(--wash-lo),transparent 70%)}
+.is-empty:not(:has(.frame))::after{content:"";position:absolute;left:0;top:0;width:100%;aspect-ratio:var(--ratio);
+  background:var(--accent);opacity:.16;pointer-events:none;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 124'%3E%3Cpath d='M16 114 V58 a34 34 0 0 1 68 0 V114 H76 V58 a26 26 0 0 0 -52 0 V114 Z' fill='black'/%3E%3Cpath d='M45 19 L55 19 L53.5 47 L46.5 47 Z' fill='black'/%3E%3Crect x='10' y='118' width='80' height='3.6' fill='black'/%3E%3C/svg%3E") no-repeat center / 30% auto;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 124'%3E%3Cpath d='M16 114 V58 a34 34 0 0 1 68 0 V114 H76 V58 a26 26 0 0 0 -52 0 V114 Z' fill='black'/%3E%3Cpath d='M45 19 L55 19 L53.5 47 L46.5 47 Z' fill='black'/%3E%3Crect x='10' y='118' width='80' height='3.6' fill='black'/%3E%3C/svg%3E") no-repeat center / 30% auto}
+.is-empty figcaption h3,.is-empty figcaption strong,.is-empty figcaption b{color:var(--ink-2)}
+@media (max-width:980px){.gallery,.gal:not(figure){grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.gallery,.gal:not(figure){grid-template-columns:1fr;gap:36px}
+  .gal.wide,.gal:not(figure) > figure.wide{grid-column:auto;--ratio:4/5}
+  .gal.tall,.gal:not(figure) > figure.tall{grid-row:auto}
+  .frame.arched{border-radius:140px 140px 2px 2px}}
+
+/* ── small screens ────────────────────────────────────────────── */
+@media (max-width:600px){
+  body{font-size:18px;line-height:1.62}
+  h1{line-height:1.1}
+  .lede{font-size:1.1rem;line-height:1.55}
+  .hero{padding-block:48px 40px}
+  .hero .lede{font-size:1.12rem;line-height:1.52;margin-top:20px}
+  .hero h1{margin-top:16px}
+  .actions{margin-top:30px;gap:12px}
+  .actions .btn{flex:1 1 auto;min-width:0}
+  .rule-orn{margin-top:40px}
+  .sec{padding-block:52px}
+  .div-card{padding:30px 22px 24px}
+  .div-card:hover{transform:none}
+  .panel{padding:24px 20px}
+  .faq summary{padding:18px 0;font-size:1.1rem}
+  .cta{padding-block:52px}
+  .hwrap{gap:14px;padding-block:14px}
+  .hcta .btn{padding:12px 18px}
+  .brand b{font-size:1.2rem;letter-spacing:.14em}
+}
+@media (max-width:360px){.hcta .btn{display:none}}

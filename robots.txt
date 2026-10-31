@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
+# Plain-language summary of this business for language models and
+# answer engines, following the llms.txt convention:
+# https://amalfibg.com/llms.txt
+Allow: /llms.txt
+
 Sitemap: https://amalfibg.com/sitemap.xml
