@@ -312,6 +312,13 @@
     }).then(function(r){return r.json();}).then(function(j){
       btn.disabled=false;btn.textContent='Send enquiry';
       if(j&&j.success){
+        if(typeof window.amalfiTrack==='function'){
+          window.amalfiTrack('generate_lead',{
+            division:data.division||'unspecified',
+            urgency:data.urgency||'unspecified',
+            city:data.city||'unspecified'
+          });
+        }
         form.reset();
         show(data.urgency&&data.urgency.indexOf('Urgent')===0
           ? 'Received, and marked urgent. We will come back to you as quickly as we can.'
@@ -326,5 +333,6 @@
   });
 })();
 </script>
+<script src="analytics.js" defer></script>
 </body>
 </html>
