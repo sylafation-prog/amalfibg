@@ -18,9 +18,27 @@
 
   function live(id, marker) { return !!id && id.indexOf(marker) === -1; }
 
-  var useGA      = live(GA4_ID, 'XXXXXXXXXX');
-  var useClarity = live(CLARITY_ID, 'TODO');
-  var useCF      = live(CF_TOKEN, 'TODO');
+  /* A visitor who has opted out on /privacy. Checked before anything loads,
+     so opting out prevents the scripts being fetched at all. */
+  var OPT_OUT_KEY = 'amalfi-no-track';
+  var optedOut = false;
+  try { optedOut = window.localStorage.getItem(OPT_OUT_KEY) === '1'; } catch (e) {}
+
+  window.amalfiPrivacy = {
+    isOptedOut: function () { return optedOut; },
+    optOut: function () {
+      try { window.localStorage.setItem(OPT_OUT_KEY, '1'); } catch (e) {}
+      optedOut = true;
+    },
+    optIn: function () {
+      try { window.localStorage.removeItem(OPT_OUT_KEY); } catch (e) {}
+      optedOut = false;
+    }
+  };
+
+  var useGA      = !optedOut && live(GA4_ID, 'XXXXXXXXXX');
+  var useClarity = !optedOut && live(CLARITY_ID, 'TODO');
+  var useCF      = !optedOut && live(CF_TOKEN, 'TODO');
 
   /* ── Google Analytics 4 ─────────────────────────────────────────────── */
   window.dataLayer = window.dataLayer || [];
@@ -57,6 +75,7 @@
 
   /* ── One place to record anything worth recording ───────────────────── */
   function track(name, params) {
+    if (optedOut) { return; }
     try { if (useGA) { gtag('event', name, params || {}); } } catch (e) {}
     try { if (useClarity && window.clarity) { window.clarity('event', name); } } catch (e) {}
   }
