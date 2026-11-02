@@ -92,6 +92,7 @@
           <div>
             <label for="lf-div">Division</label>
             <select id="lf-div" name="division">
+              <option value="">Select one</option>
               <option>Mechanical — commercial building</option>
               <option>Estates — private residence</option>
               <option>Construction — buildout or renovation</option>
@@ -101,6 +102,7 @@
           <div class="f-full">
             <label for="lf-urgency">Timing</label>
             <select id="lf-urgency" name="urgency">
+              <option value="">Select one</option>
               <option>Urgent — something has failed</option>
               <option>This week</option>
               <option>Arranging ongoing care</option>
@@ -312,7 +314,7 @@
       if(j&&j.success){
         form.reset();
         show(data.urgency&&data.urgency.indexOf('Urgent')===0
-          ? 'Received. Marked urgent — it has gone to dispatch.'
+          ? 'Received, and marked urgent. We will come back to you as quickly as we can.'
           : 'Received. Someone will be in touch the same business day.');
       }else{
         show('We could not send that. Write to hello@amalfibg.com and we will take it up at once.');
