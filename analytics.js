@@ -12,8 +12,13 @@
 (function () {
   'use strict';
 
-  var GA4_ID     = 'G-XXXXXXXXXX';
-  var CLARITY_ID = 'TODO_CLARITY_ID';
+  var GA4_ID     = 'G-GLF3DRHE00';
+  var CLARITY_ID = 'z7fk5iag6l';
+
+  /* Cloudflare Web Analytics is deliberately left off here. amalfibg.com runs
+     on Cloudflare's automatic setup, which injects the beacon server-side, so
+     loading it again from this file would double-count every page view. Fill
+     this in only if the site is ever moved off automatic setup. */
   var CF_TOKEN   = 'TODO_CLOUDFLARE_TOKEN';
 
   function live(id, marker) { return !!id && id.indexOf(marker) === -1; }
