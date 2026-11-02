@@ -108,6 +108,7 @@
             </select>
           </div>
           <div class="f-full"><label for="lf-notes">What is needed?</label><textarea id="lf-notes" name="notes" placeholder="Four rooftop units on a twelve-thousand-foot retail suite — two not cooling since Friday."></textarea></div>
+          <input type="checkbox" name="botcheck" tabindex="-1" aria-hidden="true" style="display:none">
           <div class="f-full"><button class="btn btn-primary" type="submit" id="lf-submit" style="width:100%">Send enquiry</button></div>
         </form>
         <p class="small" style="margin-top:16px">Every enquiry receives a reply. Mark it urgent and it goes to dispatch the moment it lands.</p>
@@ -269,7 +270,9 @@
 
 <script>
 (function(){
-  // ── Web3Forms: create a free key at https://web3forms.com and paste it below ──
+  // ── Web3Forms. Submissions are delivered to the address the key was created
+  //    with, so the key MUST be created using hello@amalfibg.com. Get one free
+  //    at https://web3forms.com and paste it below. ──
   var ACCESS_KEY = "REPLACE_WITH_YOUR_WEB3FORMS_KEY";
 
   var form=document.getElementById('lead'),
@@ -294,8 +297,11 @@
     btn.disabled=true;btn.textContent='Sending…';
 
     fd.append('access_key',ACCESS_KEY);
-    fd.append('subject','Amalfi enquiry — '+(data.urgency||'')+' — '+(data.city||''));
+    fd.append('subject','['+(data.urgency||'Enquiry')+'] '+(data.name||'')
+      +(data.company?' · '+data.company:'')+(data.city?' · '+data.city:''));
     fd.append('from_name','Amalfi website');
+    // so Reply in the inbox goes straight back to the enquirer
+    if(data.email){fd.append('replyto',data.email);}
 
     fetch('https://api.web3forms.com/submit',{
       method:'POST',
