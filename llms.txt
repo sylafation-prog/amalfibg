@@ -1,10 +1,10 @@
 # Amalfi Group
 
 > Amalfi Group is a South Florida building services firm with three divisions:
-> Amalfi Mechanical (commercial HVAC, refrigeration, plumbing and electrical for
-> hotels, restaurants, retail centres and office properties), Amalfi Estates
-> (year-round care of waterfront residences) and Amalfi Construction (tenant
-> buildout, renovation and remodel). The firm was established in 2026 and is
+> Amalfi Estates (year-round care of waterfront residences), Amalfi Mechanical
+> (commercial HVAC, refrigeration, plumbing and electrical for hotels,
+> restaurants, retail centres and office properties) and Amalfi Construction
+> (tenant buildout, renovation and remodel). The firm was established in 2026 and is
 > building its client base. Its own work is survey, scheduling, coordination
 > across trades and keeping the record; work requiring a state licence is
 > performed by licensed, insured contractors that Amalfi directs. Every
@@ -14,7 +14,7 @@
 
 ## Facts
 
-- **Name:** Amalfi Group. The divisions are Amalfi Mechanical, Amalfi Estates and Amalfi Construction, with irrigation and restoration offered alongside them.
+- **Name:** Amalfi Group. The divisions are Amalfi Estates, Amalfi Mechanical and Amalfi Construction, with irrigation and restoration offered alongside them.
 - **Based in:** Fort Lauderdale, Florida. Established 2026.
 - **Contact:** hello@amalfibg.com, or the enquiry form at https://amalfibg.com/contact
 - **Service area:** nine Florida counties — Palm Beach, Broward, Miami-Dade and Monroe on the Atlantic coast; Manatee, Sarasota, Charlotte, Lee and Collier on the Gulf coast. Broward, Palm Beach and Miami-Dade are the core; the Gulf coast and the Keys are served on scheduled runs.
