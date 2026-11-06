@@ -1,2 +1,5 @@
 /social/*
   Access-Control-Allow-Origin: *
+
+/*.vcf
+  Content-Type: text/vcard; charset=utf-8

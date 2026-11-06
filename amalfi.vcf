@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Syla;Fation;;;
+FN:Fation Syla
+ORG:Amalfi Group
+TITLE:Principal
+EMAIL;type=INTERNET;type=WORK:hello@amalfibg.com
+URL:https://amalfibg.com
+ADR;type=WORK:;;;Fort Lauderdale;FL;;USA
+NOTE:Waterfront estate care, commercial mechanical and construction across South Florida.
+END:VCARD
