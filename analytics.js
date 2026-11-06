@@ -1,4 +1,4 @@
-/* Amalfi Building Group — site analytics and lead tracking.
+/* Amalfi Group — site analytics and lead tracking.
  *
  * Each tool below stays completely inert until its ID is filled in, so this
  * file is safe to deploy before the accounts exist. Nothing loads, no cookies
