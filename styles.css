@@ -115,6 +115,9 @@ nav.main a{font-family:var(--util);font-weight:400;font-size:.71rem;letter-spaci
 nav.main a:hover{color:var(--oliva)}
 nav.main a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--ottone)}
 .hcta{display:flex;align-items:center;gap:18px;margin-left:auto}
+.login{font-family:var(--util);font-weight:400;font-size:.71rem;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;text-decoration:none;color:var(--ink-2);padding-block:4px;border-bottom:1px solid transparent;transition:color .18s ease}
+.login:hover{color:var(--oliva)}
+@media (max-width:560px){.login{display:none}}
 .tel{font-family:var(--util);font-weight:400;font-size:.84rem;letter-spacing:.06em;text-decoration:none;white-space:nowrap}
 .btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--util);font-weight:400;
   font-size:.73rem;letter-spacing:.2em;text-transform:uppercase;padding:13px 26px;min-height:44px;border-radius:0;
