@@ -274,16 +274,83 @@
 
 <script>
 (function(){
+  // ── Portal leads. Every enquiry is ALSO posted to the Amalfi portal, where the
+  //    office works it as a lead. This is the portal's public "lead-intake"
+  //    function. Leave it empty ('') to switch the portal copy off; the email
+  //    below keeps working either way. ──
+  var PORTAL_LEAD_URL = "https://pmwkpwifksrxjcxcxnjk.supabase.co/functions/v1/lead-intake";
+
   // ── Web3Forms. Submissions are delivered to the address the key was created
   //    with, so the key MUST be created using hello@amalfibg.com. Get one free
   //    at https://web3forms.com and paste it below. ──
   var ACCESS_KEY = "f7c030bf-cad5-4f40-bc5f-28b8d6871d6c";
+
+  var FAIL='We could not send that. Write to hello@amalfibg.com and we will take it up at once.';
 
   var form=document.getElementById('lead'),
       result=document.getElementById('lf-result'),
       btn=document.getElementById('lf-submit');
 
   function show(m){result.hidden=false;result.textContent=m;}
+
+  // Campaign tags from the address of this visit (kept for the session, so a
+  // visitor who lands on another page first still carries them here).
+  var UTM_KEYS=['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid'];
+  function campaign(){
+    var out={},saved={},i,k,v,q;
+    try{saved=JSON.parse(sessionStorage.getItem('amalfi_utm')||'{}')||{};}catch(e){saved={};}
+    try{q=new URLSearchParams(location.search);}catch(e){q=null;}
+    for(i=0;i<UTM_KEYS.length;i++){
+      k=UTM_KEYS[i];
+      v=(q&&q.get(k))||saved[k];
+      if(v){out[k]=String(v).slice(0,200);}
+    }
+    try{sessionStorage.setItem('amalfi_utm',JSON.stringify(out));}catch(e){}
+    return out;
+  }
+  var utm=campaign();
+
+  // The portal copy. Resolves true when the portal stored the enquiry; never
+  // rejects, and gives up after 10 seconds, so it can not hold the form up.
+  function sendToPortal(data){
+    if(!PORTAL_LEAD_URL||typeof fetch!=='function'){return Promise.resolve(false);}
+    var body={
+      name:data.name||'',company:data.company||'',email:data.email||'',
+      phone:data.phone||'',city:data.city||'',division:data.division||'',
+      urgency:data.urgency||'',notes:data.notes||'',
+      botcheck:data.botcheck||'',
+      page:String(location.href).slice(0,500),
+      referrer:String(document.referrer||'').slice(0,500),
+      utm:utm
+    };
+    var ctl=typeof AbortController==='function'?new AbortController():null;
+    var timer=ctl?setTimeout(function(){ctl.abort();},10000):null;
+    return fetch(PORTAL_LEAD_URL,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body),
+      signal:ctl?ctl.signal:undefined
+    }).then(function(r){return r.json().catch(function(){return null;});})
+      .then(function(j){if(timer){clearTimeout(timer);}return !!(j&&j.ok);})
+      .catch(function(){if(timer){clearTimeout(timer);}return false;});
+  }
+
+  // The email to hello@ (as before). Resolves true when Web3Forms accepted it.
+  function sendEmail(fd,data){
+    fd.append('access_key',ACCESS_KEY);
+    fd.append('subject','['+(data.urgency||'Enquiry')+'] '+(data.name||'')
+      +(data.company?' · '+data.company:'')+(data.city?' · '+data.city:''));
+    fd.append('from_name','Amalfi website');
+    // so Reply in the inbox goes straight back to the enquirer
+    if(data.email){fd.append('replyto',data.email);}
+    return fetch('https://api.web3forms.com/submit',{
+      method:'POST',
+      headers:{'Accept':'application/json'},
+      body:fd
+    }).then(function(r){return r.json();})
+      .then(function(j){return !!(j&&j.success);})
+      .catch(function(){return false;});
+  }
 
   form.addEventListener('submit',function(e){
     e.preventDefault();
@@ -293,45 +360,39 @@
 
     if(!data.name||!data.email){show('Please add your name and email so we may reach you.');return;}
 
-    if(ACCESS_KEY.indexOf('REPLACE')===0){
+    var emailOn=ACCESS_KEY.indexOf('REPLACE')!==0;
+    if(!emailOn&&!PORTAL_LEAD_URL){
       show('This form is not yet connected. Write to hello@amalfibg.com and we will take it up at once.');
       return;
     }
 
     btn.disabled=true;btn.textContent='Sending…';
 
-    fd.append('access_key',ACCESS_KEY);
-    fd.append('subject','['+(data.urgency||'Enquiry')+'] '+(data.name||'')
-      +(data.company?' · '+data.company:'')+(data.city?' · '+data.city:''));
-    fd.append('from_name','Amalfi website');
-    // so Reply in the inbox goes straight back to the enquirer
-    if(data.email){fd.append('replyto',data.email);}
-
-    fetch('https://api.web3forms.com/submit',{
-      method:'POST',
-      headers:{'Accept':'application/json'},
-      body:fd
-    }).then(function(r){return r.json();}).then(function(j){
+    // Both go out together. The enquiry counts as received as soon as EITHER
+    // one lands (the visitor is not kept waiting for the slower one), and it
+    // only fails when both have failed: the email still works if the portal is
+    // unreachable, and the other way round.
+    var settled=false,left=2;
+    function done(ok){
+      if(settled){return;}
+      if(!ok){left-=1;if(left>0){return;}}
+      settled=true;
       btn.disabled=false;btn.textContent='Send enquiry';
-      if(j&&j.success){
-        if(typeof window.amalfiTrack==='function'){
-          window.amalfiTrack('generate_lead',{
-            division:data.division||'unspecified',
-            urgency:data.urgency||'unspecified',
-            city:data.city||'unspecified'
-          });
-        }
-        form.reset();
-        show(data.urgency&&data.urgency.indexOf('Urgent')===0
-          ? 'Received, and marked urgent. We will come back to you as quickly as we can.'
-          : 'Received. Someone will be in touch the same business day.');
-      }else{
-        show('We could not send that. Write to hello@amalfibg.com and we will take it up at once.');
+      if(!ok){show(FAIL);return;}
+      if(typeof window.amalfiTrack==='function'){
+        window.amalfiTrack('generate_lead',{
+          division:data.division||'unspecified',
+          urgency:data.urgency||'unspecified',
+          city:data.city||'unspecified'
+        });
       }
-    }).catch(function(){
-      btn.disabled=false;btn.textContent='Send enquiry';
-      show('We could not send that. Write to hello@amalfibg.com and we will take it up at once.');
-    });
+      form.reset();
+      show(data.urgency&&data.urgency.indexOf('Urgent')===0
+        ? 'Received, and marked urgent. We will come back to you as quickly as we can.'
+        : 'Received. Someone will be in touch the same business day.');
+    }
+    (emailOn?sendEmail(fd,data):Promise.resolve(false)).then(done,function(){done(false);});
+    sendToPortal(data).then(done,function(){done(false);});
   });
 })();
 </script>
