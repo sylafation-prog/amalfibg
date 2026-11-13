@@ -49,6 +49,26 @@
 - [Fort Myers](https://amalfibg.com/fort-myers): Lee County. Downtown river district, commercial corridors, Cape Coral canal waterfront, and Sanibel and Captiva. Survey work for storm damage that has not yet shown itself.
 - [Sarasota](https://amalfibg.com/sarasota): Sarasota County. Longboat Key and Bird Key estates, Siesta Key, the downtown cultural district, Main Street and St Armands.
 
+## The absence year
+
+The home page carries an annual dial setting out what happens to a closed-up waterfront
+house across the Florida year. It is the firm's core argument for calendar-based care
+rather than call-when-it-breaks repair, and the reasoning is plain:
+
+- **Most waterfront houses in South Florida stand empty from roughly May to October** — about half the year. The failures below are not neglect; the owner is simply elsewhere.
+- **May:** the house closes. Nothing moves in it unless someone moves it.
+- **June:** hurricane season opens. Air inside stops circulating, and a thermostat alone will not dehumidify a closed house.
+- **July:** indoor relative humidity above roughly 60% is the point at which mold growth begins on the coolest surfaces — behind casework and inside exterior walls. Keeping indoor humidity below 60% is standard guidance for occupied and unoccupied buildings alike.
+- **August:** peak salt load on the coast. Condenser coils, fasteners, rails and hinges take the worst corrosion of the year.
+- **September:** a storm that makes no landfall still drives salt across the building envelope, and debris collects in drains.
+- **October:** the first dry air arrives and the summer's damage becomes visible — and by then it is repair rather than maintenance.
+- **November:** the owner returns to a list of items that are all several months old.
+
+The conclusion the firm draws: six months of absence is enough to change a house, which is
+why Amalfi Estates works to a written calendar with visits during the empty months rather
+than waiting for the owner to come back and find something. This is reasoning about the
+Florida climate, not a claim about any particular property or any work Amalfi has performed.
+
 ## The firm
 
 - [Our standard](https://amalfibg.com/about): How the firm works — written before it begins, the same faces each time, shown when it is done.

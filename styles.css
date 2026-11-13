@@ -479,3 +479,41 @@ figure.gal figcaption,.gal:not(figure) > figure figcaption{padding-top:16px;disp
   .brand b{font-size:1.2rem;letter-spacing:.14em}
 }
 @media (max-width:360px){.hcta .btn{display:none}}
+
+/* ---- the absence year: annual dial on the home page ---------------------- */
+.annum-grid{display:flex;flex-direction:column;align-items:center;gap:30px;margin-top:46px}
+.annum-dial{width:min(382px,78vw);flex:none;overflow:visible}
+.annum-track{fill:none;stroke:var(--line);stroke-width:1}
+.annum-band{fill:var(--ottone);fill-opacity:.18}
+.annum-tick{stroke:var(--line);stroke-width:1}
+.annum-tick.away{stroke:var(--ottone);stroke-opacity:.7}
+.annum-m{font-family:var(--util);font-weight:300;font-size:11.5px;letter-spacing:.16em;
+  fill:var(--muted);text-anchor:middle;transition:fill .3s ease}
+.annum-m.on{fill:var(--ink)}
+.annum-hit{fill:transparent;cursor:pointer}
+.annum-core{font-family:var(--util);font-weight:300;font-size:10.5px;letter-spacing:.2em;
+  fill:var(--muted);text-anchor:middle}
+.annum-core.on-b{fill:var(--ottone)}
+.annum-sweep{transform-origin:200px 200px;transition:transform .85s cubic-bezier(.45,.05,.2,1)}
+.annum-dial.scrub .annum-sweep{transition-duration:.16s}
+.annum-mark{fill:var(--ottone)}
+
+/* every month occupies one grid cell, so the block never changes height */
+.annum-read{display:grid;max-width:40ch;text-align:center}
+.annum-mo{grid-area:1/1;opacity:0;visibility:hidden;transition:opacity .45s ease}
+.annum-mo.on{opacity:1;visibility:visible}
+.annum-month{font-family:var(--display);font-size:clamp(28px,3.6vw,38px);line-height:1.08;margin:0;color:var(--ink)}
+.annum-state{font-family:var(--util);font-weight:300;font-size:.64rem;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--ottone);margin:9px 0 0}
+.annum-note{margin:16px 0 0;font-size:clamp(15px,1.45vw,17px);line-height:1.64;color:var(--muted)}
+
+.annum-kicker{font-family:var(--body);font-style:italic;font-size:clamp(20px,2.3vw,27px);
+  line-height:1.4;margin:40px auto 0;max-width:22ch;color:var(--ink)}
+
+@media (min-width:860px){
+  .annum-grid{flex-direction:row;justify-content:center;align-items:center;gap:clamp(40px,6vw,76px)}
+  .annum-read{text-align:left;max-width:34ch;align-items:center}
+}
+@media (prefers-reduced-motion:reduce){
+  .annum-sweep,.annum-mo,.annum-m{transition:none}
+}
