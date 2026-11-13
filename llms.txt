@@ -51,8 +51,8 @@
 
 ## The absence year
 
-The home page carries an annual dial setting out what happens to a closed-up waterfront
-house across the Florida year. It is the firm's core argument for calendar-based care
+The Estates page (https://amalfibg.com/estates) carries an annual dial setting out what
+happens to a closed-up waterfront house across the Florida year. It is the firm's core argument for calendar-based care
 rather than call-when-it-breaks repair, and the reasoning is plain:
 
 - **Most waterfront houses in South Florida stand empty from roughly May to October** — about half the year. The failures below are not neglect; the owner is simply elsewhere.
