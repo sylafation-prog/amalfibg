@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Smart Home &amp; Low-Voltage Systems | Lighting, Audio, Network, Security</title>
+<meta name="description" content="Lutron lighting control, Sonos and whole-house audio, UniFi networks, Ring and camera systems, gates, garage operators and pool automation — installed, serviced and held on a written programme for waterfront estates across South Florida.">
+<link rel="canonical" href="https://amalfibg.com/systems">
+<meta property="og:title" content="Smart Home &amp; Low-Voltage Systems — Amalfi Group">
+<meta property="og:description" content="Lutron lighting control, Sonos and whole-house audio, UniFi networks, Ring and camera systems, gates, garage operators and pool automation — installed, serviced and held on a written programme for waterfront estates across South Florida.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://amalfibg.com/systems">
+<meta name="geo.region" content="US-FL">
+<meta name="geo.placename" content="Fort Lauderdale, Florida">
+<meta name="geo.position" content="26.1224;-80.1373">
+<meta name="ICBM" content="26.1224, -80.1373">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta property="og:site_name" content="Amalfi Group">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://amalfibg.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Amalfi Group — commercial mechanical, estate care and construction in South Florida">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F5F2EB">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="styles.css?v=5">
+<style>
+/* Page-specific: schematic diagrams drawn as architectural line work */
+.dgm{margin-top:clamp(26px,3.4vw,42px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:clamp(18px,2.6vw,30px) 0}
+.dgm figure{margin:0}
+.dgm .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.dgm svg{display:block;width:100%;min-width:720px;height:auto}
+.dgm figcaption{font-family:var(--util);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:16px}
+.keys{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px 26px;margin-top:22px;list-style:none;padding:0}
+.keys li{display:flex;gap:11px;align-items:baseline;font-family:var(--body);font-size:15.5px;line-height:1.45;color:var(--ink-2)}
+.keys b{flex:0 0 auto;font-family:var(--util);font-weight:400;font-size:11px;letter-spacing:.06em;color:var(--ottone);border:1px solid var(--ottone);border-radius:50%;width:21px;height:21px;display:grid;place-items:center;translate:0 2px}
+.rackwrap{display:grid;grid-template-columns:minmax(0,1fr) 232px;gap:clamp(22px,3vw,44px);align-items:start}
+@media (max-width:760px){.rackwrap{grid-template-columns:1fr}.rackwrap svg{max-width:232px}}
+.dl-spec{margin:0;font-family:var(--body);font-size:16px;line-height:1.5}
+.dl-spec dt{font-family:var(--util);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ottone);margin-top:16px}
+.dl-spec dt:first-child{margin-top:0}
+.dl-spec dd{margin:4px 0 0;color:var(--ink-2)}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="rail hwrap">
+    <a class="brand" href="/">
+      <svg class="mark" viewBox="0 0 100 124" aria-hidden="true"><path d="M16 114 V58 a34 34 0 0 1 68 0 V114 H76 V58 a26 26 0 0 0 -52 0 V114 Z" fill="currentColor"/><path d="M45 19 L55 19 L53.5 47 L46.5 47 Z" fill="currentColor"/><rect x="10" y="118" width="80" height="3.6" fill="currentColor"/></svg>
+      <b>Amalfi <small>Group</small></b>
+    </a>
+    <nav class="main">
+      <a href="estates">Estates</a>
+      <a href="mechanical">Mechanical</a>
+      <a href="construction">Construction</a>
+      <a href="gallery">Work</a>
+      <a href="about">Standard</a>
+      <a href="insights">Notes</a>
+      <a href="locations">Locations</a>
+    </nav>
+    <div class="hcta">
+      <a class="login" href="https://portal.amalfibg.com/">Client login</a>
+      <a class="btn btn-primary" href="contact">Enquire</a>
+    </div>
+    <input type="checkbox" id="navtoggle" class="navtoggle" aria-label="Menu">
+    <label for="navtoggle" class="burger" aria-hidden="true"><span></span><span></span><span></span></label>
+    <nav class="drawer">
+      <a href="estates">Estates</a>
+      <a href="mechanical">Mechanical</a>
+      <a href="construction">Construction</a>
+      <a href="gallery">Selected work</a>
+      <a href="about">Our standard</a>
+      <a href="insights">Field notes</a>
+      <a href="locations">Locations</a>
+      <a href="coverage">Coverage</a>
+      <a href="contact">Enquire</a>
+      <a href="https://portal.amalfibg.com/">Client login</a>
+      <a class="d-mail" href="mailto:hello@amalfibg.com">hello@amalfibg.com</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <nav class="crumbs rail" aria-label="Breadcrumb">
+    <a href="/">Home</a> <span>·</span> <span aria-current="page">Systems &amp; controls</span>
+  </nav>
+
+  <section class="rail hero center" style="padding-top:clamp(28px,4vw,52px)">
+    <svg class="arch" viewBox="0 0 40 26" aria-hidden="true"><path d="M2 25 V13 a18 12 0 0 1 36 0 V25" fill="none" stroke="currentColor" stroke-width="1.1"/></svg>
+    <p class="label">The house · Smart home &amp; low-voltage systems</p>
+    <h1 style="margin-top:20px">Systems &amp; controls</h1>
+    <p class="lede">Lighting control, audio, network, cameras, gates and pool automation are the parts of a modern estate that fail without a sound. No water on the floor, no smell, no alarm — just an app that has quietly gone grey while the house sat empty. We install and service these systems, and we test every one of them on every visit, so that the failure is found in March rather than in November.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="contact">Request a systems audit</a>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="rail">
+      <div class="center">
+        <p class="label">The drawing</p>
+        <h2 style="margin-top:18px">Where the systems actually live</h2>
+        <p class="lede narrow" style="margin:20px auto 0">A waterfront house of any size now carries ten separate low-voltage systems, installed by five different companies, over four different years. Almost nobody holds a drawing of where any of it is. This is the one we build for every property on the estate calendar.</p>
+      </div>
+
+      <div class="dgm">
+        <figure>
+          <div class="scroll">
+            <svg viewBox="0 0 1200 600" role="img" aria-labelledby="dgm1t dgm1d">
+              <title id="dgm1t">Schematic section of a waterfront estate showing the location of its low-voltage systems</title>
+              <desc id="dgm1d">An architectural line drawing of a two-storey waterfront house with garage, entry gate, pool, generator, seawall and dock. Numbered markers show the gate operator and intercom, garage door operators, surveillance cameras, wireless access points, the equipment room and rack, the lighting control panel, in-ceiling audio, the standby generator and transfer switch, pool automation, and dock and landscape lighting. A dashed line traces the network spine from the rack to every other system.</desc>
+
+              <rect x="0" y="500" width="955" height="60" fill="var(--ink)" opacity=".05"/>
+              <rect x="967" y="500" width="233" height="60" fill="var(--ottone)" opacity=".07"/>
+              <rect x="862" y="500" width="86" height="48" fill="var(--ink)" opacity=".07"/>
+
+              <g stroke="var(--ink)" stroke-opacity=".34" fill="none" stroke-width="1.2" stroke-linecap="square">
+                <line x1="0" y1="500" x2="955" y2="500"/>
+                <path d="M0 500 H150" stroke-dasharray="7 7" stroke-opacity=".2"/>
+                <rect x="30" y="396" width="16" height="104"/>
+                <rect x="98" y="396" width="16" height="104"/>
+                <path d="M46 414 H98 M46 438 H98 M46 462 H98 M46 486 H98" stroke-opacity=".2"/>
+                <rect x="150" y="368" width="150" height="132"/>
+                <rect x="166" y="398" width="118" height="102" stroke-opacity=".24"/>
+                <path d="M166 424 H284 M166 450 H284 M166 476 H284" stroke-opacity=".16"/>
+                <rect x="300" y="330" width="490" height="170"/>
+                <rect x="300" y="180" width="490" height="150"/>
+                <rect x="286" y="168" width="518" height="12"/>
+                <rect x="330" y="356" width="82" height="144" stroke-opacity=".2"/>
+                <rect x="432" y="356" width="82" height="144" stroke-opacity=".2"/>
+                <rect x="534" y="356" width="82" height="144" stroke-opacity=".2"/>
+                <rect x="330" y="206" width="82" height="112" stroke-opacity=".2"/>
+                <rect x="432" y="206" width="82" height="112" stroke-opacity=".2"/>
+                <rect x="534" y="206" width="82" height="112" stroke-opacity=".2"/>
+                <rect x="636" y="206" width="82" height="112" stroke-opacity=".2"/>
+                <line x1="300" y1="330" x2="790" y2="330"/>
+                <rect x="660" y="372" width="60" height="128" stroke-opacity=".5"/>
+                <path d="M666 386 H714 M666 400 H714 M666 414 H714 M666 428 H714 M666 442 H714 M666 456 H714" stroke-opacity=".3"/>
+                <rect x="600" y="398" width="32" height="48" stroke-opacity=".5"/>
+                <rect x="806" y="456" width="44" height="44"/>
+                <path d="M814 466 H842 M814 476 H842 M814 486 H842" stroke-opacity=".22"/>
+                <path d="M862 500 V548 H948 V500"/>
+                <path d="M868 514 H942" stroke-opacity=".22"/>
+                <rect x="955" y="478" width="12" height="80"/>
+                <rect x="967" y="466" width="223" height="10"/>
+                <path d="M1000 476 V548 M1070 476 V548 M1140 476 V548"/>
+                <path d="M980 516 q24 -9 48 0 t48 0 t48 0 t48 0" stroke-opacity=".3"/>
+                <path d="M980 538 q24 -9 48 0 t48 0 t48 0 t48 0" stroke-opacity=".22"/>
+              </g>
+
+              <g stroke="var(--ottone)" fill="none" stroke-width="1.3" stroke-dasharray="4 6" stroke-opacity=".75">
+                <path d="M690 372 V342 H490 V268"/>
+                <path d="M660 420 H632"/>
+                <path d="M620 342 H470 V394"/>
+                <path d="M490 268 H315 V214"/>
+                <path d="M490 268 H790 V214"/>
+                <path d="M690 500 V522 H828 V500"/>
+                <path d="M828 522 H905 V514"/>
+                <path d="M905 522 H1070 V460"/>
+                <path d="M660 480 H72 V446"/>
+                <path d="M225 480 V452"/>
+              </g>
+
+              <g font-family="var(--util)" font-size="12" text-anchor="middle">
+                <g fill="none" stroke="var(--ottone)" stroke-width="1.3">
+                  <circle cx="790" cy="200" r="7"/><circle cx="470" cy="400" r="7"/>
+                  <circle cx="545" cy="342" r="7"/><circle cx="650" cy="342" r="7"/>
+                </g>
+                <g fill="var(--ottone)">
+                  <circle cx="72" cy="432" r="13"/><circle cx="225" cy="438" r="13"/>
+                  <circle cx="315" cy="200" r="13"/><circle cx="490" cy="254" r="13"/>
+                  <circle cx="690" cy="352" r="13"/><circle cx="616" cy="422" r="13"/>
+                  <circle cx="390" cy="342" r="13"/><circle cx="828" cy="478" r="13"/>
+                  <circle cx="905" cy="500" r="13"/><circle cx="1070" cy="446" r="13"/>
+                </g>
+                <g fill="#F5F2EB" dominant-baseline="middle">
+                  <text x="72" y="433">1</text><text x="225" y="439">2</text>
+                  <text x="315" y="201">3</text><text x="490" y="255">4</text>
+                  <text x="690" y="353">5</text><text x="616" y="423">6</text>
+                  <text x="390" y="343">7</text><text x="828" y="479">8</text>
+                  <text x="905" y="501">9</text><text x="1070" y="447">10</text>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <figcaption>Typical intracoastal estate — the ten systems and the single spine that carries them</figcaption>
+        </figure>
+
+        <ul class="keys">
+          <li><b>1</b><span>Gate operator, intercom and entry camera</span></li>
+          <li><b>2</b><span>Garage door operators and safety sensors</span></li>
+          <li><b>3</b><span>Surveillance cameras at the eaves and approaches</span></li>
+          <li><b>4</b><span>Wireless access points, interior and exterior</span></li>
+          <li><b>5</b><span>Equipment room — gateway, switch, UPS and head end</span></li>
+          <li><b>6</b><span>Lighting control panel and shade drives</span></li>
+          <li><b>7</b><span>In-ceiling and outdoor audio zones</span></li>
+          <li><b>8</b><span>Standby generator and automatic transfer switch</span></li>
+          <li><b>9</b><span>Pool, spa and water-feature automation</span></li>
+          <li><b>10</b><span>Dock, seawall and landscape lighting</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec band">
+    <div class="rail">
+      <div class="center">
+        <p class="label">The coast</p>
+        <h2 style="margin-top:18px">Why this equipment fails here and not in Connecticut</h2>
+        <p class="lede narrow" style="margin:20px auto 0">The same Lutron panel, the same Ubiquiti gear and the same camera heads will run for a decade in a dry northern climate. On the Intracoastal they are fighting salt, heat, humidity, lightning and a hurricane grid, and they are doing it in an empty building for five months of the year.</p>
+      </div>
+      <div class="three">
+        <div>
+          <h3>Salt in everything outdoors</h3>
+          <p>Camera housings, gate operators, dock lighting, exterior access points and antennas all carry fasteners, gaskets and circuit boards. Salt aerosol works into every one of them. The failure is rarely dramatic — a camera that fogs behind the lens, a gate that loses one leaf, a dock fixture that corrodes at the gland and fills with water.</p>
+        </div>
+        <div>
+          <h3>Heat in the rack</h3>
+          <p>Most equipment rooms in South Florida are closets that were never conditioned. A rack running a gateway, a switch under load, an amplifier and a video head end will sit at a temperature that halves the life of everything inside it. Power supplies and hard drives go first, and they go in August.</p>
+        </div>
+        <div>
+          <h3>Lightning and the grid</h3>
+          <p>This is the most lightning-prone region in the United States, and the coast adds routine brownouts and utility switching. Surge takes gear through the power side, the coax, the network and the long runs out to gates, docks and cameras. One strike nearby removes a PoE switch port by port.</p>
+        </div>
+        <div>
+          <h3>Humidity and standing air</h3>
+          <p>A house closed up at seventy-eight degrees with nobody opening a door holds humidity that condenses inside enclosures and speaker grilles. In-ceiling drivers corrode. Touch panels delaminate. The same moisture that threatens the building threatens everything mounted in it.</p>
+        </div>
+        <div>
+          <h3>Firmware, clouds and accounts</h3>
+          <p>Half of a modern system depends on a service somewhere else. Firmware updates break integrations. Apps force re-authentication. Subscriptions lapse on a card that expired. A camera plan quietly stops recording and the app keeps showing a live picture, which is the most misleading failure of them all.</p>
+        </div>
+        <div>
+          <h3>Nobody owns it</h3>
+          <p>The AV company wired the house, the alarm company fitted the cameras, the pool builder set the automation and the electrician hung the gate operator. Each is excellent at their part and none of them is responsible for the whole. When something stops, the owner is the integrator, from twelve hundred miles away.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="rail">
+      <div class="center">
+        <p class="label">The failure nobody hears</p>
+        <h2 style="margin-top:18px">Five months is long enough for all of it to go dark</h2>
+        <p class="lede narrow" style="margin:20px auto 0">A burst supply line announces itself. A network does not. This is the sequence we find most often on a first visit to a house that has been closed for a season.</p>
+      </div>
+
+      <div class="dgm">
+        <figure>
+          <div class="scroll">
+            <svg viewBox="0 0 1200 250" role="img" aria-labelledby="dgm2t dgm2d">
+              <title id="dgm2t">Timeline of silent system failure in a closed house</title>
+              <desc id="dgm2d">A four-stage timeline. Day nought: the house is closed and every system is working. Week two: a storm drops the power and the gateway returns on a different address, so half the system can no longer find it. Month two: the uninterruptible supply battery is flat and the next flicker takes the rack down for good. Month five: the owner returns to no lighting scenes, no music, and a camera system that recorded nothing all season.</desc>
+              <line x1="86" y1="104" x2="1114" y2="104" stroke="var(--ink)" stroke-opacity=".22" stroke-width="1.2"/>
+              <g font-family="var(--util)">
+                <g fill="var(--ottone)">
+                  <circle cx="110" cy="104" r="7"/><circle cx="440" cy="104" r="7"/>
+                  <circle cx="770" cy="104" r="7"/><circle cx="1100" cy="104" r="7"/>
+                </g>
+                <g font-size="12" letter-spacing="2.4" fill="var(--ottone)" text-anchor="middle">
+                  <text x="110" y="74">DAY 0</text><text x="440" y="74">WEEK 2</text>
+                  <text x="770" y="74">MONTH 2</text><text x="1100" y="74">MONTH 5</text>
+                </g>
+              </g>
+              <g font-family="var(--body)" font-size="17" fill="var(--ink-2)" text-anchor="middle">
+                <text x="110" y="150">The house closes.</text>
+                <text x="110" y="174">Every system works.</text>
+                <text x="440" y="150">A cell drops the power. The gateway</text>
+                <text x="440" y="174">returns on a new address, and half</text>
+                <text x="440" y="198">the system cannot find it.</text>
+                <text x="770" y="150">The battery in the rack is flat. The</text>
+                <text x="770" y="174">next flicker takes the whole head</text>
+                <text x="770" y="198">end down, and leaves it down.</text>
+                <text x="1100" y="150">The owner lands to no scenes,</text>
+                <text x="1100" y="174">no music, and a season of</text>
+                <text x="1100" y="198">cameras that recorded nothing.</text>
+              </g>
+            </svg>
+          </div>
+          <figcaption>The ordinary sequence — four events, none of which makes a noise</figcaption>
+        </figure>
+      </div>
+
+      <div class="two" style="margin-top:clamp(26px,3.2vw,40px)">
+        <div>
+          <p style="color:var(--ink-2)">Every one of those four events is trivial on its own, and every one of them is caught by somebody standing in the equipment room with a phone. That is the entire argument for putting these systems on the same calendar as the air conditioning and the glass: not because the technology is fragile, but because nothing in the house is checking on it and neither is anybody else.</p>
+          <p style="margin-top:18px;color:var(--ink-2)">The cameras are the part that matters most and fails most quietly. A recording plan that has lapsed, a drive that has filled, a channel that dropped off the recorder — in every case the app still shows a live picture when you open it, so there is nothing to notice. The absence is only discovered at the one moment it is needed, which is after something has happened.</p>
+          <p style="margin-top:18px;color:var(--ink-2)">So we do not take the app's word for it. On each visit a camera is covered and uncovered and the recording is played back from the timeline. A lighting scene is run. A zone of music is played. The gate is cycled from the intercom. The generator is exercised under load and the transfer witnessed. The access points are checked for client count rather than a green dot. All of it is photographed and dated, and it goes in the record with everything else about the house.</p>
+        </div>
+        <aside class="panel">
+          <h3>Tested on every visit</h3>
+          <ul>
+            <li>Camera recording played back, not merely viewed live</li>
+            <li>Storage days remaining and plan status</li>
+            <li>Lighting scenes and shade groups run</li>
+            <li>One audio zone played in each area</li>
+            <li>Gate and garage cycled, safety sensors checked</li>
+            <li>Access point client count and signal at the far corners</li>
+            <li>UPS battery age and self-test result</li>
+            <li>Rack temperature and fan condition</li>
+            <li>Firmware versions and pending updates logged</li>
+            <li>Subscription and account renewal dates</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec band">
+    <div class="rail">
+      <p class="label center">What we do</p>
+      <h2 class="center" style="margin-top:18px">The whole low-voltage house</h2>
+      <p class="lede narrow center" style="margin:20px auto 0">Installation, upgrade, service and the seasonal programme — lighting control, audio, network, cameras, access and automation, held by one firm and written down. Work requiring a licensed trade is performed by licensed, insured contractors we direct, on the same statement.</p>
+      <div class="progs">
+        <div class="prog">
+          <span class="pnum">I</span>
+          <h3>Lighting control &amp; shading</h3>
+          <p>Lutron and equivalent systems — from a handful of Caséta loads to RadioRA and HomeWorks panels across a whole house.</p>
+          <ul>
+            <li>New installation and panel upgrades</li>
+            <li>Keypads, dimmers and motorised shades</li>
+            <li>Scene programming and away-mode schedules</li>
+            <li>Failed dimmer and driver replacement</li>
+            <li>LED retrofits that do not flicker or buzz</li>
+            <li>Exterior, landscape and dock lighting</li>
+          </ul>
+        </div>
+        <div class="prog">
+          <span class="pnum">II</span>
+          <h3>Audio &amp; video</h3>
+          <p>Sonos, Control4, Savant and Crestron systems, in-ceiling and outdoor audio, and the racks that run them.</p>
+          <ul>
+            <li>Zone design, amplifiers and speaker runs</li>
+            <li>In-ceiling, in-wall and landscape speakers</li>
+            <li>Corroded driver and grille replacement</li>
+            <li>Streaming accounts and room grouping</li>
+            <li>Displays, projectors and matrix switching</li>
+            <li>Rack tidying, labelling and ventilation</li>
+          </ul>
+        </div>
+        <div class="prog">
+          <span class="pnum">III</span>
+          <h3>Network &amp; Wi-Fi</h3>
+          <p>UniFi and comparable platforms — the spine that every other system on this page depends on.</p>
+          <ul>
+            <li>Gateways, PoE switches and access points</li>
+            <li>Full-coverage survey, including dock and guest house</li>
+            <li>Structured cabling, patching and labelling</li>
+            <li>Separate networks for cameras, control and guests</li>
+            <li>Static addressing so devices come back after an outage</li>
+            <li>Cellular failover for the systems that matter</li>
+          </ul>
+        </div>
+        <div class="prog">
+          <span class="pnum">IV</span>
+          <h3>Cameras &amp; entry</h3>
+          <p>Ring, UniFi Protect and comparable camera systems, intercoms and the approaches to the house.</p>
+          <ul>
+            <li>Camera placement at gates, doors, dock and perimeter</li>
+            <li>Recorders, storage sizing and retention</li>
+            <li>Doorbells, intercoms and remote entry</li>
+            <li>Recording verified by playback on every visit</li>
+            <li>Night performance and lens cleaning</li>
+            <li>Footage retrieved and preserved when you need it</li>
+          </ul>
+        </div>
+        <div class="prog">
+          <span class="pnum">V</span>
+          <h3>Gates, garages &amp; access</h3>
+          <p>The moving parts that let people in, and the ones that strand a housekeeper at the kerb.</p>
+          <ul>
+            <li>Gate operators, loops and safety edges</li>
+            <li>Garage door operators, springs and sensors</li>
+            <li>Keypads, fobs, codes and smart locks</li>
+            <li>Battery backup for power failures</li>
+            <li>Access lists kept current for staff and trades</li>
+            <li>Cycled and tested every visit, not assumed</li>
+          </ul>
+        </div>
+        <div class="prog">
+          <span class="pnum">VI</span>
+          <h3>Automation &amp; continuity</h3>
+          <p>Pool and water features, standby power, and the protection that keeps the rest of it alive.</p>
+          <ul>
+            <li>Pentair, Jandy and Hayward pool automation</li>
+            <li>Generator monitoring and transfer switch witness</li>
+            <li>Uninterruptible supplies and battery renewal</li>
+            <li>Whole-house and point-of-use surge protection</li>
+            <li>Leak, temperature and humidity sensors that alert us</li>
+            <li>Remote monitoring with a named person answering</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="rail">
+      <div class="center">
+        <p class="label">The equipment room</p>
+        <h2 style="margin-top:18px">One cupboard decides whether the house works</h2>
+        <p class="lede narrow" style="margin:20px auto 0">Almost every system on this page runs through a single rack in a single closet. It is usually unlabelled, usually too hot, and usually the last place anyone looks. We photograph it, label it, cool it and leave a drawing on the inside of the door.</p>
+      </div>
+
+      <div class="dgm">
+        <div class="rackwrap">
+          <div>
+            <p style="color:var(--ink-2)">A rack is an honest document. Open one and you can read the history of a house — the original structured wiring, the alarm panel from the second owner, the AV head end from the renovation, the mesh kit somebody added when the Wi-Fi reached the dock badly. Four generations of equipment, three of them still powered, two of them doing nothing at all.</p>
+            <p style="margin-top:18px;color:var(--ink-2)">The first thing we do on a new property is empty it of what is dead, label every port and every cable at both ends, photograph the front and the back, and record the make, model, serial, firmware, licence and account for everything still in service. That record is the difference between a one-hour repair and a day of somebody tracing cable with a toner.</p>
+            <p style="margin-top:18px;color:var(--ink-2)">The second thing is heat. A closet at ninety-five degrees will take a switch or a power supply out in its third summer. A vent, a fan panel, a louvred door — the fix is usually trivial and almost never done. The third is the battery: an uninterruptible supply with a dead cell is worse than none, because it fails the first time it is asked, and nobody finds out for months.</p>
+            <p style="margin-top:18px;color:var(--ink-2)">Where a house is on the <a href="estates">estate calendar</a>, every one of those records sits in your portal beside the air handlers, the pool equipment and the <a href="irrigation">irrigation</a> drawing. One file for the building, kept current, and yours to take with you if you ever leave us.</p>
+          </div>
+
+          <figure style="margin:0">
+            <svg viewBox="0 0 232 400" role="img" aria-labelledby="dgm3t dgm3d" style="min-width:0">
+              <title id="dgm3t">Elevation of a typical estate equipment rack</title>
+              <desc id="dgm3d">A labelled rack elevation showing, from top to bottom, a patch panel, network gateway, power-over-Ethernet switch, camera recorder, audio amplifier, and uninterruptible power supply at the base.</desc>
+              <g stroke="var(--ink)" stroke-opacity=".34" fill="none" stroke-width="1.2">
+                <rect x="20" y="16" width="192" height="368"/>
+                <line x1="34" y1="16" x2="34" y2="384"/>
+                <line x1="198" y1="16" x2="198" y2="384"/>
+              </g>
+              <g stroke="var(--ottone)" stroke-opacity=".6" fill="var(--ottone)" fill-opacity=".07" stroke-width="1.2">
+                <rect x="40" y="30" width="152" height="36"/>
+                <rect x="40" y="76" width="152" height="36"/>
+                <rect x="40" y="122" width="152" height="46"/>
+                <rect x="40" y="178" width="152" height="46"/>
+                <rect x="40" y="234" width="152" height="46"/>
+                <rect x="40" y="290" width="152" height="78"/>
+              </g>
+              <g font-family="var(--util)" font-size="11" letter-spacing="1.3" fill="var(--ink-2)">
+                <text x="52" y="52">PATCH PANEL</text>
+                <text x="52" y="98">GATEWAY</text>
+                <text x="52" y="149">PoE SWITCH</text>
+                <text x="52" y="205">CAMERA RECORDER</text>
+                <text x="52" y="261">AUDIO AMPLIFIER</text>
+                <text x="52" y="334">UPS</text>
+              </g>
+              <g stroke="var(--ottone)" stroke-opacity=".45" stroke-width="1">
+                <path d="M52 58 h8 m6 0 h8 m6 0 h8 m6 0 h8 m6 0 h8 m6 0 h8 m6 0 h8 m6 0 h8"/>
+                <path d="M52 156 h8 m6 0 h8 m6 0 h8 m6 0 h8 m6 0 h8 m6 0 h8 m6 0 h8 m6 0 h8"/>
+              </g>
+              <g fill="var(--ottone)">
+                <circle cx="180" cy="98" r="2.6"/><circle cx="180" cy="205" r="2.6"/><circle cx="180" cy="334" r="2.6"/>
+              </g>
+            </svg>
+            <figcaption style="font-family:var(--util);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:14px">What we label, photograph and record</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec band">
+    <div class="rail">
+      <div class="center">
+        <p class="label">Working with who you have</p>
+        <h2 style="margin-top:18px">We are not asking you to replace your integrator</h2>
+        <p class="lede narrow" style="margin:20px auto 0">Most estates we walk into already have an audio-visual company, an alarm company and an electrician, and most of them are good at what they do. The gap is not competence. It is that nobody is at the house between the times they are called.</p>
+      </div>
+      <div class="three">
+        <div>
+          <h3>We hold the file</h3>
+          <p>Every make, model, serial, firmware version, licence key, subscription and renewal date for every system in the house, in one place, kept current. Most owners cannot name the company that wired their network, let alone produce the password for the gateway.</p>
+        </div>
+        <div>
+          <h3>We make the call</h3>
+          <p>When something needs the specialist who installed it, we are the ones who notice, the ones who call, the ones who meet them at the gate and the ones who confirm the work was actually done. One number for you, and a photograph afterwards.</p>
+        </div>
+        <div>
+          <h3>We do the ordinary work</h3>
+          <p>Batteries, bulbs, lens cleaning, a reboot in the right order, a failed access point swapped, a keypad replaced, a camera re-aimed after a storm. The jobs too small to call anyone out for, which is exactly why they never get done.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="rail">
+      <div class="center">
+        <p class="label">Common questions</p>
+        <h2 style="margin-top:18px">Before you call</h2>
+      </div>
+      <div class="faq" style="margin-top:clamp(24px,3vw,38px)">
+        <details><summary>Do you install new systems or only maintain existing ones?</summary>
+          <p>Both. We install and upgrade lighting control, audio, network, camera and access systems, and we hold the service and the seasonal programme afterwards. Work that requires a licensed trade is performed by licensed, insured contractors we direct, under our drawing and on our statement.</p></details>
+        <details><summary>Our Wi-Fi is fine in the house but useless at the dock and the guest house.</summary>
+          <p>Almost universally the same cause: a consumer router at one end of a long concrete-and-impact-glass building, with a mesh node added later that is talking back over the same congested band. The fix is a survey, a wired access point where the far coverage is needed, and a gateway that hands out addresses the devices keep. Coral-filled block and large-format glazing attenuate signal far more than most people expect, and no amount of mesh will push through them.</p></details>
+        <details><summary>Can you take over a system somebody else installed?</summary>
+          <p>Yes, and it is most of what we do. We start with an audit: everything in the rack identified, every port labelled, accounts and licences located, coverage measured and the whole thing photographed. You receive the record whether or not you go further with us.</p></details>
+        <details><summary>Nobody has the password for our system. Is that recoverable?</summary>
+          <p>Usually. Lighting panels, gateways and recorders can generally be recovered or re-adopted with physical access to the hardware, which is one of the reasons we insist on documenting the equipment room before anything else. Cloud accounts tied to an email nobody can reach are harder, and occasionally the honest answer is a fresh account and a day of re-provisioning.</p></details>
+        <details><summary>How do we know the cameras are actually recording?</summary>
+          <p>Because we play it back. A live picture in the app proves only that the camera has power and a connection — it says nothing about whether anything is being written to storage, how many days are retained, or whether the plan lapsed in July. On every visit a camera is covered and uncovered, the clip is found on the timeline, and the remaining storage and plan status are recorded with the date.</p></details>
+        <details><summary>Is there anything that protects this equipment from lightning?</summary>
+          <p>Nothing makes it immune, but the difference between a protected house and an unprotected one after a nearby strike is substantial. Whole-house surge protection at the panel, point-of-use protection at the rack, surge devices on the long runs out to gates, docks and cameras, and correct bonding and grounding of coax and network cabling. We check those on every visit, because a surge device that has already taken a hit looks identical to one that has not, unless you read the indicator.</p></details>
+        <details><summary>Will you work with our existing AV or alarm company?</summary>
+          <p>Yes, and we prefer to. They know the system they built. We keep the record, watch it between their visits, do the ordinary work and call them when the house needs what only they can do. Nobody is replaced and nobody is cut out.</p></details>
+        <details><summary>Which areas do you cover?</summary>
+          <p>The same nine counties as the rest of the firm: Palm Beach, Broward, Miami-Dade and Monroe on the Atlantic, and Manatee, Sarasota, Charlotte, Lee and Collier on the Gulf. The heaviest work is on the waterfront in Fort Lauderdale, Boca Raton, West Palm Beach and Naples. Response targets by county are on the <a href="coverage">coverage page</a>.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="ruled">
+    <div class="rail cta">
+      <p class="label">Enquiries</p>
+      <h2>Begin with a systems audit</h2>
+      <p class="lede narrow">Every system identified, every rack port labelled, coverage measured, recordings played back, accounts and licences located, and the whole house photographed and written up with a drawing. It obliges you to nothing, and the record is yours regardless.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="contact">Request a visit</a>
+        <a class="btn btn-ghost" href="mailto:hello@amalfibg.com">hello@amalfibg.com</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="rail">
+    <div class="fgrid">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:16px">
+          <svg class="mark" viewBox="0 0 100 124" aria-hidden="true"><path d="M16 114 V58 a34 34 0 0 1 68 0 V114 H76 V58 a26 26 0 0 0 -52 0 V114 Z" fill="currentColor"/><path d="M45 19 L55 19 L53.5 47 L46.5 47 Z" fill="currentColor"/><rect x="10" y="118" width="80" height="3.6" fill="currentColor"/></svg>
+          <b>Amalfi <small>Group</small></b>
+        </a>
+        <p class="small" style="max-width:36ch">Commercial mechanical services, waterfront estate care and construction across South Florida and the Gulf coast.</p>
+      </div>
+      <div><h4>Divisions</h4><ul>
+        <li><a href="estates">Estates</a></li>
+        <li><a href="mechanical">Mechanical</a></li>
+        <li><a href="construction">Construction</a></li>
+        <li><a href="irrigation">Irrigation</a></li>
+        <li><a href="systems">Systems &amp; controls</a></li>
+        <li><a href="restoration">Restoration</a></li>
+      </ul></div>
+      <div><h4>The house</h4><ul>
+        <li><a href="gallery">Selected work</a></li>
+        <li><a href="insights">Field notes</a></li>
+        <li><a href="about">Our standard</a></li>
+        <li><a href="locations">Locations</a></li>
+        <li><a href="coverage">Coverage</a></li>
+        <li><a href="contact">Enquire</a></li>
+      </ul></div>
+      <div><h4>Enquiries</h4><ul>
+        <li><a href="tel:+17544322225">(754) 432-2225</a></li>
+        <li><a href="mailto:hello@amalfibg.com">hello@amalfibg.com</a></li>
+        <li>Fort Lauderdale, Florida</li>
+        <li>Enquiries answered same business day</li>
+        <li><a href="https://www.linkedin.com/company/amalfibg/" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61596117256149" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com/amalfibg/" rel="noopener">Instagram</a></li>
+      </ul></div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Amalfi Building Group LLC</span>
+      <span>Permitted work is performed by licensed, insured contractors we direct</span>
+      <span><a href="privacy">Privacy</a></span>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Service",
+   "@id": "https://amalfibg.com/systems#service",
+   "name": "Smart home and low-voltage systems",
+   "serviceType": "Lighting control, audio, network, camera, access control and automation installation and maintenance",
+   "description": "Smart home and low-voltage systems for waterfront estates and commercial property across South Florida and the Gulf coast: Lutron lighting control and motorised shading, Sonos and whole-house audio, UniFi networks and structured cabling, Ring and camera systems, gate and garage operators, pool automation, standby power, surge protection and uninterruptible supplies — installed, upgraded, serviced and held on a written programme, with every system tested and recorded on each visit. Work requiring a licensed trade is performed by licensed, insured contractors we direct.",
+   "url": "https://amalfibg.com/systems",
+   "provider": {
+    "@type": "Organization",
+    "@id": "https://amalfibg.com/#organization",
+    "name": "Amalfi Group",
+    "url": "https://amalfibg.com/",
+    "email": "hello@amalfibg.com"
+   },
+   "areaServed": [
+    {"@type": "AdministrativeArea", "name": "Palm Beach County, Florida"},
+    {"@type": "AdministrativeArea", "name": "Broward County, Florida"},
+    {"@type": "AdministrativeArea", "name": "Miami-Dade County, Florida"},
+    {"@type": "AdministrativeArea", "name": "Monroe County, Florida"},
+    {"@type": "AdministrativeArea", "name": "Manatee County, Florida"},
+    {"@type": "AdministrativeArea", "name": "Sarasota County, Florida"},
+    {"@type": "AdministrativeArea", "name": "Charlotte County, Florida"},
+    {"@type": "AdministrativeArea", "name": "Lee County, Florida"},
+    {"@type": "AdministrativeArea", "name": "Collier County, Florida"}
+   ],
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Systems and controls",
+    "itemListElement": [
+     {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Lutron lighting control installation, upgrade and service"}},
+     {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Motorised shades and window treatments"}},
+     {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sonos and whole-house audio installation and service"}},
+     {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "UniFi network, Wi-Fi and structured cabling"}},
+     {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ring and surveillance camera systems"}},
+     {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gate operators, intercoms and access control"}},
+     {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Garage door operators and safety sensors"}},
+     {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pool and water feature automation"}},
+     {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Surge protection, uninterruptible supplies and standby power monitoring"}},
+     {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Equipment room audit, labelling and documentation"}}
+    ]
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://amalfibg.com/systems#breadcrumbs",
+   "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://amalfibg.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Systems & controls", "item": "https://amalfibg.com/systems"}
+   ]
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://amalfibg.com/systems#page",
+   "url": "https://amalfibg.com/systems",
+   "name": "Smart Home & Low-Voltage Systems | Lighting, Audio, Network, Security",
+   "description": "Lutron lighting control, Sonos and whole-house audio, UniFi networks, Ring and camera systems, gates, garage operators and pool automation — installed, serviced and held on a written programme for waterfront estates across South Florida.",
+   "inLanguage": "en-US",
+   "isPartOf": {"@id": "https://amalfibg.com/#website"},
+   "about": {"@id": "https://amalfibg.com/systems#service"},
+   "breadcrumb": {"@id": "https://amalfibg.com/systems#breadcrumbs"},
+   "publisher": {"@id": "https://amalfibg.com/#organization"}
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://amalfibg.com/systems#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Do you install new smart home systems or only maintain existing ones?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Both. We install and upgrade lighting control, audio, network, camera and access systems, and we hold the service and the seasonal programme afterwards. Work that requires a licensed trade is performed by licensed, insured contractors we direct, under our drawing and on our statement."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Our Wi-Fi is fine in the house but useless at the dock and guest house. Why?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Almost universally the same cause: a consumer router at one end of a long concrete and impact-glass building, with a mesh node added later talking back over the same congested band. The fix is a coverage survey, a wired access point where the far coverage is needed, and a gateway that hands out addresses the devices keep. Coral-filled block and large-format glazing attenuate wireless signal far more than most people expect, and no amount of mesh will push through them."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can you take over a system somebody else installed?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, and it is most of what we do. We start with an audit: everything in the rack identified, every port labelled, accounts and licences located, coverage measured and the whole system photographed. You receive the record whether or not you go further with us."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do we know our cameras are actually recording?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Because we play it back. A live picture in the app proves only that the camera has power and a connection. It says nothing about whether anything is being written to storage, how many days are retained, or whether the recording plan lapsed. On every visit a camera is covered and uncovered, the clip is found on the timeline, and remaining storage and plan status are recorded with the date."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What protects low-voltage equipment from lightning in Florida?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nothing makes it immune, but the difference between a protected house and an unprotected one after a nearby strike is substantial. Whole-house surge protection at the panel, point-of-use protection at the rack, surge devices on the long runs out to gates, docks and cameras, and correct bonding and grounding of coax and network cabling. These are checked on every visit, because a surge device that has already taken a hit looks identical to one that has not unless the indicator is read."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Will you work with our existing AV or alarm company?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, and we prefer to. They know the system they built. We keep the record, watch it between their visits, carry out the ordinary work and call them when the house needs what only they can do. Nobody is replaced and nobody is cut out."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which areas do you cover for smart home and low-voltage work?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The same nine counties as the rest of the firm: Palm Beach, Broward, Miami-Dade and Monroe on the Atlantic, and Manatee, Sarasota, Charlotte, Lee and Collier on the Gulf. The heaviest work is on the waterfront in Fort Lauderdale, Boca Raton, West Palm Beach and Naples."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<script src="analytics.js?v=1" defer></script>
+</body>
+</html>
