@@ -390,47 +390,88 @@
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
- "@type": "FAQPage",
- "@id": "https://amalfibg.com/hurricane-preparation-rooftop-hvac#faq",
- "mainEntity": [
+ "@graph": [
   {
-   "@type": "Question",
-   "name": "When should hurricane preparation for rooftop HVAC start?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "February for engineering and capital decisions, March for ordering, April for the structural walk, May for the mechanical walk, documentation closed before 1 June. The constraint is the supply chain, not the weather."
-   }
+   "@type": "FAQPage",
+   "@id": "https://amalfibg.com/hurricane-preparation-rooftop-hvac#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "When should hurricane preparation for rooftop HVAC start?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "February for engineering and capital decisions, March for ordering, April for the structural walk, May for the mechanical walk, documentation closed before 1 June. The constraint is the supply chain, not the weather."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does rooftop mechanical equipment need a Miami-Dade Notice of Acceptance?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Inside the High-Velocity Hurricane Zone — Miami-Dade and Broward counties only — rooftop equipment is expected to carry an approval demonstrating resistance to the HVHZ design loads: a Notice of Acceptance from the Miami-Dade County Product Control Division, or a statewide Florida Product Approval under Section 553.842, Florida Statutes."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should rooftop air conditioning be shut down before a hurricane?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, once the building is no longer occupied and the roof is no longer safe to reach — and at the unit disconnect rather than the thermostat, so it cannot restart remotely or when the utility returns. Life-safety systems stay in service."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why can a flooded or salt-soaked rooftop unit not simply be switched back on?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Because water and salt change the equipment rather than merely wetting it. NEMA CS 70006-2026, formerly NEMA GD 1, lists water-damaged motors, moulded-case circuit breakers, switches and fuses for replacement rather than reconditioning."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long do I have to report hurricane damage to rooftop equipment in Florida?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Under Section 627.70132, Florida Statutes, notice must be given within one year after the date of loss and a supplemental claim within eighteen months; for a hurricane the date of loss is the date of landfall. Section 627.70131 then gives the insurer seven days to acknowledge, thirty to inspect and sixty to pay or deny."
+     }
+    }
+   ]
   },
   {
-   "@type": "Question",
-   "name": "Does rooftop mechanical equipment need a Miami-Dade Notice of Acceptance?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Inside the High-Velocity Hurricane Zone — Miami-Dade and Broward counties only — rooftop equipment is expected to carry an approval demonstrating resistance to the HVHZ design loads: a Notice of Acceptance from the Miami-Dade County Product Control Division, or a statewide Florida Product Approval under Section 553.842, Florida Statutes."
-   }
+   "@type": "Organization",
+   "@id": "https://amalfibg.com/#organization",
+   "name": "Amalfi Group",
+   "legalName": "Amalfi Building Group LLC",
+   "url": "https://amalfibg.com/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://amalfibg.com/og.png",
+    "width": 1200,
+    "height": 630
+   },
+   "image": "https://amalfibg.com/og.png",
+   "email": "hello@amalfibg.com",
+   "telephone": "+1-754-432-2225",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Fort Lauderdale",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+   },
+   "sameAs": [
+    "https://www.linkedin.com/company/amalfibg/",
+    "https://www.facebook.com/profile.php?id=61596117256149",
+    "https://www.instagram.com/amalfibg/"
+   ]
   },
   {
-   "@type": "Question",
-   "name": "Should rooftop air conditioning be shut down before a hurricane?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Yes, once the building is no longer occupied and the roof is no longer safe to reach — and at the unit disconnect rather than the thermostat, so it cannot restart remotely or when the utility returns. Life-safety systems stay in service."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Why can a flooded or salt-soaked rooftop unit not simply be switched back on?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Because water and salt change the equipment rather than merely wetting it. NEMA CS 70006-2026, formerly NEMA GD 1, lists water-damaged motors, moulded-case circuit breakers, switches and fuses for replacement rather than reconditioning."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "How long do I have to report hurricane damage to rooftop equipment in Florida?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Under Section 627.70132, Florida Statutes, notice must be given within one year after the date of loss and a supplemental claim within eighteen months; for a hurricane the date of loss is the date of landfall. Section 627.70131 then gives the insurer seven days to acknowledge, thirty to inspect and sixty to pay or deny."
+   "@type": "WebSite",
+   "@id": "https://amalfibg.com/#website",
+   "url": "https://amalfibg.com/",
+   "name": "Amalfi Group",
+   "inLanguage": "en-US",
+   "publisher": {
+    "@id": "https://amalfibg.com/#organization"
    }
   }
  ]

@@ -460,40 +460,81 @@
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
- "@type": "FAQPage",
- "@id": "https://amalfibg.com/salt-air-corrosion-hvac#faq",
- "inLanguage": "en-US",
- "mainEntity": [
+ "@graph": [
   {
-   "@type": "Question",
-   "name": "Why did my four-year-old condensing unit need a new coil?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Almost certainly because it sits in a chloride atmosphere and nothing was specified to resist one. Airborne salt holds a conductive moisture film on the coil, which drives galvanic attack between copper tube and aluminium fin, pitting of the copper, and crevice attack where two surfaces trap damp. If the failure is a pinhole rather than fin loss, check for formicary corrosion."
-   }
+   "@type": "FAQPage",
+   "@id": "https://amalfibg.com/salt-air-corrosion-hvac#faq",
+   "inLanguage": "en-US",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Why did my four-year-old condensing unit need a new coil?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Almost certainly because it sits in a chloride atmosphere and nothing was specified to resist one. Airborne salt holds a conductive moisture film on the coil, which drives galvanic attack between copper tube and aluminium fin, pitting of the copper, and crevice attack where two surfaces trap damp. If the failure is a pinhole rather than fin loss, check for formicary corrosion."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does the coil coating itself come with a warranty?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Frequently not. At least one major manufacturer's technical bulletin for its microchannel coating option states that its factories do not provide a warranty for the coating applied to condenser fins. Salt-air corrosion is also commonly excluded from base limited warranties, picked up only by a coastal variant, on prompt registration, and where an annual service history exists."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Should I use 316 or 304 stainless near the water?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "316 for anything outdoors within roughly the first few hundred metres of breaking surf. 304 carries slightly more chromium; the whole of 316's advantage is 2.00 to 3.00 per cent molybdenum, which stabilises the passive film against chloride. On the pitting resistance equivalent number — %Cr + 3.3(%Mo + 0.5%W) + 16(%N) — 304 calculates to about 18 and 316 to about 24."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How often should a coastal condenser coil be rinsed with fresh water?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Monthly within the first few hundred metres of breaking surf, quarterly out to roughly a mile, and at least seasonally beyond — tightened wherever rain does not reach the equipment. Rinse at low pressure and high volume, against the direction of airflow, so salt leaves by the face it entered."
+     }
+    }
+   ]
   },
   {
-   "@type": "Question",
-   "name": "Does the coil coating itself come with a warranty?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Frequently not. At least one major manufacturer's technical bulletin for its microchannel coating option states that its factories do not provide a warranty for the coating applied to condenser fins. Salt-air corrosion is also commonly excluded from base limited warranties, picked up only by a coastal variant, on prompt registration, and where an annual service history exists."
-   }
+   "@type": "Organization",
+   "@id": "https://amalfibg.com/#organization",
+   "name": "Amalfi Group",
+   "legalName": "Amalfi Building Group LLC",
+   "url": "https://amalfibg.com/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://amalfibg.com/og.png",
+    "width": 1200,
+    "height": 630
+   },
+   "image": "https://amalfibg.com/og.png",
+   "email": "hello@amalfibg.com",
+   "telephone": "+1-754-432-2225",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Fort Lauderdale",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+   },
+   "sameAs": [
+    "https://www.linkedin.com/company/amalfibg/",
+    "https://www.facebook.com/profile.php?id=61596117256149",
+    "https://www.instagram.com/amalfibg/"
+   ]
   },
   {
-   "@type": "Question",
-   "name": "Should I use 316 or 304 stainless near the water?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "316 for anything outdoors within roughly the first few hundred metres of breaking surf. 304 carries slightly more chromium; the whole of 316's advantage is 2.00 to 3.00 per cent molybdenum, which stabilises the passive film against chloride. On the pitting resistance equivalent number — %Cr + 3.3(%Mo + 0.5%W) + 16(%N) — 304 calculates to about 18 and 316 to about 24."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "How often should a coastal condenser coil be rinsed with fresh water?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Monthly within the first few hundred metres of breaking surf, quarterly out to roughly a mile, and at least seasonally beyond — tightened wherever rain does not reach the equipment. Rinse at low pressure and high volume, against the direction of airflow, so salt leaves by the face it entered."
+   "@type": "WebSite",
+   "@id": "https://amalfibg.com/#website",
+   "url": "https://amalfibg.com/",
+   "name": "Amalfi Group",
+   "inLanguage": "en-US",
+   "publisher": {
+    "@id": "https://amalfibg.com/#organization"
    }
   }
  ]

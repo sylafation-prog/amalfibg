@@ -309,12 +309,63 @@
 </script>
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"BreadcrumbList",
-  "itemListElement":[
-    {"@type":"ListItem","position":1,"name":"Home","item":"https://amalfibg.com/"},
-    {"@type":"ListItem","position":2,"name":"Our standard","item":"https://amalfibg.com/about"}
-  ]
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://amalfibg.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Our standard",
+     "item": "https://amalfibg.com/about"
+    }
+   ]
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://amalfibg.com/#organization",
+   "name": "Amalfi Group",
+   "legalName": "Amalfi Building Group LLC",
+   "url": "https://amalfibg.com/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://amalfibg.com/og.png",
+    "width": 1200,
+    "height": 630
+   },
+   "image": "https://amalfibg.com/og.png",
+   "email": "hello@amalfibg.com",
+   "telephone": "+1-754-432-2225",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Fort Lauderdale",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+   },
+   "sameAs": [
+    "https://www.linkedin.com/company/amalfibg/",
+    "https://www.facebook.com/profile.php?id=61596117256149",
+    "https://www.instagram.com/amalfibg/"
+   ]
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://amalfibg.com/#website",
+   "url": "https://amalfibg.com/",
+   "name": "Amalfi Group",
+   "inLanguage": "en-US",
+   "publisher": {
+    "@id": "https://amalfibg.com/#organization"
+   }
+  }
+ ]
 }
 </script>
 <script src="analytics.js?v=1" defer></script>

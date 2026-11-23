@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>The Maintenance Record Nobody Is Keeping</title>
-<meta name="description" content="Preventive maintenance extends the life of building systems — but only the recorded kind. Why multi-vendor properties fail at the seams, what belongs in a maintenance file, and what the gap costs.">
+<meta name="description" content="Why multi-vendor properties fail at the seams, what belongs in a maintenance file, and what the recording gap actually costs an owner.">
 <link rel="canonical" href="https://amalfibg.com/preventive-maintenance-records">
 <meta property="og:title" content="The Maintenance Record Nobody Is Keeping">
-<meta property="og:description" content="Preventive maintenance extends the life of building systems — but only the recorded kind. Why multi-vendor properties fail at the seams, what belongs in a maintenance file, and what the gap costs.">
+<meta property="og:description" content="Why multi-vendor properties fail at the seams, what belongs in a maintenance file, and what the recording gap actually costs an owner.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://amalfibg.com/preventive-maintenance-records">
 <meta name="geo.region" content="US-FL">
@@ -441,39 +441,80 @@
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
- "@type": "FAQPage",
- "@id": "https://amalfibg.com/preventive-maintenance-records#faq",
- "mainEntity": [
+ "@graph": [
   {
-   "@type": "Question",
-   "name": "How often should a condenser be rinsed on the coast?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Quarterly is the usual starting point within sight of salt water, and closer to monthly on an exposed oceanfront roof. The variable is chloride deposition, not the calendar, so the honest answer comes from looking at the coil rather than from a schedule. What matters as much as the interval is that the rinse is recorded as its own event — it is frequently folded into a general service line, which makes it impossible to tell afterwards whether it happened."
-   }
+   "@type": "FAQPage",
+   "@id": "https://amalfibg.com/preventive-maintenance-records#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "How often should a condenser be rinsed on the coast?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Quarterly is the usual starting point within sight of salt water, and closer to monthly on an exposed oceanfront roof. The variable is chloride deposition, not the calendar, so the honest answer comes from looking at the coil rather than from a schedule. What matters as much as the interval is that the rinse is recorded as its own event — it is frequently folded into a general service line, which makes it impossible to tell afterwards whether it happened."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does skipping maintenance really void a manufacturer's warranty?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In practice the problem is less that cover is voided and more that a claim cannot be substantiated. Manufacturers generally condition warranty cover on maintenance performed to their published requirements, and the burden of showing it falls on the owner. An owner who cannot produce dated records against the serial is usually paying for the part."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What should I ask a contractor to hand over if I change vendors?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The asset register in an exportable format, the full service history by serial, photographs, logged readings, outstanding recommendations with dates, warranty registrations and copies of closed permits. Ask for all of it in writing at the point you sign, not at the point you leave."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "We already have good vendors. Why change anything?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You may not need to. If someone on your side can tell you today when the condenser was last rinsed, which recommendations are outstanding, and which units are still in warranty, the system is working and the vendors are not the issue. If nobody can answer those three questions quickly, the gap is not in the trades — it is in the record."
+     }
+    }
+   ]
   },
   {
-   "@type": "Question",
-   "name": "Does skipping maintenance really void a manufacturer's warranty?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "In practice the problem is less that cover is voided and more that a claim cannot be substantiated. Manufacturers generally condition warranty cover on maintenance performed to their published requirements, and the burden of showing it falls on the owner. An owner who cannot produce dated records against the serial is usually paying for the part."
-   }
+   "@type": "Organization",
+   "@id": "https://amalfibg.com/#organization",
+   "name": "Amalfi Group",
+   "legalName": "Amalfi Building Group LLC",
+   "url": "https://amalfibg.com/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://amalfibg.com/og.png",
+    "width": 1200,
+    "height": 630
+   },
+   "image": "https://amalfibg.com/og.png",
+   "email": "hello@amalfibg.com",
+   "telephone": "+1-754-432-2225",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Fort Lauderdale",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+   },
+   "sameAs": [
+    "https://www.linkedin.com/company/amalfibg/",
+    "https://www.facebook.com/profile.php?id=61596117256149",
+    "https://www.instagram.com/amalfibg/"
+   ]
   },
   {
-   "@type": "Question",
-   "name": "What should I ask a contractor to hand over if I change vendors?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "The asset register in an exportable format, the full service history by serial, photographs, logged readings, outstanding recommendations with dates, warranty registrations and copies of closed permits. Ask for all of it in writing at the point you sign, not at the point you leave."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "We already have good vendors. Why change anything?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "You may not need to. If someone on your side can tell you today when the condenser was last rinsed, which recommendations are outstanding, and which units are still in warranty, the system is working and the vendors are not the issue. If nobody can answer those three questions quickly, the gap is not in the trades — it is in the record."
+   "@type": "WebSite",
+   "@id": "https://amalfibg.com/#website",
+   "url": "https://amalfibg.com/",
+   "name": "Amalfi Group",
+   "inLanguage": "en-US",
+   "publisher": {
+    "@id": "https://amalfibg.com/#organization"
    }
   }
  ]

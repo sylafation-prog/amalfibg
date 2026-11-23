@@ -475,39 +475,80 @@
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
- "@type": "FAQPage",
- "@id": "https://amalfibg.com/commercial-hvac-service-agreement#faq",
- "mainEntity": [
+ "@graph": [
   {
-   "@type": "Question",
-   "name": "Does a full-coverage agreement include compressors?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Often not, and that is the first thing to check. The compressor is the most expensive component, so it is the one most frequently excluded, capped, or made conditional on a prior condition report. A full-coverage agreement that excludes compressors is a labour agreement with a better name."
-   }
+   "@type": "FAQPage",
+   "@id": "https://amalfibg.com/commercial-hvac-service-agreement#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Does a full-coverage agreement include compressors?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Often not, and that is the first thing to check. The compressor is the most expensive component, so it is the one most frequently excluded, capped, or made conditional on a prior condition report. A full-coverage agreement that excludes compressors is a labour agreement with a better name."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Who pays for refrigerant under a maintenance agreement?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The owner, at every tier, because the supply market is in a phasedown and no contractor will price a year ahead of a commodity it does not control. What you negotiate is not whether you pay but how: a rate per pound by refrigerant type, an annual or per-unit cap, and a stated position on leak search and repair labour."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long should a commercial HVAC service agreement run?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "One year is normal, and a one-year term with a termination-for-convenience clause costs little to be wrong about. Longer terms are worth signing only for something specific — a capped escalation, a held rate card, a better response commitment."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is a four-hour response-time guarantee worth anything?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Only if a remedy is attached. A response time with no stated consequence for missing it is an aspiration, and should be priced as though absent. Ask what happens in the fifth hour: a credit, a waived call-out, an escalation to a named person."
+     }
+    }
+   ]
   },
   {
-   "@type": "Question",
-   "name": "Who pays for refrigerant under a maintenance agreement?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "The owner, at every tier, because the supply market is in a phasedown and no contractor will price a year ahead of a commodity it does not control. What you negotiate is not whether you pay but how: a rate per pound by refrigerant type, an annual or per-unit cap, and a stated position on leak search and repair labour."
-   }
+   "@type": "Organization",
+   "@id": "https://amalfibg.com/#organization",
+   "name": "Amalfi Group",
+   "legalName": "Amalfi Building Group LLC",
+   "url": "https://amalfibg.com/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://amalfibg.com/og.png",
+    "width": 1200,
+    "height": 630
+   },
+   "image": "https://amalfibg.com/og.png",
+   "email": "hello@amalfibg.com",
+   "telephone": "+1-754-432-2225",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Fort Lauderdale",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+   },
+   "sameAs": [
+    "https://www.linkedin.com/company/amalfibg/",
+    "https://www.facebook.com/profile.php?id=61596117256149",
+    "https://www.instagram.com/amalfibg/"
+   ]
   },
   {
-   "@type": "Question",
-   "name": "How long should a commercial HVAC service agreement run?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "One year is normal, and a one-year term with a termination-for-convenience clause costs little to be wrong about. Longer terms are worth signing only for something specific — a capped escalation, a held rate card, a better response commitment."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Is a four-hour response-time guarantee worth anything?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Only if a remedy is attached. A response time with no stated consequence for missing it is an aspiration, and should be priced as though absent. Ask what happens in the fifth hour: a credit, a waived call-out, an escalation to a named person."
+   "@type": "WebSite",
+   "@id": "https://amalfibg.com/#website",
+   "url": "https://amalfibg.com/",
+   "name": "Amalfi Group",
+   "inLanguage": "en-US",
+   "publisher": {
+    "@id": "https://amalfibg.com/#organization"
    }
   }
  ]

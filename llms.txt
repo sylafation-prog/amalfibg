@@ -36,6 +36,7 @@
 ## Coverage
 
 - [Service area](https://amalfibg.com/coverage): The nine counties set out one by one, with the towns attended in each.
+- [Selected work](https://amalfibg.com/gallery): Photographic record of completed and in-progress work across the three divisions — exterior and glass work on waterfront residences, commercial mechanical installations and service, and construction and remodel projects. Captioned by property type and county rather than by client name.
 - [Locations](https://amalfibg.com/locations): Hub page linking the twelve cities that have a page of their own.
 
 ## Cities
