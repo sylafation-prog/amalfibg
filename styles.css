@@ -135,7 +135,7 @@ nav.main a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--otton
 .btn-ghost:hover{border-color:var(--oliva);color:var(--oliva)}
 .band .btn-ghost:hover,.band .btn-ghost:focus-visible{border-color:var(--mare);color:var(--mare)}
 @media (max-width:1340px){.tel{display:none}}
-@media (max-width:1140px){nav.main{display:none}.hcta{margin-left:auto}}
+@media (max-width:1180px){nav.main{display:none}.hcta{margin-left:auto}}
 
 /* mobile drawer — CSS only; the checkbox is the state, the label is the burger */
 .navtoggle{position:absolute;width:1px;height:1px;margin:-1px;padding:0;border:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
@@ -148,7 +148,7 @@ nav.main a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--otton
 .navtoggle:checked ~ .burger span:nth-child(2){opacity:0;transform:scaleX(.2)}
 .navtoggle:checked ~ .burger span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
 .drawer{display:none}
-@media (max-width:1140px){
+@media (max-width:1180px){
   .burger{display:flex}
   /* positioned against the sticky header, so it drops from under it, full-bleed */
   .drawer{position:absolute;left:0;right:0;top:100%;z-index:70;
@@ -333,7 +333,8 @@ input:focus-visible,select:focus-visible,textarea:focus-visible{border-color:var
 
 /* footer */
 footer.site{border-top:1px solid var(--line);padding-block:52px 32px}
-.fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:34px}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr 1fr;gap:34px}
+@media (max-width:1080px){.fgrid{grid-template-columns:1fr 1fr 1fr}}
 @media (max-width:860px){.fgrid{grid-template-columns:1fr 1fr}}
 @media (max-width:520px){.fgrid{grid-template-columns:1fr}}
 footer h4{font-family:var(--util);font-weight:400;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
@@ -516,4 +517,35 @@ figure.gal figcaption,.gal:not(figure) > figure figcaption{padding-top:16px;disp
 }
 @media (prefers-reduced-motion:reduce){
   .annum-sweep,.annum-mo,.annum-m{transition:none}
+}
+
+/* --- Trades dropdown: CSS only, real anchors, opens on hover and on keyboard focus --- */
+nav.main .hasmenu{position:relative;display:flex;align-items:center}
+nav.main .hasmenu > a::after{content:"";display:inline-block;width:4.5px;height:4.5px;margin-left:7px;
+  border-right:1px solid currentColor;border-bottom:1px solid currentColor;
+  transform:translateY(-2px) rotate(45deg);opacity:.6}
+nav.main .menu{position:absolute;top:100%;left:50%;z-index:60;
+  transform:translateX(-50%) translateY(8px);
+  min-width:432px;display:grid;grid-template-columns:1fr 1fr;gap:0 26px;
+  margin-top:18px;padding:14px 22px;
+  background:var(--stone);border:1px solid var(--line);
+  box-shadow:0 2px 4px var(--shadow),0 28px 56px -20px var(--shadow-deep);
+  opacity:0;visibility:hidden;pointer-events:none;
+  transition:opacity .18s ease,transform .18s ease,visibility 0s linear .18s}
+/* invisible bridge so the pointer can cross the gap without closing the menu */
+nav.main .menu::before{content:"";position:absolute;left:0;right:0;top:-20px;height:20px}
+nav.main .hasmenu:hover .menu,
+nav.main .hasmenu:focus-within .menu{opacity:1;visibility:visible;pointer-events:auto;
+  transform:translateX(-50%) translateY(0);transition-delay:0s}
+nav.main .menu a{border-bottom:0;padding:10px 2px;font-size:.68rem;letter-spacing:.13em;white-space:nowrap}
+nav.main .menu a:hover{color:var(--oliva)}
+nav.main .menu a[aria-current="page"]{color:var(--ink)}
+@media (prefers-reduced-motion:reduce){nav.main .menu{transition:none}}
+
+/* drawer: the trades group sits indented under its own heading */
+@media (max-width:1180px){
+  .drawer .d-group{font-family:var(--util);font-weight:400;font-size:.62rem;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--mare);padding:16px max(22px,env(safe-area-inset-left,0px)) 6px;
+    border-bottom:1px solid var(--line-soft)}
+  .drawer a.d-sub{padding-left:max(38px,calc(env(safe-area-inset-left,0px) + 38px));font-size:.73rem;color:var(--ink-2)}
 }

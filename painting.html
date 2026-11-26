@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap">
-<link rel="stylesheet" href="styles.css?v=5">
+<link rel="stylesheet" href="styles.css?v=6">
 <style>
 .lvl{width:100%;border-collapse:collapse;margin-top:26px;font-size:1.02rem}
 .lvl th,.lvl td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--line);vertical-align:top}
@@ -49,6 +49,19 @@
       <a href="estates">Estates</a>
       <a href="mechanical">Mechanical</a>
       <a href="construction">Construction</a>
+      <div class="hasmenu">
+        <a href="trades" aria-current="page">Trades</a>
+        <div class="menu">
+          <a href="painting" aria-current="page">Painting &amp; coatings</a>
+          <a href="caulking">Caulking &amp; sealants</a>
+          <a href="stone-care">Stone &amp; terrace care</a>
+          <a href="metalwork">Metalwork care</a>
+          <a href="historic">Historic &amp; landmark</a>
+          <a href="irrigation">Irrigation</a>
+          <a href="systems">Systems &amp; controls</a>
+          <a href="restoration">Restoration</a>
+        </div>
+      </div>
       <a href="gallery">Work</a>
       <a href="about">Standard</a>
       <a href="insights">Notes</a>
@@ -64,6 +77,15 @@
       <a href="estates">Estates</a>
       <a href="mechanical">Mechanical</a>
       <a href="construction">Construction</a>
+      <a href="trades">Trades</a>
+      <a class="d-sub" href="painting">Painting &amp; coatings</a>
+      <a class="d-sub" href="caulking">Caulking &amp; sealants</a>
+      <a class="d-sub" href="stone-care">Stone &amp; terrace care</a>
+      <a class="d-sub" href="metalwork">Metalwork care</a>
+      <a class="d-sub" href="historic">Historic &amp; landmark</a>
+      <a class="d-sub" href="irrigation">Irrigation</a>
+      <a class="d-sub" href="systems">Systems &amp; controls</a>
+      <a class="d-sub" href="restoration">Restoration</a>
       <a href="gallery">Selected work</a>
       <a href="about">Our standard</a>
       <a href="insights">Field notes</a>
@@ -341,7 +363,7 @@
       <div class="center">
         <p class="label">The line</p>
         <h2 style="margin-top:18px">Where painting ends</h2>
-        <p class="lede narrow" style="margin:20px auto 0">Painting is not a licensed trade in Florida and has not been locally licensed since the state preempted those categories. Several of the things that routinely get bundled into a painting quote are licensed work, and we draw the line in writing rather than discovering it halfway up a scaffold.</p>
+        <p class="lede narrow" style="margin:20px auto 0">Painting and stuccoing are both named in Fla. Stat. 489.117(4)(a) as job scopes exempt from contractor licensing, and neither has been locally licensed since the state preempted those categories. Several of the things that routinely get bundled into a painting quote are still licensed work, and we draw the line in writing rather than discovering it halfway up a scaffold.</p>
       </div>
       <div class="two even" style="margin-top:44px">
         <aside class="panel">
@@ -355,6 +377,7 @@
             <li>Priming systems and specialist primers</li>
             <li>Ferrous metal preparation and coating — railings, gates, brackets, shutters</li>
             <li>Exterior joinery and trim finishing</li>
+            <li>Stucco repair, patching and re-rendering, matched to the existing wall</li>
             <li>Mineral, silicate and lime-based coatings on masonry</li>
             <li>Specification, colour schedules, drawdowns and the record</li>
           </ul>
@@ -365,7 +388,6 @@
             <li>Structural timber replacement beyond trim — that is carpentry under the contracting statute</li>
             <li>Window and door replacement, and sash rebuilding</li>
             <li>Any work requiring a building permit</li>
-            <li>Stucco replacement at scale, as opposed to patching</li>
             <li>Roofing, including anything coated that keeps water out of the building</li>
             <li>Structural crack repair, which wants an engineer before it wants a trade</li>
             <li>Mould remediation above ten square feet, a separately licensed trade in Florida</li>
@@ -386,7 +408,7 @@
         <details><summary>How often does a waterfront house actually need repainting?</summary>
           <p>It depends far more on the elevation than on the house. Inland, a quality acrylic system on sound stucco holds eight to ten years. On an oceanfront or Intracoastal exposure, the south and west faces are commonly tired at three to five while the north face is still sound at eight. That is why we forecast repaint windows by elevation rather than for the building, and why a house kept on a rinsing and sealant cycle sits at the long end of every one of those ranges rather than the short end.</p></details>
         <details><summary>Do you need a licence to paint in Florida?</summary>
-          <p>No. Painting has never been a state-licensed trade under Florida's construction contracting statute, and local certificates of competency for it were eliminated by state preemption — Miami-Dade stopped issuing them in 2023 and Palm Beach County's painting certificate ended on 1 July 2025, with existing holders reclassified. What does still apply is a business tax receipt in each jurisdiction and current insurance, both of which the permitting portals verify. The licensing questions that genuinely matter on a painting job attach to the work around it, which is why there is a section above setting out exactly where our scope ends.</p></details>
+          <p>No. Painting has never been a state-licensed trade under Florida's construction contracting statute, and local certificates of competency for it were eliminated by state preemption — Miami-Dade stopped issuing them in 2023 and Palm Beach County's painting certificate ended on 1 July 2025, with existing holders reclassified. Fla. Stat. 489.117(4)(a) now names painting, stuccoing, plastering, caulking and pressure washing among the exempt job scopes, and states that a local government may not require a licence to obtain a permit for them. What does still apply is a business tax receipt in each jurisdiction and current insurance, both of which the permitting portals verify, and some municipalities may still licence rooftop painting, coating and cleaning above three storeys. The licensing questions that matter on a painting job attach to the work around it, which is why there is a section above setting out exactly where our scope ends.</p></details>
         <details><summary>What is a Level 5 finish and do I need one?</summary>
           <p>It is the highest of the six gypsum board finish levels, and it means a skim coat of compound or high-build primer-surfacer over the entire wall rather than only over the joints and fasteners, so the surface is one continuous material. You need it if you are using eggshell, satin or gloss, if the colour is dark or saturated, or if any significant wall is lit at a grazing angle by a window, a cove or sconces. Under those conditions a Level 4 wall shows its joints through the paint as faint bands. If your rooms are flat paint in soft colours without directional light, Level 5 is money you will not see.</p></details>
         <details><summary>My paint is blistering and peeling in sheets. Is it bad paint?</summary>
@@ -418,8 +440,8 @@
           <p>Lime stucco, cast stone and pecky cypress on houses a preservation board has an opinion about, and what may be done without a Certificate of Appropriateness.</p>
         </div>
         <div>
-          <h3><a href="restoration">Restoration</a></h3>
-          <p>When the reason the paint failed is water that came from somewhere else, and the wall behind it has to be dried before anything can be coated.</p>
+          <h3><a href="caulking">Caulking &amp; sealants</a></h3>
+          <p>The joints the coating runs up to, on their own and shorter cycle. Most of what gets blamed on paint is water that entered through one of them.</p>
         </div>
       </div>
       <div class="actions" style="margin-top:40px">
@@ -443,10 +465,16 @@
         <li><a href="estates">Estates</a></li>
         <li><a href="mechanical">Mechanical</a></li>
         <li><a href="construction">Construction</a></li>
-        <li><a href="irrigation">Irrigation</a></li>
+        <li><a href="trades">All trades</a></li>
+      </ul></div>
+      <div><h4>Trades</h4><ul>
         <li><a href="painting">Painting</a></li>
-        <li><a href="systems">Systems &amp; controls</a></li>
-        <li><a href="historic">Historic &amp; landmark</a></li>
+        <li><a href="caulking">Caulking</a></li>
+        <li><a href="stone-care">Stone care</a></li>
+        <li><a href="metalwork">Metalwork</a></li>
+        <li><a href="historic">Historic</a></li>
+        <li><a href="irrigation">Irrigation</a></li>
+        <li><a href="systems">Controls</a></li>
         <li><a href="restoration">Restoration</a></li>
       </ul></div>
       <div><h4>The house</h4><ul>
@@ -483,7 +511,7 @@
    "@id": "https://amalfibg.com/painting#service",
    "name": "Estate painting and architectural coatings",
    "serviceType": "Interior and exterior painting, architectural and protective coatings",
-   "description": "Specification-grade interior and exterior painting for waterfront estates and private residences across South Florida and the Gulf coast: substrate survey and adhesion testing, gypsum board finish levels including Level 5 skim coats, salt-air and ultraviolet-resistant exterior coating systems, elastomeric and waterproof coatings, mineral, silicate and lime-based systems for historic lime stucco, sealant and expansion joint renewal, ferrous metal preparation and coating, colour schedules and drawdowns, and planned repaint cycles forecast elevation by elevation under the estate calendar. Work on dwellings built before 1978 is governed by the federal Renovation, Repair and Painting rule. Permitted work, structural carpentry, window replacement, roofing and mold remediation above the statutory threshold are performed by licensed trades that contract directly with the owner.",
+   "description": "Specification-grade interior and exterior painting for waterfront estates and private residences across South Florida and the Gulf coast: substrate survey and adhesion testing, gypsum board finish levels including Level 5 skim coats, salt-air and ultraviolet-resistant exterior coating systems, elastomeric and waterproof coatings, stucco repair and re-rendering, mineral, silicate and lime-based systems for historic lime stucco, sealant and expansion joint renewal, ferrous metal preparation and coating, colour schedules and drawdowns, and planned repaint cycles forecast elevation by elevation under the estate calendar. Work on dwellings built before 1978 is governed by the federal Renovation, Repair and Painting rule. Painting and stuccoing are job scopes exempted from contractor licensing under Fla. Stat. 489.117(4)(a). Permitted work, structural carpentry, window replacement, roofing and mold remediation above the statutory threshold are performed by licensed trades that contract directly with the owner.",
    "url": "https://amalfibg.com/painting",
    "provider": {
     "@type": "Organization",
@@ -553,6 +581,13 @@
       "itemOffered": {
        "@type": "Service",
        "name": "Level 5 skim coat and high-build primer-surfacer preparation"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Stucco repair, patching and re-rendering"
       }
      },
      {
@@ -655,7 +690,7 @@
      "name": "Do you need a licence to paint in Florida?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "No. Painting has never been a state-licensed trade under Florida's construction contracting statute, and local certificates of competency for it were eliminated by state preemption \u2014 Miami-Dade stopped issuing them in 2023 and Palm Beach County's painting certificate ended on 1 July 2025, with existing holders reclassified. What does still apply is a business tax receipt in each jurisdiction and current insurance, both of which the permitting portals verify. The licensing questions that genuinely matter on a painting job attach to the work around it, which is why there is a section above setting out exactly where our scope ends."
+      "text": "No. Painting has never been a state-licensed trade under Florida's construction contracting statute, and local certificates of competency for it were eliminated by state preemption \u2014 Miami-Dade stopped issuing them in 2023 and Palm Beach County's painting certificate ended on 1 July 2025, with existing holders reclassified. Fla. Stat. 489.117(4)(a) now names painting, stuccoing, plastering, caulking and pressure washing among the exempt job scopes, and states that a local government may not require a licence to obtain a permit for them. What does still apply is a business tax receipt in each jurisdiction and current insurance, both of which the permitting portals verify, and some municipalities may still licence rooftop painting, coating and cleaning above three storeys. The licensing questions that matter on a painting job attach to the work around it, which is why there is a section above setting out exactly where our scope ends."
      }
     },
     {
