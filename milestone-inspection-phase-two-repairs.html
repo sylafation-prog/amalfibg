@@ -29,6 +29,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap">
 <link rel="stylesheet" href="styles.css?v=9">
+<style>
+.lvl{width:100%;border-collapse:collapse;margin-top:26px;font-size:1.02rem}
+.lvl th,.lvl td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+.lvl th{font-family:'Jost',sans-serif;font-weight:500;font-size:.73rem;letter-spacing:.17em;text-transform:uppercase;color:var(--ottone);white-space:nowrap}
+.lvl td:first-child{font-family:'Jost',sans-serif;font-weight:500;letter-spacing:.04em;white-space:nowrap;color:var(--ink)}
+.lvl tr:last-child td{border-bottom:none}
+.lvl tr.hi td{background:rgba(168,131,43,.07)}
+</style>
 </head>
 <body>
 
@@ -173,8 +181,6 @@
         <p class="lede narrow" style="margin:20px auto 0">There are more deadlines than most boards realise, and several of them run from events the board does not control.</p>
       </div>
       <div class="tablewrap">
-      <div class="tblwrap">
-
       <table class="lvl">
         <thead><tr><th scope="col">Deadline</th><th scope="col">Runs from</th><th scope="col">What is due</th></tr></thead>
         <tbody>
@@ -186,7 +192,6 @@
           <tr><td>Agency discretion</td><td>Failure to evidence repairs</td><td>Agency review to determine whether the building is unsafe for human occupancy</td></tr>
         </tbody>
       </table>
-      </div>
       </div>
       <div class="two" style="margin-top:clamp(26px,3vw,40px)">
         <div>
@@ -272,8 +277,6 @@
         <p class="lede narrow" style="margin:20px auto 0">In July 2026 OPPAGA published the first statewide milestone inspection data. One pair of numbers in it should concentrate the mind of every board holding a phase two report.</p>
       </div>
       <div class="tablewrap">
-      <div class="tblwrap">
-
       <table class="lvl">
         <thead><tr><th scope="col">Reported statewide</th><th scope="col">2024</th><th scope="col">2025</th><th scope="col">Total</th></tr></thead>
         <tbody>
@@ -284,7 +287,6 @@
           <tr><td>Buildings found unsafe or uninhabitable</td><td>30</td><td>24</td><td>54</td></tr>
         </tbody>
       </table>
-      </div>
       </div>
       <div class="two" style="margin-top:clamp(26px,3vw,40px)">
         <div>
@@ -347,8 +349,8 @@
       <h2 style="margin-top:18px">Related</h2>
       <div class="three" style="margin-top:34px;text-align:left">
         <div><h3><a href="condominium-compliance-florida">The two obligations</a></h3><p>Milestone inspection and reserve study, how they differ, and the sequence from notice to funded repair.</p></div>
-        <div><h3><a href="waterproofing-exterior-painting-reserve-component">A reserve component, read closely</a></h3><p>Waterproofing and exterior painting is one of the eight statutory lines. What drives the number, how often it is actually due on this coast, and how it is specified.</p></div>
-        <div><h3><a href="condominium-restoration-bidding">Putting the repair out to bid</a></h3><p>The unit-rate schedule, the inclusions that differ invisibly between bidders, and how to compare three prices on the same basis.</p></div>
+        <div><h3><a href="waterproofing-exterior-painting-reserve-component">A reserve component, read closely</a></h3><p>The statutory components, the filing and affidavit obligations, and the end of the waiver vote.</p></div>
+        <div><h3><a href="condominium-restoration-bidding">Putting the repair out to bid</a></h3><p>How restoration is scoped, specified and phased, and how to compare three bids on the same basis.</p></div>
       </div>
       <div class="actions" style="margin-top:40px">
         <a class="btn btn-primary" href="contact">Request a facade survey</a>
@@ -424,11 +426,7 @@
    "description": "Guidance for Florida condominium boards on what follows a phase two milestone inspection under Fla. Stat. 553.899. Sets out the statutory definition of substantial structural deterioration, including the express exclusion of surface imperfections such as cracks, sagging, deflection, leakage signs and peeling finishes unless the inspecting engineer or architect determines they signal such deterioration. Lists the full sequence of deadlines: 14 days to notify unit owners of a required inspection, 180 days for phase one completion measured by submission of the report to the local enforcement agency, 45 days to distribute the inspector's summary to every owner regardless of findings, 180 days from the phase one report for a phase two progress report with completion timeline, and no later than 365 days from the agency's receipt of the phase two report for repairs to be scheduled or commenced under the local ordinance, failing which the agency must determine whether the building is unsafe for human occupancy. Covers the statutory conflict-of-interest disclosure obligations that render a contract voidable where undisclosed, the licensing boundary between structural and permitted work requiring a licensed contractor and the envelope job scopes placed outside state licensing by Fla. Stat. 489.117(4)(a), and the documentation lenders, insurers and the next reserve study will require. Amalfi Group performs quantified facade surveys, waterproofing, caulking, coating and exterior painting; it does not perform milestone inspections or structural repair.",
    "url": "https://amalfibg.com/milestone-inspection-phase-two-repairs",
    "provider": {
-    "@type": "Organization",
-    "@id": "https://amalfibg.com/#organization",
-    "name": "Amalfi Group",
-    "url": "https://amalfibg.com/",
-    "email": "hello@amalfibg.com"
+    "@id": "https://amalfibg.com/#organization"
    },
    "areaServed": [
     {
@@ -647,6 +645,71 @@
    "publisher": {
     "@id": "https://amalfibg.com/#organization"
    }
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://amalfibg.com/#organization",
+   "name": "Amalfi Group",
+   "legalName": "Amalfi Building Group LLC",
+   "url": "https://amalfibg.com/",
+   "email": "hello@amalfibg.com",
+   "telephone": "+1-754-432-2225",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://amalfibg.com/og.png",
+    "width": 1200,
+    "height": 630
+   },
+   "image": "https://amalfibg.com/og.png",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Fort Lauderdale",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+   },
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "Palm Beach County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Broward County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Miami-Dade County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Monroe County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Manatee County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Sarasota County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Charlotte County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Lee County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Collier County, Florida"
+    }
+   ],
+   "sameAs": [
+    "https://www.linkedin.com/company/amalfibg/",
+    "https://www.facebook.com/profile.php?id=61596117256149",
+    "https://www.instagram.com/amalfibg/"
+   ]
   }
  ]
 }

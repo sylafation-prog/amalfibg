@@ -29,6 +29,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap">
 <link rel="stylesheet" href="styles.css?v=9">
+<style>
+.lvl{width:100%;border-collapse:collapse;margin-top:26px;font-size:1.02rem}
+.lvl th,.lvl td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+.lvl th{font-family:'Jost',sans-serif;font-weight:500;font-size:.73rem;letter-spacing:.17em;text-transform:uppercase;color:var(--ottone);white-space:nowrap}
+.lvl td:first-child{font-family:'Jost',sans-serif;font-weight:500;letter-spacing:.04em;white-space:nowrap;color:var(--ink)}
+.lvl tr:last-child td{border-bottom:none}
+.lvl tr.hi td{background:rgba(168,131,43,.07)}
+</style>
 </head>
 <body>
 
@@ -183,8 +191,6 @@
         <p class="lede narrow" style="margin:20px auto 0">Hard construction cost per square foot of conditioned space. Land, design fees, permits and other soft costs, furnishings and landscape are all outside these figures unless stated.</p>
       </div>
       <div class="tablewrap">
-      <div class="tblwrap">
-
       <table class="lvl">
         <caption class="small" style="text-align:left;padding:0 0 10px;color:var(--ink-2)">Published 2026 ranges from builders active in the South Florida market. Hard cost only, per square foot of conditioned space.</caption>
         <thead><tr><th scope="col">Band</th><th scope="col">What it buys</th></tr></thead>
@@ -195,7 +201,6 @@
           <tr><td>$1,300&ndash;1,800+</td><td>Oceanfront, and sites constrained by an overlay or a review board. Concentrated in Palm Beach County and the barrier-island towns.</td></tr>
         </tbody>
       </table>
-      </div>
       </div>
       <div class="two" style="margin-top:clamp(26px,3vw,40px)">
         <div>
@@ -436,11 +441,7 @@
    "description": "Independent budget guidance for owners planning to build on the South Florida coast. Published 2026 market ranges by submarket &mdash; $450 to $650 per square foot for high-end production custom on the mainland, $650 to $900 for bespoke custom, $900 to $1,300 on direct waterfront and $1,300 to $1,800 or more on oceanfront and overlay-constrained sites &mdash; with the Palm Beach County premium of ten to twenty-five per cent over comparable Miami-Dade waterfront and the eight to twelve per cent added by the High Velocity Hurricane Zone. Covers the cost levers that move a budget without changing the plan: steel and bronze glazing, flood elevation and foundation type, millwork, control systems, site access, and carrying cost. Sets out the seasonal construction restrictions in Gulf Stream, the Town of Palm Beach and Highland Beach that lengthen programmes and are priced into trade costs by builders who know the territory. Explains why price per square foot misleads, what to ask instead, and the long-run cost of keeping a waterfront house. Amalfi Group does not build new houses; it represents owners through design and permitting and maintains properties once complete, and reads parcels for prospective owners at no charge.",
    "url": "https://amalfibg.com/cost-to-build-south-florida",
    "provider": {
-    "@type": "Organization",
-    "@id": "https://amalfibg.com/#organization",
-    "name": "Amalfi Group",
-    "url": "https://amalfibg.com/",
-    "email": "hello@amalfibg.com"
+    "@id": "https://amalfibg.com/#organization"
    },
    "areaServed": [
     {
@@ -659,6 +660,71 @@
    "publisher": {
     "@id": "https://amalfibg.com/#organization"
    }
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://amalfibg.com/#organization",
+   "name": "Amalfi Group",
+   "legalName": "Amalfi Building Group LLC",
+   "url": "https://amalfibg.com/",
+   "email": "hello@amalfibg.com",
+   "telephone": "+1-754-432-2225",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://amalfibg.com/og.png",
+    "width": 1200,
+    "height": 630
+   },
+   "image": "https://amalfibg.com/og.png",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Fort Lauderdale",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+   },
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "Palm Beach County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Broward County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Miami-Dade County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Monroe County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Manatee County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Sarasota County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Charlotte County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Lee County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Collier County, Florida"
+    }
+   ],
+   "sameAs": [
+    "https://www.linkedin.com/company/amalfibg/",
+    "https://www.facebook.com/profile.php?id=61596117256149",
+    "https://www.instagram.com/amalfibg/"
+   ]
   }
  ]
 }

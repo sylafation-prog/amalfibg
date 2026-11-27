@@ -29,6 +29,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap">
 <link rel="stylesheet" href="styles.css?v=9">
+<style>
+.lvl{width:100%;border-collapse:collapse;margin-top:26px;font-size:1.02rem}
+.lvl th,.lvl td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+.lvl th{font-family:'Jost',sans-serif;font-weight:500;font-size:.73rem;letter-spacing:.17em;text-transform:uppercase;color:var(--ottone);white-space:nowrap}
+.lvl td:first-child{font-family:'Jost',sans-serif;font-weight:500;letter-spacing:.04em;white-space:nowrap;color:var(--ink)}
+.lvl tr:last-child td{border-bottom:none}
+.lvl tr.hi td{background:rgba(168,131,43,.07)}
+</style>
 </head>
 <body>
 
@@ -199,8 +207,6 @@
         <p class="lede narrow" style="margin:20px auto 0">The zone is not a percentage added to everything. It changes specific things substantially and leaves the rest alone, which is why it is worth knowing which is which.</p>
       </div>
       <div class="tablewrap">
-      <div class="tblwrap">
-
       <table class="lvl">
         <caption class="small" style="text-align:left;padding:0 0 10px;color:var(--ink-2)">Ultimate design wind speeds by risk category under the Florida Building Code. A single-family house is normally Risk Category II.</caption>
         <thead><tr><th scope="col">Risk category</th><th scope="col">Miami-Dade</th><th scope="col">Broward</th></tr></thead>
@@ -210,7 +216,6 @@
           <tr><td>III</td><td>185 mph</td><td>180 mph</td></tr>
         </tbody>
       </table>
-      </div>
       </div>
       <div class="three">
         <div><h3>Openings, above all</h3><p>Every window, door, skylight and garage door has to be impact-rated and approved, tested against large and small missile impact and cyclic pressure under the TAS 201, 202 and 203 protocols. This is the single largest cost item the zone creates, and on a house designed around glass it is a very large number.</p></div>
@@ -391,11 +396,7 @@
    "description": "Explanation of the High Velocity Hurricane Zone for owners building or buying in Miami-Dade and Broward counties, the two counties the zone covers. Sets out the ultimate design wind speeds by risk category &mdash; 175 mph Miami-Dade and 170 mph Broward for Risk Category II houses &mdash; the origin of the zone in the 1994 South Florida Building Code following Hurricane Andrew in 1992 and its absorption into the unified Florida Building Code in March 2002, and the envelope-first logic that follows from Andrew's dominant failure mode of breached openings and internal pressurisation. Covers impact-rated glazing and the TAS 201, 202 and 203 test protocols, Miami-Dade Notice of Acceptance and Florida product approval, continuous load path connectors, roofing underlayment and attachment, inspection and documentation. Quantifies the eight to twelve per cent cost premium over non-HVHZ markets and explains why it concentrates in glazing rather than spreading evenly, and why Palm Beach County outside the zone is nonetheless ten to twenty-five per cent more expensive. Covers ongoing maintenance of an HVHZ house including sealant, connector corrosion, hardware and the wind mitigation record. Amalfi Group maintains completed properties and represents owners before construction; it does not build new houses.",
    "url": "https://amalfibg.com/high-velocity-hurricane-zone",
    "provider": {
-    "@type": "Organization",
-    "@id": "https://amalfibg.com/#organization",
-    "name": "Amalfi Group",
-    "url": "https://amalfibg.com/",
-    "email": "hello@amalfibg.com"
+    "@id": "https://amalfibg.com/#organization"
    },
    "areaServed": [
     {
@@ -614,6 +615,71 @@
    "publisher": {
     "@id": "https://amalfibg.com/#organization"
    }
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://amalfibg.com/#organization",
+   "name": "Amalfi Group",
+   "legalName": "Amalfi Building Group LLC",
+   "url": "https://amalfibg.com/",
+   "email": "hello@amalfibg.com",
+   "telephone": "+1-754-432-2225",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://amalfibg.com/og.png",
+    "width": 1200,
+    "height": 630
+   },
+   "image": "https://amalfibg.com/og.png",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Fort Lauderdale",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+   },
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "Palm Beach County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Broward County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Miami-Dade County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Monroe County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Manatee County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Sarasota County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Charlotte County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Lee County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Collier County, Florida"
+    }
+   ],
+   "sameAs": [
+    "https://www.linkedin.com/company/amalfibg/",
+    "https://www.facebook.com/profile.php?id=61596117256149",
+    "https://www.instagram.com/amalfibg/"
+   ]
   }
  ]
 }

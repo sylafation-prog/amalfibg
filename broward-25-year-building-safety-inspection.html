@@ -29,6 +29,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap">
 <link rel="stylesheet" href="styles.css?v=9">
+<style>
+.lvl{width:100%;border-collapse:collapse;margin-top:26px;font-size:1.02rem}
+.lvl th,.lvl td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+.lvl th{font-family:'Jost',sans-serif;font-weight:500;font-size:.73rem;letter-spacing:.17em;text-transform:uppercase;color:var(--ottone);white-space:nowrap}
+.lvl td:first-child{font-family:'Jost',sans-serif;font-weight:500;letter-spacing:.04em;white-space:nowrap;color:var(--ink)}
+.lvl tr:last-child td{border-bottom:none}
+.lvl tr.hi td{background:rgba(168,131,43,.07)}
+</style>
 </head>
 <body>
 
@@ -154,8 +162,6 @@
         <p class="lede narrow" style="margin:20px auto 0">The programme derives from Broward County Board of Rules and Appeals Policy 05-05 and is administered by each municipality&rsquo;s Building Official. The exemption list is what matters most to a commercial owner, because of what is not on it.</p>
       </div>
       <div class="tablewrap">
-      <div class="tblwrap">
-
       <table class="lvl">
         <thead><tr><th scope="col">&nbsp;</th><th scope="col">Broward Building Safety Inspection Program</th><th scope="col">State milestone inspection</th></tr></thead>
         <tbody>
@@ -171,7 +177,6 @@
           <tr><td>Repairs</td><td>180 days from the report date, unless the Building Official allows longer</td><td>Local ordinance, no later than 365 days from the agency receiving the phase two report</td></tr>
         </tbody>
       </table>
-      </div>
       </div>
       <div class="two" style="margin-top:clamp(26px,3vw,40px)">
         <div>
@@ -403,11 +408,7 @@
    "description": "Guidance for commercial, retail, office, industrial and mixed-use property owners in Broward County on the county's Building Safety Inspection Program, derived from Broward County Board of Rules and Appeals Policy 05-05 and administered by each municipality's Building Official. Unlike the state milestone inspection under Fla. Stat. 553.899, which applies only to condominium and cooperative property of three or more habitable storeys, the Broward programme applies to buildings generally: its published exemptions cover United States government and State of Florida buildings, sovereign tribal lands, Broward County School Board schools, small residential buildings of up to four units and three storeys or fewer, fee simple townhouses, structures under 3,500 square feet of floor area, and railroads and related facilities &mdash; with no exemption for commercial property and no height threshold. Buildings 25 years or older are inspected and re-inspected every ten years; the inspection covers structural and electrical systems, where the milestone inspection is structural only; notices issue by certified mail between 1 June and 31 August for that calendar year; the safety report from a licensed professional is due within 180 days of notice; and repairs are to be completed within 180 days of the report date unless the Building Official allows longer. Covers the findings typical of a twenty-five to forty-year-old coastal commercial building, the correct repair sequence of structural then envelope-related electrical then sealant and coating, and the licensing boundary. Amalfi Group performs quantified envelope surveys, waterproofing, caulking, stucco repair, exterior painting, stone and architectural metalwork under the job scopes placed outside state contractor licensing by Fla. Stat. 489.117(4)(a); it does not perform the inspection, structural repair, electrical, roofing, window and door replacement, plumbing or mechanical work, which the owner contracts directly with the licensed party, and structural work above three storeys requires a certified general contractor.",
    "url": "https://amalfibg.com/broward-25-year-building-safety-inspection",
    "provider": {
-    "@type": "Organization",
-    "@id": "https://amalfibg.com/#organization",
-    "name": "Amalfi Group",
-    "url": "https://amalfibg.com/",
-    "email": "hello@amalfibg.com"
+    "@id": "https://amalfibg.com/#organization"
    },
    "areaServed": [
     {
@@ -633,6 +634,71 @@
    "publisher": {
     "@id": "https://amalfibg.com/#organization"
    }
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://amalfibg.com/#organization",
+   "name": "Amalfi Group",
+   "legalName": "Amalfi Building Group LLC",
+   "url": "https://amalfibg.com/",
+   "email": "hello@amalfibg.com",
+   "telephone": "+1-754-432-2225",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://amalfibg.com/og.png",
+    "width": 1200,
+    "height": 630
+   },
+   "image": "https://amalfibg.com/og.png",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Fort Lauderdale",
+    "addressRegion": "FL",
+    "addressCountry": "US"
+   },
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "Palm Beach County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Broward County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Miami-Dade County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Monroe County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Manatee County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Sarasota County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Charlotte County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Lee County, Florida"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Collier County, Florida"
+    }
+   ],
+   "sameAs": [
+    "https://www.linkedin.com/company/amalfibg/",
+    "https://www.facebook.com/profile.php?id=61596117256149",
+    "https://www.instagram.com/amalfibg/"
+   ]
   }
  ]
 }
