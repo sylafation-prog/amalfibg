@@ -137,11 +137,10 @@
 
   <section class="rail hero center">
     <svg class="arch" viewBox="0 0 40 26" aria-hidden="true"><path d="M2 25 V13 a18 12 0 0 1 36 0 V25" fill="none" stroke="currentColor" stroke-width="1.1"/></svg>
-    <p class="label">The portfolio</p>
-    <h1 style="margin-top:20px">Selected work</h1>
+    <p class="label">How the work is recorded</p>
+    <h1 style="margin-top:20px">Photographed from the same place, every time</h1>
     <p class="lede">The three divisions do work that photographs badly and matters enormously — a coil you will never see, a terrace that falls correctly, a joint in the right place. We would rather show it properly than not at all.</p>
-    <p class="small narrow" style="margin-top:26px">The portfolio is being assembled. Amalfi is a new house, and we are photographing jobs as they close rather than borrowing anyone else's. Until then, the entries below describe the kind of work each division takes on, so you can judge the scope before you call. Nothing here is presented as a finished Amalfi project.</p>
-    <div class="actions">
+        <div class="actions">
       <a class="btn btn-primary" href="contact">Discuss a property</a>
       <a class="btn btn-ghost" href="about">Our standard</a>
     </div>
@@ -152,229 +151,41 @@
   <section class="sec">
     <div class="rail">
       <div class="center">
-        <p class="label">By division</p>
-        <h2 style="margin-top:18px">The kind of work we take on</h2>
+        <p class="label">The method</p>
+        <h2 style="margin-top:18px">What a record actually consists of</h2>
         <p class="lede narrow" style="margin-top:20px">Ten representative engagements, three or four to a division. Each describes a type of job, its typical setting and what the work actually consists of.</p>
       </div>
 
-<!-- ===========================================================================
-     HOW TO PUT A REAL PROJECT ON THIS PAGE
-     ===========================================================================
+<!--
+     ADDING REAL WORK TO THIS PAGE
+     =============================
+     This page now argues the standard rather than showing an empty grid.
+     When you have photographs, add a section of real entries BELOW the
+     three method cards, not instead of them.
 
-     READ THIS FIRST. Every entry below is a PLACEHOLDER. It describes the kind
-     of work a division takes on. It is NOT a record of a job Amalfi has done,
-     and none of the titles or captions refer to a real building or a real
-     client. That is deliberate: inventing a portfolio is the one mistake on a
-     website that can genuinely cost you a contract, a licence application or a
-     lawsuit. Do not promote this page as finished work until the entries have
-     been replaced with real jobs.
+     For each entry you need:
+       1. A photograph you took, of work Amalfi actually performed.
+          Not stock, not the client's own photos of someone else's work.
+       2. Written permission from the owner if the property is private.
+          The estates page promises we do not photograph a client's
+          property for marketing without it. Keep that promise.
+       3. A caption that states exactly what Amalfi did. If we performed
+          the painting and sealant work on a house someone else built,
+          the caption says that. Never imply authorship of a building.
+       4. No address, and no owner's name unless they have agreed in
+          writing to be named.
 
-     TO REPLACE ONE SLOT WITH A REAL PROJECT — four steps:
+     Three real entries with honest captions are worth more than ten
+     padded ones. When the first three exist, tell Claude and the grid
+     markup and schema will be rebuilt around them.
+-->
 
-     1. THE PHOTOGRAPH
-        Save the photo as a .jpg in a folder called "images" sitting next to
-        this file, e.g. images/hotel-rooftop-fort-lauderdale.jpg
-        (The images folder does not exist yet. Create it the first time.)
-        Then in the entry, change the img src to that filename, and set width
-        and height to the real pixel dimensions of your photo. A portrait
-        photo around 1000 x 1250 suits the frame best.
-
-     2. TURN OFF THE EMPTY STATE
-        On the <figure> tag, delete  class="is-empty"
-        and DELETE the whole <span class="await"> ... </span> block inside the
-        frame. That block is the "photograph to come" placeholder that sits over
-        the picture. While it is there, your photo will not be visible.
-
-     3. REWRITE THE WORDS — THIS PART IS NOT OPTIONAL
-        - <h3> becomes the real job, in plain terms. No invented client names.
-          Do not name the building or the owner unless they have agreed to it
-          in writing. "Rooftop plant replacement, select-service hotel" is
-          fine. So is "Private residence, Royal Palm Yacht & Country Club" IF
-          the owner said yes.
-        - <span class="place"> becomes the real city.
-        - The <p> must describe what was ACTUALLY done: the equipment, the
-          materials, the problem, the result. Delete the placeholder sentences
-          entirely — do not edit around them.
-        - <span class="div-tag"> must lose the words "Representative of the
-          division's work" and carry only the division name, e.g. "Mechanical".
-          That phrase is the honesty label. It comes off only when the entry
-          describes a real job.
-        - The alt text on the img should describe what is in the photo, for
-          someone who cannot see it.
-
-     4. DELETE WHAT YOU HAVE NOT REPLACED
-        A page of six real projects beats a page of three real ones padded out
-        with seven placeholders. Delete spare entries; the grid reflows on its
-        own. When every remaining entry is real, also remove the paragraph in
-        the hero above that begins "The portfolio is being assembled", and the
-        sentence in the section intro that says "Ten representative
-        engagements".
-
-     =========================================================================== -->
-
-      <div class="gal">
-
-        <figure class="is-empty">
-          <span class="frame">
-            <img src="images/hotel-rooftop-plant.jpg" alt="Placeholder — rooftop mechanical plant on a coastal hotel" loading="lazy" width="1000" height="1250">
-            <span class="await" aria-hidden="true">
-              <svg viewBox="0 0 40 50" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M2 49 V21 a18 15 0 0 1 36 0 V49"/><path d="M20 30 V42"/></svg>
-              <em>Photograph to come</em>
-            </span>
-          </span>
-          <figcaption>
-            <span class="place">Fort Lauderdale, Florida</span>
-            <h3>Rooftop plant replacement, select-service hotel</h3>
-            <p>The division's standard commercial job: four to ten packaged rooftop units at the end of their life on a building that cannot stop selling rooms. Survey first, then a staged changeout taking one unit at a time, curb adapters fabricated rather than improvised, and condenser coils coated before the first season of salt reaches them.</p>
-            <span class="div-tag">Mechanical · Representative of the division's work</span>
-          </figcaption>
-        </figure>
-
-        <figure class="is-empty">
-          <span class="frame">
-            <img src="images/restaurant-refrigeration.jpg" alt="Placeholder — walk-in refrigeration and kitchen line in a commercial kitchen" loading="lazy" width="1000" height="1250">
-            <span class="await" aria-hidden="true">
-              <svg viewBox="0 0 40 50" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M2 49 V21 a18 15 0 0 1 36 0 V49"/><path d="M20 30 V42"/></svg>
-              <em>Photograph to come</em>
-            </span>
-          </span>
-          <figcaption>
-            <span class="place">Miami, Florida</span>
-            <h3>Kitchen refrigeration and makeup air, restaurant group</h3>
-            <p>Walk-in coolers, remote condensing units, prep refrigeration and ice machines held on one schedule across several locations, with makeup air balanced against the hood so the dining room is not pulling the front door shut. Grease waste lines and condensate treatment run on the same calendar, because in a kitchen they fail in the same week.</p>
-            <span class="div-tag">Mechanical · Representative of the division's work</span>
-          </figcaption>
-        </figure>
-
-        <figure class="is-empty">
-          <span class="frame">
-            <img src="images/retail-chiller-controls.jpg" alt="Placeholder — chiller and control panel in a retail centre mechanical room" loading="lazy" width="1000" height="1250">
-            <span class="await" aria-hidden="true">
-              <svg viewBox="0 0 40 50" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M2 49 V21 a18 15 0 0 1 36 0 V49"/><path d="M20 30 V42"/></svg>
-              <em>Photograph to come</em>
-            </span>
-          </span>
-          <figcaption>
-            <span class="place">West Palm Beach, Florida</span>
-            <h3>Chiller service and controls, retail centre</h3>
-            <p>A multi-tenant plaza where every suite is billed for comfort nobody is measuring. The work is a full equipment inventory, a chiller and cooling-tower service interval written for a climate that cools twelve months of the year, and building controls set so the landlord can see a failure before a tenant telephones about it.</p>
-            <span class="div-tag">Mechanical · Representative of the division's work</span>
-          </figcaption>
-        </figure>
-
-        <figure class="is-empty">
-          <span class="frame">
-            <img src="images/waterfront-exterior-paint.jpg" alt="Placeholder — rendered elevation of a waterfront residence under repaint" loading="lazy" width="1000" height="1250">
-            <span class="await" aria-hidden="true">
-              <svg viewBox="0 0 40 50" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M2 49 V21 a18 15 0 0 1 36 0 V49"/><path d="M20 30 V42"/></svg>
-              <em>Photograph to come</em>
-            </span>
-          </span>
-          <figcaption>
-            <span class="place">Naples, Florida</span>
-            <h3>Exterior paint cycle, waterfront residence</h3>
-            <p>On the water a coating sold as seven-year work gives out in two, so the cycle is shortened rather than the product oversold. Render cracks cut out and made good, sealants and expansion joints renewed before anything is sprayed, and the elevation facing the Gulf treated as a separate specification from the three that are sheltered.</p>
-            <span class="div-tag">Estates · Representative of the division's work</span>
-          </figcaption>
-        </figure>
-
-        <figure class="is-empty">
-          <span class="frame">
-            <img src="images/terrace-dock-seawall.jpg" alt="Placeholder — stone terrace running to a dock and seawall" loading="lazy" width="1000" height="1250">
-            <span class="await" aria-hidden="true">
-              <svg viewBox="0 0 40 50" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M2 49 V21 a18 15 0 0 1 36 0 V49"/><path d="M20 30 V42"/></svg>
-              <em>Photograph to come</em>
-            </span>
-          </span>
-          <figcaption>
-            <span class="place">Boca Raton, Florida</span>
-            <h3>Terrace, dock and seawall programme</h3>
-            <p>Stone and dock boards washed on a fortnightly interval before the staining sets rather than after, coping lifted and re-bedded where it has worked loose, and fixings changed to marine-grade stainless as they are found. The seawall is photographed at the same points twice a year so movement shows up as a comparison instead of a surprise.</p>
-            <span class="div-tag">Estates · Representative of the division's work</span>
-          </figcaption>
-        </figure>
-
-        <figure class="is-empty">
-          <span class="frame">
-            <img src="images/house-systems-watch.jpg" alt="Placeholder — generator and house plant room at a private residence" loading="lazy" width="1000" height="1250">
-            <span class="await" aria-hidden="true">
-              <svg viewBox="0 0 40 50" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M2 49 V21 a18 15 0 0 1 36 0 V49"/><path d="M20 30 V42"/></svg>
-              <em>Photograph to come</em>
-            </span>
-          </span>
-          <figcaption>
-            <span class="place">Sarasota, Florida</span>
-            <h3>House systems and watch, seasonal residence</h3>
-            <p>A house empty for five months of the year, which is when the expensive failures happen. Climate and dehumidification held to a set point rather than switched off, the generator run under load quarterly, lift and pool service coordinated, and a walk of the interior and exterior on an agreed interval with photographs sent the same day.</p>
-            <span class="div-tag">Estates · Representative of the division's work</span>
-          </figcaption>
-        </figure>
-
-        <figure class="is-empty">
-          <span class="frame">
-            <img src="images/wine-room-cooling.jpg" alt="Placeholder — temperature-controlled wine room with stone and timber racking" loading="lazy" width="1000" height="1250">
-            <span class="await" aria-hidden="true">
-              <svg viewBox="0 0 40 50" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M2 49 V21 a18 15 0 0 1 36 0 V49"/><path d="M20 30 V42"/></svg>
-              <em>Photograph to come</em>
-            </span>
-          </span>
-          <figcaption>
-            <span class="place">Delray Beach, Florida</span>
-            <h3>Wine room and specialty cooling</h3>
-            <p>Where the two divisions meet. A room that has to hold a temperature and a humidity band for decades, which means a sealed envelope and a vapour barrier before any decision about cooling, redundant equipment because a single unit failing in August is a loss rather than an inconvenience, and an alarm that reaches a telephone and not just a wall.</p>
-            <span class="div-tag">Estates with Mechanical · Representative of the division's work</span>
-          </figcaption>
-        </figure>
-
-        <figure class="is-empty">
-          <span class="frame">
-            <img src="images/restaurant-buildout.jpg" alt="Placeholder — restaurant tenant buildout at rough-in stage" loading="lazy" width="1000" height="1250">
-            <span class="await" aria-hidden="true">
-              <svg viewBox="0 0 40 50" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M2 49 V21 a18 15 0 0 1 36 0 V49"/><path d="M20 30 V42"/></svg>
-              <em>Photograph to come</em>
-            </span>
-          </span>
-          <figcaption>
-            <span class="place">Pompano Beach, Florida</span>
-            <h3>Restaurant tenant buildout, shell space</h3>
-            <p>A buildout where the rent clock is running and the kitchen drives everything. Grease interceptor, hood and makeup air, gas and power resolved on paper before a wall goes up, inspections sequenced so one failure does not cost a fortnight, and a single party holding the drawings, the trades, the permits and the opening date.</p>
-            <span class="div-tag">Construction · Representative of the division's work</span>
-          </figcaption>
-        </figure>
-
-        <figure class="is-empty">
-          <span class="frame">
-            <img src="images/bath-terrace-renovation.jpg" alt="Placeholder — stone-lined bathroom and adjoining terrace under renovation" loading="lazy" width="1000" height="1250">
-            <span class="await" aria-hidden="true">
-              <svg viewBox="0 0 40 50" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M2 49 V21 a18 15 0 0 1 36 0 V49"/><path d="M20 30 V42"/></svg>
-              <em>Photograph to come</em>
-            </span>
-          </span>
-          <figcaption>
-            <span class="place">Miami Beach, Florida</span>
-            <h3>Primary bath and terrace renovation</h3>
-            <p>Stone work where the tolerances are visible from a metre away. Falls set and checked with a straightedge before a tile is ordered, waterproofing flood-tested and photographed rather than taken on trust, movement joints at the thresholds where the building actually moves, and the terrace detailed so the membrane can be reached again without demolishing it.</p>
-            <span class="div-tag">Construction · Representative of the division's work</span>
-          </figcaption>
-        </figure>
-
-        <figure class="is-empty">
-          <span class="frame">
-            <img src="images/office-suite-refit.jpg" alt="Placeholder — office suite refit with new ceiling grid and lighting" loading="lazy" width="1000" height="1250">
-            <span class="await" aria-hidden="true">
-              <svg viewBox="0 0 40 50" fill="none" stroke="currentColor" stroke-width="1.1"><path d="M2 49 V21 a18 15 0 0 1 36 0 V49"/><path d="M20 30 V42"/></svg>
-              <em>Photograph to come</em>
-            </span>
-          </span>
-          <figcaption>
-            <span class="place">Fort Myers, Florida</span>
-            <h3>Office suite refit, occupied building</h3>
-            <p>Work done around other people's tenants: demolition and deliveries out of hours, dust and noise contained to the floor, lifts protected, and the fire alarm and sprinkler work coordinated with the building engineer rather than discovered by him. Panel capacity confirmed before the lighting is specified, not after it arrives.</p>
-            <span class="div-tag">Construction · Representative of the division's work</span>
-          </figcaption>
-        </figure>
-
+      <div class="three">
+        <div><h3>Fixed positions</h3><p>Every property is photographed from a set of marked positions, and the same positions are used on every visit afterwards. Fifty pictures taken from wherever someone happened to stand prove that a person attended. Eleven taken from the same eleven places over three years show a hairline crack lengthening, a stain spreading, a tile lifting at one corner. Only the second is evidence of condition.</p></div>
+        <div><h3>Before, during and after</h3><p>Work is photographed before it starts, at the stage where the substrate is open and visible, and on completion. The middle one is the photograph that matters and the one almost nobody takes &mdash; what was behind the finish is the only record of why the specification was what it was.</p></div>
+        <div><h3>The record belongs to the owner</h3><p>Dated images, readings and exceptions go to the property file after every visit, through a private portal. It is the file an insurer reads after a storm, an adjuster reads on a claim, and a buyer&rsquo;s inspector reads at sale &mdash; which is when the difference between a record and a promise becomes expensive.</p></div>
       </div>
+      <p class="lede narrow" style="margin:40px auto 0;text-align:left">Work on private houses is photographed to this standard and published only with the owner&rsquo;s written permission, which is a slower way to build a portfolio and the only one compatible with the discretion these clients expect. We do not borrow other firms&rsquo; photographs, and we do not present a type of job as though it were a completed one. If you would like to see work in progress, ask and we will arrange it.</p>
     </div>
   </section>
 
