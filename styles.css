@@ -537,6 +537,7 @@ nav.main .menu::before{content:"";position:absolute;left:0;right:0;top:-20px;hei
 nav.main .hasmenu:hover .menu,
 nav.main .hasmenu:focus-within .menu{opacity:1;visibility:visible;pointer-events:auto;
   transform:translateX(-50%) translateY(0);transition-delay:0s}
+nav.main .menu.m1{grid-template-columns:1fr;min-width:252px}
 nav.main .menu a{border-bottom:0;padding:10px 2px;font-size:.68rem;letter-spacing:.13em;white-space:nowrap}
 nav.main .menu a:hover{color:var(--oliva)}
 nav.main .menu a[aria-current="page"]{color:var(--ink)}
