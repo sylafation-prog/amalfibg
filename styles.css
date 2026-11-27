@@ -561,3 +561,12 @@ nav.main .menu a[aria-current="page"]{color:var(--ink)}
     border-bottom:1px solid var(--line-soft)}
   .drawer a.d-sub{padding-left:max(38px,calc(env(safe-area-inset-left,0px) + 38px));font-size:.73rem;color:var(--ink-2)}
 }
+
+/* ── photographs ─────────────────────────────────────────────────────────
+   A photograph is context, never a claim. Captions say where the picture
+   was taken and nothing about whose property it is. */
+figure.shot{margin:0}
+figure.shot img{display:block;width:100%;height:auto;background:var(--stone-deep);
+  border:1px solid var(--line-soft);box-shadow:0 20px 44px -30px var(--shadow-deep)}
+figure.shot figcaption{margin-top:14px;font-family:var(--util);font-size:.82rem;
+  font-weight:300;letter-spacing:.05em;color:var(--muted);line-height:1.6}

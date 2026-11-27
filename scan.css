@@ -91,3 +91,9 @@ h1{
   letter-spacing:.09em; color:var(--muted); margin:34px 0 0; line-height:2
 }
 .foot a{color:var(--muted)}
+
+figure.shot{margin:34px 0 0}
+figure.shot img{display:block;width:100%;height:auto;
+  border:1px solid var(--line-soft);box-shadow:0 20px 44px -30px rgba(84,64,32,.16)}
+figure.shot figcaption{margin-top:13px;font-family:var(--util);font-size:.8rem;
+  font-weight:300;letter-spacing:.05em;color:var(--muted);line-height:1.6}
