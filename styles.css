@@ -135,7 +135,7 @@ nav.main a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--otton
 .btn-ghost:hover{border-color:var(--oliva);color:var(--oliva)}
 .band .btn-ghost:hover,.band .btn-ghost:focus-visible{border-color:var(--mare);color:var(--mare)}
 @media (max-width:1340px){.tel{display:none}}
-@media (max-width:1180px){nav.main{display:none}.hcta{margin-left:auto}}
+@media (max-width:1220px){nav.main{display:none}.hcta{margin-left:auto}}
 
 /* mobile drawer — CSS only; the checkbox is the state, the label is the burger */
 .navtoggle{position:absolute;width:1px;height:1px;margin:-1px;padding:0;border:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
@@ -148,7 +148,7 @@ nav.main a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--otton
 .navtoggle:checked ~ .burger span:nth-child(2){opacity:0;transform:scaleX(.2)}
 .navtoggle:checked ~ .burger span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
 .drawer{display:none}
-@media (max-width:1180px){
+@media (max-width:1220px){
   .burger{display:flex}
   /* positioned against the sticky header, so it drops from under it, full-bleed */
   .drawer{position:absolute;left:0;right:0;top:100%;z-index:70;
@@ -555,7 +555,7 @@ nav.main .menu a[aria-current="page"]{color:var(--ink)}
 @media (prefers-reduced-motion:reduce){nav.main .menu{transition:none}}
 
 /* drawer: the trades group sits indented under its own heading */
-@media (max-width:1180px){
+@media (max-width:1220px){
   .drawer .d-group{font-family:var(--util);font-weight:400;font-size:.62rem;letter-spacing:.24em;
     text-transform:uppercase;color:var(--mare);padding:16px max(22px,env(safe-area-inset-left,0px)) 6px;
     border-bottom:1px solid var(--line-soft)}

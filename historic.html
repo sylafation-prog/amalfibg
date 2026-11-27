@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap">
-<link rel="stylesheet" href="styles.css?v=8">
+<link rel="stylesheet" href="styles.css?v=9">
 <style>
 /* Page-specific: fabric table, treatment ladder and schematic diagrams */
 .dgm{margin-top:clamp(26px,3.4vw,42px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:clamp(18px,2.6vw,30px) 0}
@@ -182,15 +182,28 @@
       <b>Amalfi <small>Group</small></b>
     </a>
     <nav class="main">
-      <a href="estates">Estates</a>
+      <div class="hasmenu">
+        <a href="estates">Estates</a>
+        <div class="menu m1">
+          <a href="estate-renovation">Estate renovation</a>
+          <a href="seawall-and-dock-care">Seawall &amp; dock care</a>
+          <a href="pool-and-water-features">Pool &amp; water features</a>
+          <a href="grounds-oversight">Grounds oversight</a>
+          <a href="interior-systems">Interior systems</a>
+        </div>
+      </div>
       <a href="mechanical">Mechanical</a>
       <div class="hasmenu">
         <a href="construction">Construction</a>
-        <div class="menu m1">
-          <a href="building-in-south-florida">Before you build</a>
+        <div class="menu">
+          <a href="building-a-custom-home-south-florida">Building a custom home</a>
+          <a href="condo-renovation">Condominium renovation</a>
+          <a href="waterfront-estate-construction">Waterfront estates</a>
           <a href="condominium-compliance-florida">Condominium compliance</a>
-          <a href="milestone-inspections-florida">Milestone inspections</a>
+          <a href="home-additions-and-second-storey">Additions &amp; second storey</a>
           <a href="broward-25-year-building-safety-inspection">Commercial recertification</a>
+          <a href="before-you-buy-the-land">Before you buy the land</a>
+          <a href="building-in-south-florida">Everything before you build</a>
         </div>
       </div>
       <div class="hasmenu">
@@ -219,11 +232,20 @@
     <label for="navtoggle" class="burger" aria-hidden="true"><span></span><span></span><span></span></label>
     <nav class="drawer">
       <a href="estates">Estates</a>
+      <a class="d-sub" href="estate-renovation">Estate renovation</a>
+      <a class="d-sub" href="seawall-and-dock-care">Seawall &amp; dock care</a>
+      <a class="d-sub" href="pool-and-water-features">Pool &amp; water features</a>
+      <a class="d-sub" href="grounds-oversight">Grounds oversight</a>
+      <a class="d-sub" href="interior-systems">Interior systems</a>
       <a href="mechanical">Mechanical</a>
       <a href="construction">Construction</a>
-      <a class="d-sub" href="building-in-south-florida">Before you build</a>
+      <a class="d-sub" href="building-a-custom-home-south-florida">Building a custom home</a>
+      <a class="d-sub" href="waterfront-estate-construction">Waterfront estates</a>
+      <a class="d-sub" href="home-additions-and-second-storey">Additions &amp; second storey</a>
+      <a class="d-sub" href="before-you-buy-the-land">Before you buy the land</a>
+      <a class="d-sub" href="building-in-south-florida">Everything before you build</a>
+      <a class="d-sub" href="condo-renovation">Condominium renovation</a>
       <a class="d-sub" href="condominium-compliance-florida">Condominium compliance</a>
-      <a class="d-sub" href="milestone-inspections-florida">Milestone inspections</a>
       <a class="d-sub" href="broward-25-year-building-safety-inspection">Commercial recertification</a>
       <a href="trades">Trades</a>
       <a class="d-sub" href="painting">Painting &amp; coatings</a>
