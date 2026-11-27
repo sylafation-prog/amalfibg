@@ -570,3 +570,9 @@ figure.shot img{display:block;width:100%;height:auto;background:var(--stone-deep
   border:1px solid var(--line-soft);box-shadow:0 20px 44px -30px var(--shadow-deep)}
 figure.shot figcaption{margin-top:14px;font-family:var(--util);font-size:.82rem;
   font-weight:300;letter-spacing:.05em;color:var(--muted);line-height:1.6}
+
+/* founder portrait leads on a narrow screen, rather than trailing the text */
+@media (max-width:880px){
+  #founder .two > div{order:2}
+  #founder .two > figure{order:1;max-width:340px;margin-inline:auto}
+}
