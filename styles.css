@@ -576,3 +576,5 @@ figure.shot figcaption{margin-top:14px;font-family:var(--util);font-size:.82rem;
   #founder .two > div{order:2}
   #founder .two > figure{order:1;max-width:340px;margin-inline:auto}
 }
+#founder .shot{max-width:340px;justify-self:end}
+@media (max-width:880px){#founder .shot{justify-self:center}}
