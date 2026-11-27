@@ -538,6 +538,17 @@ nav.main .hasmenu:hover .menu,
 nav.main .hasmenu:focus-within .menu{opacity:1;visibility:visible;pointer-events:auto;
   transform:translateX(-50%) translateY(0);transition-delay:0s}
 nav.main .menu.m1{grid-template-columns:1fr;min-width:252px}
+
+/* ── data tables (finish levels, intervals, standards) ─────────── */
+.tblwrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:26px}
+.lvl{width:100%;border-collapse:collapse;font-size:1.02rem}
+.lvl th,.lvl td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+.lvl th{font-family:'Jost',sans-serif;font-weight:500;font-size:.73rem;letter-spacing:.17em;text-transform:uppercase;color:var(--ottone);white-space:nowrap}
+.lvl td:first-child{font-family:'Jost',sans-serif;font-weight:500;letter-spacing:.04em;white-space:nowrap;color:var(--ink)}
+.lvl tr:last-child td{border-bottom:none}
+.lvl tr.hi td{background:rgba(168,131,43,.07)}
+@media (max-width:560px){.lvl{font-size:.94rem}.lvl th,.lvl td{padding:11px 12px}}
+
 nav.main .menu a{border-bottom:0;padding:10px 2px;font-size:.68rem;letter-spacing:.13em;white-space:nowrap}
 nav.main .menu a:hover{color:var(--oliva)}
 nav.main .menu a[aria-current="page"]{color:var(--ink)}
